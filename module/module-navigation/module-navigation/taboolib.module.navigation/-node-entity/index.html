@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NodeEntity</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-navigation</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-navigation:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-navigation::taboolib.module.navigation/NodeEntity///PointingToDeclaration//-1719916946">
+  <div class="breadcrumbs"><a href="../../../index.html">module-navigation</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.navigation</a><span class="delimiter">/</span><span class="current">NodeEntity</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Node</span><wbr></wbr><span><span>Entity</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">NodeEntity</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>location<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">1.0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>depth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span>width<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canPassDoors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canOpenDoors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>canFloat<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>random<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html">Random</a><span class="token operator"> = </span>Random()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>restrictCenter<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator"> = </span>Vector(0, 0, 0)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>restrictRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f</span></span><span class="token punctuation">)</span></div><p class="paragraph">Navigation taboolib.module.navigation.Original</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">sky</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2021/2/21 6:35 下午</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-281048637%2FConstructors%2F-1719916946" anchor-label="NodeEntity" id="-281048637%2FConstructors%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-node-entity.html"><span>Node</span><wbr></wbr><span><span>Entity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-281048637%2FConstructors%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">location<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">1.0</span><span class="token punctuation">, </span></span><span class="parameter ">depth<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span>width<span class="token punctuation">, </span></span><span class="parameter ">canPassDoors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">canOpenDoors<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">canFloat<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">random<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html">Random</a><span class="token operator"> = </span>Random()<span class="token punctuation">, </span></span><span class="parameter ">restrictCenter<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator"> = </span>Vector(0, 0, 0)<span class="token punctuation">, </span></span><span class="parameter ">restrictRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>-1f</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="790720138%2FFunctions%2F-1719916946" anchor-label="canCutCorner" id="790720138%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-cut-corner.html"><span>can</span><wbr></wbr><span>Cut</span><wbr></wbr><span><span>Corner</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="790720138%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="can-cut-corner.html"><span class="token function">canCutCorner</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pathType<span class="token operator">: </span><a href="../-path-type/index.html">PathType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="669474775%2FFunctions%2F-1719916946" anchor-label="canStandOnFluid" id="669474775%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-stand-on-fluid.html"><span>can</span><wbr></wbr><span>Stand</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Fluid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="669474775%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="can-stand-on-fluid.html"><span class="token function">canStandOnFluid</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">fluid<span class="token operator">: </span><a href="../-fluid/index.html">Fluid</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="221298087%2FFunctions%2F-1719916946" anchor-label="getAirSupply" id="221298087%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-air-supply.html"><span>get</span><wbr></wbr><span>Air</span><wbr></wbr><span><span>Supply</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="221298087%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-air-supply.html"><span class="token function">getAirSupply</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1906610693%2FFunctions%2F-1719916946" anchor-label="getPathfindingMalus" id="1906610693%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-pathfinding-malus.html"><span>get</span><wbr></wbr><span>Pathfinding</span><wbr></wbr><span><span>Malus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1906610693%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-pathfinding-malus.html"><span class="token function">getPathfindingMalus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pathType<span class="token operator">: </span><a href="../-path-type/index.html">PathType</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="615705881%2FFunctions%2F-1719916946" anchor-label="getWalkTargetValue" id="615705881%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-walk-target-value.html"><span>get</span><wbr></wbr><span>Walk</span><wbr></wbr><span>Target</span><wbr></wbr><span><span>Value</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="615705881%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-walk-target-value.html"><span class="token function">getWalkTargetValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pos<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><br><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-walk-target-value.html"><span class="token function">getWalkTargetValue</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pos<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token punctuation">, </span></span><span class="parameter ">world<span class="token operator">: </span><span data-unresolved-link="org.bukkit/World///PointingToDeclaration/">World</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">重写后不允许返回 -1 值 否则会影响随机游荡算法价值计算</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1971907384%2FFunctions%2F-1719916946" anchor-label="isInWater" id="-1971907384%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-in-water.html"><span>is</span><wbr></wbr><span>In</span><wbr></wbr><span><span>Water</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1971907384%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-in-water.html"><span class="token function">isInWater</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="255906330%2FFunctions%2F-1719916946" anchor-label="isOnGround" id="255906330%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-on-ground.html"><span>is</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Ground</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="255906330%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-on-ground.html"><span class="token function">isOnGround</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1397602691%2FFunctions%2F-1719916946" anchor-label="isWithinRestriction" id="-1397602691%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-within-restriction.html"><span>is</span><wbr></wbr><span>Within</span><wbr></wbr><span><span>Restriction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1397602691%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-within-restriction.html"><span class="token function">isWithinRestriction</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-within-restriction.html"><span class="token function">isWithinRestriction</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pos<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1459131667%2FFunctions%2F-1719916946" anchor-label="restrictTo" id="1459131667%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="restrict-to.html"><span>restrict</span><wbr></wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1459131667%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="restrict-to.html"><span class="token function">restrictTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pos<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token punctuation">, </span></span><span class="parameter ">radius<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="569566239%2FFunctions%2F-1719916946" anchor-label="setPathfindingMalus" id="569566239%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-pathfinding-malus.html"><span>set</span><wbr></wbr><span>Pathfinding</span><wbr></wbr><span><span>Malus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="569566239%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-pathfinding-malus.html"><span class="token function">setPathfindingMalus</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pathType<span class="token operator">: </span><a href="../-path-type/index.html">PathType</a><span class="token punctuation">, </span></span><span class="parameter ">malus<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="165168585%2FProperties%2F-1719916946" anchor-label="boundingBox" id="165168585%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bounding-box.html"><span>bounding</span><wbr></wbr><span><span>Box</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="165168585%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="bounding-box.html">boundingBox</a><span class="token operator">: </span><a href="../-bounding-box/index.html">BoundingBox</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-122086402%2FProperties%2F-1719916946" anchor-label="canFloat" id="-122086402%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-float.html"><span>can</span><wbr></wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-122086402%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="can-float.html">canFloat</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1461880225%2FProperties%2F-1719916946" anchor-label="canOpenDoors" id="-1461880225%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-open-doors.html"><span>can</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Doors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1461880225%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="can-open-doors.html">canOpenDoors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1636344294%2FProperties%2F-1719916946" anchor-label="canPassDoors" id="1636344294%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-pass-doors.html"><span>can</span><wbr></wbr><span>Pass</span><wbr></wbr><span><span>Doors</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1636344294%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="can-pass-doors.html">canPassDoors</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1280965043%2FProperties%2F-1719916946" anchor-label="depth" id="-1280965043%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="depth.html"><span><span>depth</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1280965043%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="depth.html">depth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1823817417%2FProperties%2F-1719916946" anchor-label="G" id="1823817417%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g.html"><span><span>G</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1823817417%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-g.html">G</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">不知道是什么东西</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="224597144%2FProperties%2F-1719916946" anchor-label="hasRestriction" id="224597144%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-restriction.html"><span>has</span><wbr></wbr><span><span>Restriction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="224597144%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="has-restriction.html">hasRestriction</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="405126883%2FProperties%2F-1719916946" anchor-label="height" id="405126883%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="height.html"><span><span>height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405126883%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="height.html">height</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1055415083%2FProperties%2F-1719916946" anchor-label="location" id="-1055415083%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1055415083%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="location.html">location</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1171174808%2FProperties%2F-1719916946" anchor-label="pathfindingMalus" id="1171174808%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pathfinding-malus.html"><span>pathfinding</span><wbr></wbr><span><span>Malus</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1171174808%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="pathfinding-malus.html">pathfindingMalus</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html">EnumMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-path-type/index.html">PathType</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1726837447%2FProperties%2F-1719916946" anchor-label="random" id="1726837447%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="random.html"><span><span>random</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1726837447%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="random.html">random</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Random.html">Random</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2047867929%2FProperties%2F-1719916946" anchor-label="restrictCenter" id="2047867929%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="restrict-center.html"><span>restrict</span><wbr></wbr><span><span>Center</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2047867929%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="restrict-center.html">restrictCenter</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1372662396%2FProperties%2F-1719916946" anchor-label="restrictRadius" id="1372662396%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="restrict-radius.html"><span>restrict</span><wbr></wbr><span><span>Radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1372662396%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="restrict-radius.html">restrictRadius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="468319402%2FProperties%2F-1719916946" anchor-label="width" id="468319402%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="468319402%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="width.html">width</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token operator"> = </span><span class="token constant">1.0</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-951179336%2FProperties%2F-1719916946" anchor-label="x" id="-951179336%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="x.html"><span><span>x</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-951179336%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="x.html">x</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-920159529%2FProperties%2F-1719916946" anchor-label="y" id="-920159529%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="y.html"><span><span>y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-920159529%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="y.html">y</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-889139722%2FProperties%2F-1719916946" anchor-label="z" id="-889139722%2FProperties%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="z.html"><span><span>z</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-889139722%2FProperties%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="z.html">z</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

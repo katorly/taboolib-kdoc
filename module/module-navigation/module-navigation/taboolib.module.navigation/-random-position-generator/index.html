@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RandomPositionGenerator</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-navigation</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-navigation:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-navigation::taboolib.module.navigation/RandomPositionGenerator///PointingToDeclaration//-1719916946">
+  <div class="breadcrumbs"><a href="../../../index.html">module-navigation</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.navigation</a><span class="delimiter">/</span><span class="current">RandomPositionGenerator</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Random</span><wbr></wbr><span>Position</span><wbr></wbr><span><span>Generator</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="index.html">RandomPositionGenerator</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-915176359%2FFunctions%2F-1719916946" anchor-label="generate" id="-915176359%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate.html"><span><span>generate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-915176359%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate.html"><span class="token function">generate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">rX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">yY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">start<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">onWater<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">aboveLand<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">requireWalkable<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1637792058%2FFunctions%2F-1719916946" anchor-label="generateAirTowards" id="-1637792058%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-air-towards.html"><span>generate</span><wbr></wbr><span>Air</span><wbr></wbr><span><span>Towards</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637792058%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-air-towards.html"><span class="token function">generateAirTowards</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">target<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成朝向目标的空中随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="232200393%2FFunctions%2F-1719916946" anchor-label="generateLand" id="232200393%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-land.html"><span>generate</span><wbr></wbr><span><span>Land</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232200393%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-land.html"><span class="token function">generateLand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成地面随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-868578998%2FFunctions%2F-1719916946" anchor-label="generateLandAbove" id="-868578998%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-land-above.html"><span>generate</span><wbr></wbr><span>Land</span><wbr></wbr><span><span>Above</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-868578998%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-land-above.html"><span class="token function">generateLandAbove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-land-above.html"><span class="token function">generateLandAbove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">start<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成地面随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="523920022%2FFunctions%2F-1719916946" anchor-label="generateLandAvoid" id="523920022%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-land-avoid.html"><span>generate</span><wbr></wbr><span>Land</span><wbr></wbr><span><span>Avoid</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="523920022%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-land-avoid.html"><span class="token function">generateLandAvoid</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">start<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成远离起点的地面随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="404087311%2FFunctions%2F-1719916946" anchor-label="generateLandTowards" id="404087311%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-land-towards.html"><span>generate</span><wbr></wbr><span>Land</span><wbr></wbr><span><span>Towards</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404087311%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-land-towards.html"><span class="token function">generateLandTowards</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nodeEntity<span class="token operator">: </span><a href="../-node-entity/index.html">NodeEntity</a><span class="token punctuation">, </span></span><span class="parameter ">restrictX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">restrictY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">target<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">生成朝向目标的地面随机坐标</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="793985470%2FFunctions%2F-1719916946" anchor-label="moveUp" id="793985470%2FFunctions%2F-1719916946" data-filterable-set=":module:module-navigation:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-navigation:dokkaHtml/main" data-filterable-set=":module:module-navigation:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="move-up.html"><span>move</span><wbr></wbr><span><span>Up</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="793985470%2FFunctions%2F-1719916946"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-navigation:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="move-up.html"><span class="token function">moveUp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">maxY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">check<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.util/Vector///PointingToDeclaration/">Vector</span></div><div class="brief "><p class="paragraph">通过条件不断向上移动坐标指针</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

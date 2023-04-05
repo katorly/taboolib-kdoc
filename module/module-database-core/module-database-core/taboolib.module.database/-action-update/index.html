@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ActionUpdate</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-database-core</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-database-core:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-database-core::taboolib.module.database/ActionUpdate///PointingToDeclaration//945978419">
+  <div class="breadcrumbs"><a href="../../../index.html">module-database-core</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.database</a><span class="delimiter">/</span><span class="current">ActionUpdate</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Action</span><wbr></wbr><span><span>Update</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ActionUpdate</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>table<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../-where-executor/index.html">WhereExecutor</a>, <a href="../-action/index.html">Action</a></div><p class="paragraph">TabooLib taboolib.module.database.ActionUpdate</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">sky</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2021/6/23 5:07 下午</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-89352666%2FConstructors%2F945978419" anchor-label="ActionUpdate" id="-89352666%2FConstructors%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-action-update.html"><span>Action</span><wbr></wbr><span><span>Update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-89352666%2FConstructors%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">table<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1194647942%2FFunctions%2F945978419" anchor-label="and" id="-1194647942%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/and.html"><span><span>and</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1194647942%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-where-executor/and.html"><span class="token function">and</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">func<span class="token operator">: </span><span class="token keyword"></span><a href="../-where/index.html">Where</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2134746229%2FFunctions%2F945978419" anchor-label="and" id="-2134746229%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/and.html"><span><span>and</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2134746229%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../-where-data/index.html">WhereData</a><span class="token punctuation">.</span><a href="../-where-executor/and.html"><span class="token function">and</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2011096065%2FFunctions%2F945978419" anchor-label="append" id="2011096065%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="append.html"><span><span>append</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2011096065%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="append.html"><span class="token function">append</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">whereData<span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-482917381%2FFunctions%2F945978419" anchor-label="between" id="-482917381%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/between.html"><span><span>between</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-482917381%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/between.html"><span class="token function">between</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1470988143%2FFunctions%2F945978419" anchor-label="eq" id="1470988143%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/eq.html"><span><span>eq</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1470988143%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/eq.html"><span class="token function">eq</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="966629808%2FFunctions%2F945978419" anchor-label="gt" id="966629808%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/gt.html"><span><span>gt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="966629808%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/gt.html"><span class="token function">gt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="997611377%2FFunctions%2F945978419" anchor-label="gte" id="997611377%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/gte.html"><span><span>gte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="997611377%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/gte.html"><span class="token function">gte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="89875094%2FFunctions%2F945978419" anchor-label="inside" id="89875094%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/inside.html"><span><span>inside</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="89875094%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/inside.html"><span class="token function">inside</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="485487386%2FFunctions%2F945978419" anchor-label="like" id="485487386%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/like.html"><span><span>like</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="485487386%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/like.html"><span class="token function">like</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-236070837%2FFunctions%2F945978419" anchor-label="lt" id="-236070837%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/lt.html"><span><span>lt</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-236070837%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/lt.html"><span class="token function">lt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1926370250%2FFunctions%2F945978419" anchor-label="lte" id="-1926370250%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/lte.html"><span><span>lte</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1926370250%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">.</span><a href="../-where-executor/lte.html"><span class="token function">lte</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-728186387%2FFunctions%2F945978419" anchor-label="not" id="-728186387%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/not.html"><span><span>not</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-728186387%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-where-executor/not.html"><span class="token function">not</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">func<span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="591363315%2FFunctions%2F945978419" anchor-label="onFinally" id="591363315%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-finally.html"><span>on</span><wbr></wbr><span><span>Finally</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="591363315%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="on-finally.html"><span class="token function">onFinally</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">onFinally<span class="token operator">: </span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html">PreparedStatement</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html">Connection</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1432494140%2FFunctions%2F945978419" anchor-label="or" id="-1432494140%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/or.html"><span><span>or</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1432494140%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-where-executor/or.html"><span class="token function">or</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">func<span class="token operator">: </span><span class="token keyword"></span><a href="../-where/index.html">Where</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-200527147%2FFunctions%2F945978419" anchor-label="or" id="-200527147%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/or.html"><span><span>or</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-200527147%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">infix </span><span class="token keyword">fun </span><a href="../-where-data/index.html">WhereData</a><span class="token punctuation">.</span><a href="../-where-executor/or.html"><span class="token function">or</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1104892672%2FFunctions%2F945978419" anchor-label="pre" id="1104892672%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-where-executor/pre.html"><span><span>pre</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1104892672%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-where-executor/pre.html"><span class="token function">pre</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">any<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-pre-value/index.html">PreValue</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="300196696%2FFunctions%2F945978419" anchor-label="runFinally" id="300196696%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="run-finally.html"><span>run</span><wbr></wbr><span><span>Finally</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="300196696%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="run-finally.html"><span class="token function">runFinally</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">preparedStatement<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/PreparedStatement.html">PreparedStatement</a><span class="token punctuation">, </span></span><span class="parameter ">connection<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/sql/Connection.html">Connection</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1899438164%2FFunctions%2F945978419" anchor-label="set" id="-1899438164%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1899438164%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1160526061%2FFunctions%2F945978419" anchor-label="where" id="1160526061%2FFunctions%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="where.html"><span><span>where</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1160526061%2FFunctions%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="where.html"><span class="token function">where</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">func<span class="token operator">: </span><span class="token keyword"></span><a href="../-where/index.html">Where</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="where.html"><span class="token function">where</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">whereData<span class="token operator">: </span><a href="../-where-data/index.html">WhereData</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-2046734234%2FProperties%2F945978419" anchor-label="elements" id="-2046734234%2FProperties%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="elements.html"><span><span>elements</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2046734234%2FProperties%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="elements.html">elements</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1004116533%2FProperties%2F945978419" anchor-label="query" id="1004116533%2FProperties%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="query.html"><span><span>query</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1004116533%2FProperties%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="query.html">query</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1269970449%2FProperties%2F945978419" anchor-label="table" id="-1269970449%2FProperties%2F945978419" data-filterable-set=":module:module-database-core:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-database-core:dokkaHtml/main" data-filterable-set=":module:module-database-core:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="table.html"><span><span>table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1269970449%2FProperties%2F945978419"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-database-core:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="table.html">table</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

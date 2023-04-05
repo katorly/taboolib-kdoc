@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ChannelHandler</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-nms</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-nms:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-nms::taboolib.module.nms/ChannelHandler///PointingToDeclaration//-106641578">
+  <div class="breadcrumbs"><a href="../../../index.html">module-nms</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.nms</a><span class="delimiter">/</span><span class="current">ChannelHandler</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Channel</span><wbr></wbr><span><span>Handler</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ChannelHandler</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>player<span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="io.netty.channel/ChannelDuplexHandler///PointingToDeclaration/">ChannelDuplexHandler</span></div><p class="paragraph">TabooLib taboolib.module.nms.ChannelHandler</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">sky</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2021/6/24 5:42 下午</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1858922617%2FConstructors%2F-106641578" anchor-label="ChannelHandler" id="-1858922617%2FConstructors%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-channel-handler.html"><span>Channel</span><wbr></wbr><span><span>Handler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1858922617%2FConstructors%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">player<span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-823711177%2FFunctions%2F-106641578" anchor-label="bind" id="-823711177%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-823711177%2FFunctions%2F-106641578"><span><span>bind</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823711177%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-823711177%2FFunctions%2F-106641578"><span class="token function">bind</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html">SocketAddress</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="464870770%2FFunctions%2F-106641578" anchor-label="channelActive" id="464870770%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#464870770%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span><span>Active</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="464870770%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#464870770%2FFunctions%2F-106641578"><span class="token function">channelActive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1531052435%2FFunctions%2F-106641578" anchor-label="channelInactive" id="-1531052435%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1531052435%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span><span>Inactive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1531052435%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1531052435%2FFunctions%2F-106641578"><span class="token function">channelInactive</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1938831324%2FFunctions%2F-106641578" anchor-label="channelRead" id="1938831324%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="channel-read.html"><span>channel</span><wbr></wbr><span><span>Read</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1938831324%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="channel-read.html"><span class="token function">channelRead</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">channelHandlerContext<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">packet<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-485765271%2FFunctions%2F-106641578" anchor-label="channelReadComplete" id="-485765271%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-485765271%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span>Read</span><wbr></wbr><span><span>Complete</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-485765271%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-485765271%2FFunctions%2F-106641578"><span class="token function">channelReadComplete</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="612052086%2FFunctions%2F-106641578" anchor-label="channelRegistered" id="612052086%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#612052086%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span><span>Registered</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="612052086%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#612052086%2FFunctions%2F-106641578"><span class="token function">channelRegistered</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="841931005%2FFunctions%2F-106641578" anchor-label="channelUnregistered" id="841931005%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#841931005%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span><span>Unregistered</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="841931005%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#841931005%2FFunctions%2F-106641578"><span class="token function">channelUnregistered</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1982623816%2FFunctions%2F-106641578" anchor-label="channelWritabilityChanged" id="1982623816%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1982623816%2FFunctions%2F-106641578"><span>channel</span><wbr></wbr><span>Writability</span><wbr></wbr><span><span>Changed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1982623816%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1982623816%2FFunctions%2F-106641578"><span class="token function">channelWritabilityChanged</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="230513455%2FFunctions%2F-106641578" anchor-label="close" id="230513455%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#230513455%2FFunctions%2F-106641578"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="230513455%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#230513455%2FFunctions%2F-106641578"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1418748957%2FFunctions%2F-106641578" anchor-label="connect" id="1418748957%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1418748957%2FFunctions%2F-106641578"><span><span>connect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1418748957%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1418748957%2FFunctions%2F-106641578"><span class="token function">connect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html">SocketAddress</a><span class="token punctuation">, </span></span><span class="parameter ">p2<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/SocketAddress.html">SocketAddress</a><span class="token punctuation">, </span></span><span class="parameter ">p3<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1671006827%2FFunctions%2F-106641578" anchor-label="deregister" id="-1671006827%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1671006827%2FFunctions%2F-106641578"><span><span>deregister</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1671006827%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1671006827%2FFunctions%2F-106641578"><span class="token function">deregister</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1945450525%2FFunctions%2F-106641578" anchor-label="disconnect" id="1945450525%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1945450525%2FFunctions%2F-106641578"><span><span>disconnect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1945450525%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1945450525%2FFunctions%2F-106641578"><span class="token function">disconnect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1302831364%2FFunctions%2F-106641578" anchor-label="exceptionCaught" id="-1302831364%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1302831364%2FFunctions%2F-106641578"><span>exception</span><wbr></wbr><span><span>Caught</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1302831364%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1302831364%2FFunctions%2F-106641578"><span class="token function">exceptionCaught</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html">Throwable</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-429761545%2FFunctions%2F-106641578" anchor-label="flush" id="-429761545%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-429761545%2FFunctions%2F-106641578"><span><span>flush</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-429761545%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-429761545%2FFunctions%2F-106641578"><span class="token function">flush</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="178607799%2FFunctions%2F-106641578" anchor-label="handlerAdded" id="178607799%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#178607799%2FFunctions%2F-106641578"><span>handler</span><wbr></wbr><span><span>Added</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="178607799%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#178607799%2FFunctions%2F-106641578"><span class="token function">handlerAdded</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1272817303%2FFunctions%2F-106641578" anchor-label="handlerRemoved" id="1272817303%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1272817303%2FFunctions%2F-106641578"><span>handler</span><wbr></wbr><span><span>Removed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1272817303%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1272817303%2FFunctions%2F-106641578"><span class="token function">handlerRemoved</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-723883764%2FFunctions%2F-106641578" anchor-label="isSharable" id="-723883764%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-723883764%2FFunctions%2F-106641578"><span>is</span><wbr></wbr><span><span>Sharable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-723883764%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-723883764%2FFunctions%2F-106641578"><span class="token function">isSharable</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1186162167%2FFunctions%2F-106641578" anchor-label="read" id="1186162167%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1186162167%2FFunctions%2F-106641578"><span><span>read</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1186162167%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1186162167%2FFunctions%2F-106641578"><span class="token function">read</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1193332837%2FFunctions%2F-106641578" anchor-label="userEventTriggered" id="-1193332837%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1193332837%2FFunctions%2F-106641578"><span>user</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Triggered</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1193332837%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#-1193332837%2FFunctions%2F-106641578"><span class="token function">userEventTriggered</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="971043054%2FFunctions%2F-106641578" anchor-label="write" id="971043054%2FFunctions%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write.html"><span><span>write</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="971043054%2FFunctions%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="write.html"><span class="token function">write</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">channelHandlerContext<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelHandlerContext///PointingToDeclaration/">ChannelHandlerContext</span><span class="token punctuation">, </span></span><span class="parameter ">packet<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">channelPromise<span class="token operator">: </span><span data-unresolved-link="io.netty.channel/ChannelPromise///PointingToDeclaration/">ChannelPromise</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-261838797%2FProperties%2F-106641578" anchor-label="player" id="-261838797%2FProperties%2F-106641578" data-filterable-set=":module:module-nms:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-nms:dokkaHtml/main" data-filterable-set=":module:module-nms:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="player.html"><span><span>player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-261838797%2FProperties%2F-106641578"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="player.html">player</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

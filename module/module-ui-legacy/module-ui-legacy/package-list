@@ -1,0 +1,16 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.module.ui.virtual////PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/index.html
+$dokka.location:taboolib.module.ui.virtual/RemoteInventoryLegacy///PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-remote-inventory-legacy/index.html
+$dokka.location:taboolib.module.ui.virtual/RemoteInventoryLegacy/bottomInventory/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-remote-inventory-legacy/bottom-inventory.html
+$dokka.location:taboolib.module.ui.virtual/RemoteInventoryLegacy/inventory/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-remote-inventory-legacy/inventory.html
+$dokka.location:taboolib.module.ui.virtual/RemoteInventoryLegacy/viewer/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-remote-inventory-legacy/viewer.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy///PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/index.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/VirtualInventoryViewLegacy/#taboolib.module.ui.virtual.RemoteInventoryLegacy/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/-virtual-inventory-view-legacy.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/getBottomInventory/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/get-bottom-inventory.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/getPlayer/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/get-player.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/getTopInventory/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/get-top-inventory.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/getType/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/get-type.html
+$dokka.location:taboolib.module.ui.virtual/VirtualInventoryViewLegacy/remoteInventory/#/PointingToDeclaration/module-ui-legacy/taboolib.module.ui.virtual/-virtual-inventory-view-legacy/remote-inventory.html
+taboolib.module.ui.virtual
+

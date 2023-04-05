@@ -1,0 +1,51 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.module.database.bridge////PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/index.html
+$dokka.location:taboolib.module.database.bridge//createBridgeCollection/#kotlin.String#kotlin.String#kotlin.String#taboolib.module.database.bridge.Index/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/create-bridge-collection.html
+$dokka.location:taboolib.module.database.bridge//createBridgeDatabase/#kotlin.String#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/create-bridge-database.html
+$dokka.location:taboolib.module.database.bridge//getValues/taboolib.library.configuration.ConfigurationSection#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/get-values.html
+$dokka.location:taboolib.module.database.bridge//releaseBridge/taboolib.common.platform.ProxyPlayer#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/release-bridge.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection///PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/index.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/BridgeCollection/#taboolib.module.database.bridge.BridgeDatabase#kotlin.String#taboolib.module.database.bridge.Index/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/-bridge-collection.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/collection/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/collection.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/dataMap/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/data-map.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/database/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/database.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/get/#kotlin.String#kotlin.Boolean/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/get.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/get/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/get.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/get/#taboolib.common.platform.ProxyPlayer/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/get.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/index/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/--index--.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/release/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/release.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/release/#taboolib.common.platform.ProxyPlayer/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/release.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/remove/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/remove.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/update/#kotlin.String#taboolib.module.database.bridge.BridgeData?/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/update.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/update/#kotlin.String?/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/update.html
+$dokka.location:taboolib.module.database.bridge/BridgeCollection/update/#taboolib.common.platform.ProxyPlayer/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-collection/update.html
+$dokka.location:taboolib.module.database.bridge/BridgeData///PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/index.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/BridgeData/#kotlin.String#org.bson.Document?/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/-bridge-data.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/BridgeData/#kotlin.String#taboolib.module.configuration.SecuredFile/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/-bridge-data.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/BridgeData/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/-bridge-data.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/checked/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/checked.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/data/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/data.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/id/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/id.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/lastUpdate/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/last-update.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/lastVisit/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/last-visit.html
+$dokka.location:taboolib.module.database.bridge/BridgeData/update/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-data/update.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase///PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/index.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/BridgeDatabase/#kotlin.String#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/-bridge-database.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/client/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/client.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/close/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/close.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/collectionMap/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/collection-map.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/database/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/database.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/getCollection/#kotlin.String#taboolib.module.database.bridge.Index/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/get-collection.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/mongoClient/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/mongo-client.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/mongoDatabase/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/mongo-database.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/release/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/release.html
+$dokka.location:taboolib.module.database.bridge/BridgeDatabase/releaseId/#kotlin.String#kotlin.String?/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-bridge-database/release-id.html
+$dokka.location:taboolib.module.database.bridge/Index.NONE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}module-database-mongodb/taboolib.module.database.bridge/-index/-n-o-n-e/index.html
+$dokka.location:taboolib.module.database.bridge/Index.USERNAME///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}module-database-mongodb/taboolib.module.database.bridge/-index/-u-s-e-r-n-a-m-e/index.html
+$dokka.location:taboolib.module.database.bridge/Index.UUID///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}module-database-mongodb/taboolib.module.database.bridge/-index/-u-u-i-d/index.html
+$dokka.location:taboolib.module.database.bridge/Index///PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-index/index.html
+$dokka.location:taboolib.module.database.bridge/Index/valueOf/#kotlin.String/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-index/value-of.html
+$dokka.location:taboolib.module.database.bridge/Index/values/#/PointingToDeclaration/module-database-mongodb/taboolib.module.database.bridge/-index/values.html
+taboolib.module.database.bridge
+
