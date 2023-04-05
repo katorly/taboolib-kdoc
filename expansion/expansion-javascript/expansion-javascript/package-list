@@ -1,0 +1,8 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.common5////PointingToDeclaration/expansion-javascript/taboolib.common5/index.html
+$dokka.location:taboolib.common5//compileJS/kotlin.String#/PointingToDeclaration/expansion-javascript/taboolib.common5/compile-j-s.html
+$dokka.location:taboolib.common5//scriptEngine/#/PointingToDeclaration/expansion-javascript/taboolib.common5/script-engine.html
+$dokka.location:taboolib.common5//scriptEngineFactory/#/PointingToDeclaration/expansion-javascript/taboolib.common5/script-engine-factory.html
+taboolib.common5
+
