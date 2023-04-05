@@ -1,5 +1,8 @@
 # [Taboolib 非官方 KDoc](https://katorly.github.io/taboolib-kdoc)
-点击 ↑ 访问
+点击 ↑ 访问  
+
+> **Note**  
+> 本仓库仅提供 Taboolib 的 Kotlin 文档服务，同时在文档索引页面右上角的导航中引用了 Taboolib 相关的一些链接。若仍有 Taboolib 相关的疑问，请[联系原作者](https://github.com/TabooLib)。  
 
 ## 免责声明
 [Taboolib](https://tabooproject.org) 是由 Bkm016, IzzelAliz, Arasple 等编写的使用 [MIT协议](https://github.com/TabooLib/taboolib/blob/f0d1eae35eaefbb66fe3ff26ed5ed7950fcbc8ff/LICENSE) 许可的 Minecraft (Java 版) 跨平台插件开发框架,  
