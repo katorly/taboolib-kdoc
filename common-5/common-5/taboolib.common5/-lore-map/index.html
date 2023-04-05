@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>LoreMap</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>common-5</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":common-5:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="common-5::taboolib.common5/LoreMap///PointingToDeclaration//-1044625478">
+  <div class="breadcrumbs"><a href="../../../index.html">common-5</a><span class="delimiter">/</span><a href="../index.html">taboolib.common5</a><span class="delimiter">/</span><span class="current">LoreMap</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Lore</span><wbr></wbr><span><span>Map</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">LoreMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">T</a><span class="token operator">&gt;</span></div><p class="paragraph">只读Lore对象存储Map 用于物品Lore前缀识别, 在Map中储存lore关键词和对象, 然后丢入装备上的lore即可高效返回对象 用法和 HashMap类似, 适合上百条乃至上千条lore的快速前缀判断. 比如, 你有&quot;物理伤害&quot;, &quot;法术伤害&quot;, &quot;心理伤害&quot; 等上百种属性, &quot;&b&l[&e&l属性&b&l]&c&l物理伤害: &a20&quot; &quot;草泥马透透透物理伤害: &b20&quot; 现在要从中准确提取出 &quot;物理伤害&quot;和&quot;:20&quot; (注：&quot;物理伤害&quot;这四个字中间, 只允许有空格或颜色代码) 那么用这个LoreMap, 只需调用 getMatchResult(lore), 你将会在几个毫秒内得到匹配结果, 远远快于循环contains和正则表达式 注意, 要完全匹配, 推荐直接用HashMap的containsKey(lore) ============================================ 用法示例: 属性插件 假定你通过抽象类定义了属性 public abstract class MyAttribute{...} 并且定义了子类 public class Damage extend MyAttribute{...} public class Speed extend MyAttribute{...} public class Health extend MyAttribute{...} 你就可以初始化一个属性Map: public static LoreMapattrMap = new LoreMap(true, true, true); 这个属性Map无视颜色代码, 无视前缀, 无视空格. 然后向Map中添加lore和属性 attrMap.put(&quot;物理伤害&quot;, new Damage()) attrMap.put(&quot;速度&quot;, new Health()) attrMap.put(&quot;生命值&quot;, new Speed()) 之后在用户用装备的时候, for (String lore: meta.getLore()) { // 在Map中匹配属性 LoreMap.Result</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">YiMiner</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="915874276%2FConstructors%2F-1044625478" anchor-label="LoreMap" id="915874276%2FConstructors%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lore-map.html"><span>Lore</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="915874276%2FConstructors%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignoreSpace<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">ignoreColor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">ignorePrefix<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">初始化一个LoreMap</div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief ">初始化一个LoreMap, 匹配lore前缀, 无视颜色和空格</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-1341151686%2FClasslikes%2F-1044625478" anchor-label="LoreChar" id="-1341151686%2FClasslikes%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-lore-char/index.html"><span>Lore</span><wbr></wbr><span><span>Char</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1341151686%2FClasslikes%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-lore-char/index.html">LoreChar</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1613470746%2FClasslikes%2F-1044625478" anchor-label="MatchResult" id="1613470746%2FClasslikes%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-match-result/index.html"><span>Match</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1613470746%2FClasslikes%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-match-result/index.html">MatchResult</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-match-result/index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1799305834%2FClasslikes%2F-1044625478" anchor-label="TrieNode" id="1799305834%2FClasslikes%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-trie-node/index.html"><span>Trie</span><wbr></wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1799305834%2FClasslikes%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-trie-node/index.html">TrieNode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1463094180%2FFunctions%2F-1044625478" anchor-label="clear" id="-1463094180%2FFunctions%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear.html"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1463094180%2FFunctions%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear.html"><span class="token function">clear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1157386642%2FFunctions%2F-1044625478" anchor-label="get" id="-1157386642%2FFunctions%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1157386642%2FFunctions%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lore<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">T</a></div><div class="brief ">查询lore对应的对象</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1672203104%2FFunctions%2F-1044625478" anchor-label="getMatchResult" id="1672203104%2FFunctions%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-match-result.html"><span>get</span><wbr></wbr><span>Match</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1672203104%2FFunctions%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-match-result.html"><span class="token function">getMatchResult</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lore<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-match-result/index.html">LoreMap.MatchResult</a><span class="token operator">&lt;</span><a href="index.html">T</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="537728548%2FFunctions%2F-1044625478" anchor-label="put" id="537728548%2FFunctions%2F-1044625478" data-filterable-set=":common-5:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common-5:dokkaHtml/main" data-filterable-set=":common-5:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put.html"><span><span>put</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="537728548%2FFunctions%2F-1044625478"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common-5:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="put.html"><span class="token function">put</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lore<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="index.html">T</a></span></span><span class="token punctuation">)</span></div><div class="brief ">向LoreMap中放入lore和对应的对象</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
