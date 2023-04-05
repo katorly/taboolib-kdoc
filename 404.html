@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>Taboolib 6.0.10 KDoc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- CACHE (每7天过期) -->
+    <meta http-equiv="Cache-Control" content="max-age=604800 must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/material-kit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: #FAFAFA;
+
+            /* Firefox scrollbar */
+            scrollbar-width: 8px;
+            scrollbar-color: #A2A2A4 #F4F4F4;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            background-color: #F4F4F4;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: #A2A2A4;
+        }
+
+        table {
+            border-radius: 5px;
+            background: #FEFEFE;
+        }
+
+        a:hover,
+        a:active {
+            color: #4E73DF;
+        }
+
+        .item:hover {
+            background-color: #F8F9FC;
+        }
+
+        .item:active {
+            background-color: #F1F3F9;
+        }
+
+        span.green {
+            color: #1CC88A;
+        }
+
+        span.blue {
+            color: #4E73DF;
+        }
+
+        span.red {
+            color: #E74A3B;
+        }
+    </style>
+
+    <!-- JS -->
+    <script src="assets/js/material-kit.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- 全部链接新窗口打开 -->
+    <base target="_blank">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-md navbar-light shadow z-index-3 py-1">
+        <div class="container">
+            <a class="navbar-brand text-lg fw-bold mt-2" href="https://tabooproject.org"><img
+                    src="assets/img/taboolib-icon.png" width="48" height="48" class="mb-1">&nbsp;Taboolib</a>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mt-2">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navigation">
+                <ul class="navbar-nav navbar-nav-hover ms-auto mt-1">
+                    <li class="nav-item px-1">
+                        <a href="https://get.tabooproject.org/quickstart.html" class="nav-link text-decoration-none">
+                            <i class="bi bi-star-fill"></i>&nbsp;快速开始
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://docs.tabooproject.org" class="nav-link text-decoration-none">
+                            <i class="bi bi-file-earmark-text-fill"></i>&nbsp;官方文档
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://katorly.github.io/taboolib-wiki" class="nav-link text-decoration-none">
+                            <i class="bi bi-file-earmark-text"></i>&nbsp;旧版文档
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://github.com/TabooLib/taboolib" class="nav-link text-decoration-none">
+                            <i class="bi bi-github"></i>&nbsp;GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /Header -->
+
+    <!-- 页面 -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-sm-4">
+                <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' style='enable-background:new 0 0 64 64'
+                    xml:space='preserve'>
+                    <path d='M0 0H64V64H0z' />
+                    <path fill='white' d='M5.9 52H29.9V56H5.9z' />
+                    <g fill='white'>
+                        <path
+                            d='M13.3 19.6h-7l-.6-2.8L13.1 8h4v8.7h1.8v3h-1.8v2.8h-3.8V19.6zM13.3 16.7v-4.1l-3.4 4.1H13.3zM19.5 15.3 19.5 15.3c0-4.1 2.6-7.5 6.7-7.5s6.6 3.4 6.6 7.4v0c0 4.1-2.6 7.5-6.7 7.5C22.1 22.7 19.5 19.3 19.5 15.3zM28.8 15.3 28.8 15.3c0-2.3-1.1-4-2.7-4-1.6 0-2.6 1.6-2.6 3.9v0c0 2.3 1.1 3.9 2.7 3.9C27.8 19.2 28.8 17.5 28.8 15.3zM40.7 19.6h-7l-.6-2.8L40.5 8h4v8.7h1.8v3h-1.8v2.8h-3.8V19.6zM40.7 16.7v-4.1l-3.4 4.1H40.7z' />
+                    </g>
+                </svg>
+            </div>
+            <div class="col-sm-6">
+                <h1 class="display-5 fw-bold lh-1 ms-1 mb-1">哇哦！</h1>
+                <p class="text-lg lead mb-0 ms-1 pt-3">
+                    你肯定知道这意味着什么。
+                </p>
+                <p class="text-sm lead mb-0 ms-1 pt-4">
+                    我们找不到您请求的页面。使用搜索或返回 <a href="index.html" target="_self">文档主页</a>。
+                </p>
+            </div>
+
+
+            <br>
+            <div class="col-lg-12">
+                <p class="text-sm lead text-center mb-0 px-5 pt-5 pb-2">
+                    Taboolib 是由 Bkm016, IzzelAliz, Arasple 等编写的使用 <a
+                        href="https://github.com/TabooLib/taboolib/blob/f0d1eae35eaefbb66fe3ff26ed5ed7950fcbc8ff/LICENSE">MIT协议</a>
+                    许可的 Minecraft (Java 版) 跨平台插件开发框架,<br>
+                    本页面 以及 Kotlin文档 由 <a href="https://github.com/katorly">Katorly</a> 使用 <a
+                        href="https://github.com/Kotlin/dokka">Dokka</a> 自行构建, 与 Taboolib 以及
+                    TabooProject <strong>没有从属关系</strong>.<br>
+                </p>
+                <p class="text-sm lead text-center mb-0 px-5 py-2">
+                    仅提供 Taboolib 总项目 settings.gradle.kts 中定义的子项目的 Kotlin 文档.<br>
+                    为什么不把所有子项目放入一个侧栏中, 以及 如何更新文档至最新版本 等疑问, 请<a
+                        href="https://github.com/katorly/taboolib-kdoc/tree/howto">见此</a>.<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- /页面 -->
+</body>
+
+</html>
