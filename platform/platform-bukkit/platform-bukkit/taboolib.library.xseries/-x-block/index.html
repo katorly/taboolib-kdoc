@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>XBlock</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>platform-bukkit</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":platform:platform-bukkit:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="platform-bukkit::taboolib.library.xseries/XBlock///PointingToDeclaration//797970008">
+  <div class="breadcrumbs"><a href="../../../index.html">platform-bukkit</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.xseries</a><span class="delimiter">/</span><span class="current">XBlock</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>XBlock</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">XBlock</a></div><p class="paragraph"><strong>XBlock</strong> - MaterialData/BlockData Support BlockState (Old): https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/BlockState.html BlockData (New): https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/data/BlockData.html MaterialData (Old): https://hub.spigotmc.org/javadocs/spigot/org/bukkit/material/MaterialData.html </p><p class="paragraph"> All the parameters are non-null except the ones marked as nullable. This class doesn't and shouldn't support materials that are <span data-unresolved-link="org.bukkit/Material/isLegacy/#/PointingToDeclaration/">isLegacy</span>.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Crypto Morin</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/"><span><span>Block</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.block/BlockState///PointingToDeclaration/"><span>Block</span><wbr></wbr><span><span>State</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.material/MaterialData///PointingToDeclaration/"><span>Material</span><wbr></wbr><span><span>Data</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-x-material/index.html"><span><span>XMaterial</span></span></a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="505572261%2FClasslikes%2F797970008" anchor-label="BlockMaterial" id="505572261%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-block-material/index.html"><span>Block</span><wbr></wbr><span><span>Material</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="505572261%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-block-material/index.html">BlockMaterial</a></div><div class="brief ">An enum with cached legacy materials which can be used when comparing blocks with blocks and blocks with items.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="223126138%2FFunctions%2F797970008" anchor-label="addCakeSlices" id="223126138%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-cake-slices.html"><span>add</span><wbr></wbr><span>Cake</span><wbr></wbr><span><span>Slices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="223126138%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-cake-slices.html"><span class="token function">addCakeSlices</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">slices<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="361409157%2FFunctions%2F797970008" anchor-label="getAge" id="361409157%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-age.html"><span>get</span><wbr></wbr><span><span>Age</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="361409157%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-age.html"><span class="token function">getAge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1359927199%2FFunctions%2F797970008" anchor-label="getColor" id="-1359927199%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-color.html"><span>get</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1359927199%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-color.html"><span class="token function">getColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit/DyeColor///PointingToDeclaration/">DyeColor</span></div><div class="brief ">Wool and Dye.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1468065349%2FFunctions%2F797970008" anchor-label="getDirection" id="1468065349%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-direction.html"><span>get</span><wbr></wbr><span><span>Direction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1468065349%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-direction.html"><span class="token function">getDirection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/BlockFace///PointingToDeclaration/">BlockFace</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-67630640%2FFunctions%2F797970008" anchor-label="getFluidLevel" id="-67630640%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-fluid-level.html"><span>get</span><wbr></wbr><span>Fluid</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-67630640%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-fluid-level.html"><span class="token function">getFluidLevel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="207752812%2FFunctions%2F797970008" anchor-label="getRotation" id="207752812%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-rotation.html"><span>get</span><wbr></wbr><span><span>Rotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="207752812%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-rotation.html"><span class="token function">getRotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/BlockFace///PointingToDeclaration/">BlockFace</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1049469104%2FFunctions%2F797970008" anchor-label="getType" id="1049469104%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-type.html"><span>get</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1049469104%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-type.html"><span class="token function"><strike>getType</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-x-material/index.html">XMaterial</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="522073775%2FFunctions%2F797970008" anchor-label="isAir" id="522073775%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-air.html"><span>is</span><wbr></wbr><span><span>Air</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="522073775%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-air.html"><span class="token function">isAir</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-474650433%2FFunctions%2F797970008" anchor-label="isBeetroot" id="-474650433%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-beetroot.html"><span>is</span><wbr></wbr><span><span>Beetroot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-474650433%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-beetroot.html"><span class="token function">isBeetroot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-969235869%2FFunctions%2F797970008" anchor-label="isCake" id="-969235869%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-cake.html"><span>is</span><wbr></wbr><span><span>Cake</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-969235869%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-cake.html"><span class="token function">isCake</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2118843502%2FFunctions%2F797970008" anchor-label="isCarrot" id="2118843502%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-carrot.html"><span>is</span><wbr></wbr><span><span>Carrot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2118843502%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-carrot.html"><span class="token function">isCarrot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1250001545%2FFunctions%2F797970008" anchor-label="isContainer" id="1250001545%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-container.html"><span>is</span><wbr></wbr><span><span>Container</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1250001545%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-container.html"><span class="token function">isContainer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>block<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the block is a container.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1724756597%2FFunctions%2F797970008" anchor-label="isCrop" id="-1724756597%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-crop.html"><span>is</span><wbr></wbr><span><span>Crop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1724756597%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-crop.html"><span class="token function">isCrop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">material<span class="token operator">: </span><a href="../-x-material/index.html">XMaterial</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Any material that can be planted which is from <a href="-c-r-o-p-s.html">CROPS</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1759405015%2FFunctions%2F797970008" anchor-label="isDangerous" id="1759405015%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-dangerous.html"><span>is</span><wbr></wbr><span><span>Dangerous</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1759405015%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-dangerous.html"><span class="token function">isDangerous</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">material<span class="token operator">: </span><a href="../-x-material/index.html">XMaterial</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Any material that can damage players, usually by interacting with the block.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1543134987%2FFunctions%2F797970008" anchor-label="isLava" id="1543134987%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-lava.html"><span>is</span><wbr></wbr><span><span>Lava</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1543134987%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-lava.html"><span class="token function">isLava</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">material<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-384247821%2FFunctions%2F797970008" anchor-label="isLit" id="-384247821%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-lit.html"><span>is</span><wbr></wbr><span><span>Lit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-384247821%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-lit.html"><span class="token function">isLit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1401129816%2FFunctions%2F797970008" anchor-label="isMelon" id="1401129816%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-melon.html"><span>is</span><wbr></wbr><span><span>Melon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1401129816%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-melon.html"><span class="token function">isMelon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="490395375%2FFunctions%2F797970008" anchor-label="isNetherWart" id="490395375%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-nether-wart.html"><span>is</span><wbr></wbr><span>Nether</span><wbr></wbr><span><span>Wart</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="490395375%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-nether-wart.html"><span class="token function">isNetherWart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1739803593%2FFunctions%2F797970008" anchor-label="isOneOf" id="-1739803593%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-one-of.html"><span>is</span><wbr></wbr><span>One</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1739803593%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-one-of.html"><span class="token function">isOneOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">blocks<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1441738330%2FFunctions%2F797970008" anchor-label="isOpen" id="1441738330%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-open.html"><span>is</span><wbr></wbr><span><span>Open</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1441738330%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-open.html"><span class="token function">isOpen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-31880942%2FFunctions%2F797970008" anchor-label="isPotato" id="-31880942%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-potato.html"><span>is</span><wbr></wbr><span><span>Potato</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-31880942%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-potato.html"><span class="token function">isPotato</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-331685626%2FFunctions%2F797970008" anchor-label="isPowered" id="-331685626%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-powered.html"><span>is</span><wbr></wbr><span><span>Powered</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-331685626%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-powered.html"><span class="token function">isPowered</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1329327729%2FFunctions%2F797970008" anchor-label="isSimilar" id="1329327729%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-similar.html"><span>is</span><wbr></wbr><span><span>Similar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1329327729%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-similar.html"><span class="token function">isSimilar</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">material<span class="token operator">: </span><a href="../-x-material/index.html">XMaterial</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Same as <a href="is-type.html">isType</a> except it also does a simple <a href="../-x-material/match-x-material.html">matchXMaterial</a> comparison with the given block and material.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="11115280%2FFunctions%2F797970008" anchor-label="isSugarCane" id="11115280%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sugar-cane.html"><span>is</span><wbr></wbr><span>Sugar</span><wbr></wbr><span><span>Cane</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="11115280%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-sugar-cane.html"><span class="token function">isSugarCane</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="777948102%2FFunctions%2F797970008" anchor-label="isType" id="777948102%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-type.html"><span>is</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="777948102%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-type.html"><span class="token function">isType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">material<span class="token operator">: </span><a href="../-x-material/index.html">XMaterial</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><strong>Universal Method</strong> Check if the block type matches the specified XMaterial.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1063369660%2FFunctions%2F797970008" anchor-label="isWater" id="1063369660%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-water.html"><span>is</span><wbr></wbr><span><span>Water</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1063369660%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-water.html"><span class="token function">isWater</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">material<span class="token operator">: </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-574321057%2FFunctions%2F797970008" anchor-label="isWaterStationary" id="-574321057%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-water-stationary.html"><span>is</span><wbr></wbr><span>Water</span><wbr></wbr><span><span>Stationary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-574321057%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-water-stationary.html"><span class="token function">isWaterStationary</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1093089676%2FFunctions%2F797970008" anchor-label="isWheat" id="1093089676%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-wheat.html"><span>is</span><wbr></wbr><span><span>Wheat</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1093089676%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-wheat.html"><span class="token function">isWheat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2057113051%2FFunctions%2F797970008" anchor-label="setAge" id="-2057113051%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-age.html"><span>set</span><wbr></wbr><span><span>Age</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2057113051%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-age.html"><span class="token function">setAge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">age<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="664102489%2FFunctions%2F797970008" anchor-label="setCakeSlices" id="664102489%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-cake-slices.html"><span>set</span><wbr></wbr><span>Cake</span><wbr></wbr><span><span>Slices</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664102489%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-cake-slices.html"><span class="token function">setCakeSlices</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">amount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-331303113%2FFunctions%2F797970008" anchor-label="setColor" id="-331303113%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-color.html"><span>set</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-331303113%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-color.html"><span class="token function">setColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">color<span class="token operator">: </span><span data-unresolved-link="org.bukkit/DyeColor///PointingToDeclaration/">DyeColor</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Sets the type of any block that can be colored.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2020750763%2FFunctions%2F797970008" anchor-label="setDirection" id="2020750763%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-direction.html"><span>set</span><wbr></wbr><span><span>Direction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2020750763%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-direction.html"><span class="token function">setDirection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">facing<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/BlockFace///PointingToDeclaration/">BlockFace</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1582269403%2FFunctions%2F797970008" anchor-label="setEnderPearlOnFrame" id="1582269403%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ender-pearl-on-frame.html"><span>set</span><wbr></wbr><span>Ender</span><wbr></wbr><span>Pearl</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1582269403%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-ender-pearl-on-frame.html"><span class="token function">setEnderPearlOnFrame</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">endPortalFrame<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">eye<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-708479400%2FFunctions%2F797970008" anchor-label="setFluidLevel" id="-708479400%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-fluid-level.html"><span>set</span><wbr></wbr><span>Fluid</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-708479400%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-fluid-level.html"><span class="token function">setFluidLevel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">level<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Can be used on cauldrons as well.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="98709428%2FFunctions%2F797970008" anchor-label="setLit" id="98709428%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-lit.html"><span>set</span><wbr></wbr><span><span>Lit</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="98709428%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-lit.html"><span class="token function">setLit</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">lit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Can be furnaces or redstone lamps.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-207387376%2FFunctions%2F797970008" anchor-label="setOpened" id="-207387376%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-opened.html"><span>set</span><wbr></wbr><span><span>Opened</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-207387376%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-opened.html"><span class="token function">setOpened</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">opened<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1992621369%2FFunctions%2F797970008" anchor-label="setPowered" id="-1992621369%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-powered.html"><span>set</span><wbr></wbr><span><span>Powered</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1992621369%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-powered.html"><span class="token function">setPowered</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">powered<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1937125308%2FFunctions%2F797970008" anchor-label="setRotation" id="1937125308%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-rotation.html"><span>set</span><wbr></wbr><span><span>Rotation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1937125308%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-rotation.html"><span class="token function">setRotation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter ">facing<span class="token operator">: </span><span data-unresolved-link="org.bukkit.block/BlockFace///PointingToDeclaration/">BlockFace</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="46378993%2FFunctions%2F797970008" anchor-label="setType" id="46378993%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-type.html"><span>set</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="46378993%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-type.html"><span class="token function">setType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>block<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="../-x-material/index.html">XMaterial</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-type.html"><span class="token function">setType</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>block<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.block/Block///PointingToDeclaration/">Block</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="../-x-material/index.html">XMaterial</a><span class="token punctuation">, </span></span><span class="parameter ">applyPhysics<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1275823906%2FProperties%2F797970008" anchor-label="CAKE_SLICES" id="-1275823906%2FProperties%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-a-k-e_-s-l-i-c-e-s.html"><span><span>CAKE_SLICES</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275823906%2FProperties%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-c-a-k-e_-s-l-i-c-e-s.html">CAKE_SLICES</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token operator"> = </span><span class="token constant">6</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1155967299%2FProperties%2F797970008" anchor-label="CROPS" id="1155967299%2FProperties%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-r-o-p-s.html"><span><span>CROPS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1155967299%2FProperties%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-c-r-o-p-s.html">CROPS</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-x-material/index.html">XMaterial</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="884018236%2FProperties%2F797970008" anchor-label="DANGEROUS" id="884018236%2FProperties%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-a-n-g-e-r-o-u-s.html"><span><span>DANGEROUS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="884018236%2FProperties%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-d-a-n-g-e-r-o-u-s.html">DANGEROUS</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-x-material/index.html">XMaterial</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

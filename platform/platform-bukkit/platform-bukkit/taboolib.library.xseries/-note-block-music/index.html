@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NoteBlockMusic</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>platform-bukkit</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":platform:platform-bukkit:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="platform-bukkit::taboolib.library.xseries/NoteBlockMusic///PointingToDeclaration//797970008">
+  <div class="breadcrumbs"><a href="../../../index.html">platform-bukkit</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.xseries</a><span class="delimiter">/</span><span class="current">NoteBlockMusic</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Note</span><wbr></wbr><span>Block</span><wbr></wbr><span><span>Music</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">NoteBlockMusic</a></div><p class="paragraph"><strong>NoteBlockMusic</strong> - Write music scripts for Minecraft. You can write small text scripts for Minecraft <a href="https://minecraft.gamepedia.com/Note_Block">note blocks</a> without needing to use any redstone or building to make your music. This class is independent of XSound.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Crypto Morin</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit/Instrument///PointingToDeclaration/"><span><span>Instrument</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit/Note///PointingToDeclaration/"><span><span>Note</span></span></span></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="556631318%2FClasslikes%2F797970008" anchor-label="Instruction" id="556631318%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-instruction/index.html"><span><span>Instruction</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="556631318%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-instruction/index.html">Instruction</a></div><div class="brief ">An instruction is any musical <a href="https://en.wikipedia.org/wiki/Movement_(music)">movement</a> or <a href="https://en.wikipedia.org/wiki/Section_(music)">section</a> that can be a <a href="">restatement</a> and might have a <a href="https://en.wikipedia.org/wiki/Fermata">fermata</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1724956995%2FClasslikes%2F797970008" anchor-label="Sequence" id="-1724956995%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sequence/index.html"><span><span>Sequence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1724956995%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-sequence/index.html">Sequence</a> : <a href="-instruction/index.html">NoteBlockMusic.Instruction</a></div><div class="brief ">A <a href="https://en.wikipedia.org/wiki/Sequence_(music)">sequence</a> is a restatement collection of multiple other <a href="-sequence/index.html">Sequence</a>s and <a href="-sound/index.html">Sound</a> that itself might be a part of another <a href="-sequence/index.html">Sequence</a> A sequence in a script is shown with: <code class="lang-kotlin">(instruction1, instruction2, ...),restatement,restatementFermata fermata</code></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1533709813%2FClasslikes%2F797970008" anchor-label="Sound" id="1533709813%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-sound/index.html"><span><span>Sound</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1533709813%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-sound/index.html">Sound</a> : <a href="-instruction/index.html">NoteBlockMusic.Instruction</a></div><div class="brief ">An instruction that produces a sonud which consists of a <span data-unresolved-link="org.bukkit/Instrument///PointingToDeclaration/">Instrument</span> and a <span data-unresolved-link="org.bukkit/Note///PointingToDeclaration/">Note</span> with <span data-unresolved-link="org.bukkit/Note.Tone///PointingToDeclaration/">org.bukkit.Note.Tone</span>, but without <a href="https://en.wikipedia.org/wiki/Duration_(music)">duration</a> or</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-191757751%2FFunctions%2F797970008" anchor-label="fromFile" id="-191757751%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="from-file.html"><span>from</span><wbr></wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-191757751%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="from-file.html"><span class="token function">fromFile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>player<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>location<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">Supplier</a><span class="token operator">&lt;</span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>path<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/Path.html">Path</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html">CompletableFuture</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">&gt;</span></div><div class="brief ">Plays a music from a file.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-929667327%2FFunctions%2F797970008" anchor-label="getNoteTone" id="-929667327%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-note-tone.html"><span>get</span><wbr></wbr><span>Note</span><wbr></wbr><span><span>Tone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-929667327%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-note-tone.html"><span class="token function">getNoteTone</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Note.Tone///PointingToDeclaration/">Note.Tone</span></div><div class="brief ">Gets a note tone from a character.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="947938230%2FFunctions%2F797970008" anchor-label="getSoundFromInstrument" id="947938230%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-sound-from-instrument.html"><span>get</span><wbr></wbr><span>Sound</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Instrument</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="947938230%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-sound-from-instrument.html"><span class="token function">getSoundFromInstrument</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>instrument<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit/Instrument///PointingToDeclaration/">Instrument</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="../-x-sound/index.html">XSound</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1045824020%2FFunctions%2F797970008" anchor-label="noteToPitch" id="-1045824020%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="note-to-pitch.html"><span>note</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Pitch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1045824020%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="note-to-pitch.html"><span class="token function">noteToPitch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>note<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit/Note///PointingToDeclaration/">Note</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="686847982%2FFunctions%2F797970008" anchor-label="parseInstructions" id="686847982%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parse-instructions.html"><span>parse</span><wbr></wbr><span><span>Instructions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="686847982%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-instructions.html"><span class="token function">parseInstructions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>script<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-sequence/index.html">NoteBlockMusic.Sequence</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-232266713%2FFunctions%2F797970008" anchor-label="parseNote" id="-232266713%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parse-note.html"><span>parse</span><wbr></wbr><span><span>Note</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-232266713%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-note.html"><span class="token function">parseNote</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>note<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Note///PointingToDeclaration/">Note</span></div><div class="brief ">Parses a Minecraft <span data-unresolved-link="org.bukkit/Note///PointingToDeclaration/">Note</span> with its <span data-unresolved-link="org.bukkit/Note.Tone///PointingToDeclaration/">org.bukkit.Note.Tone</span> With the format: &lt;tone&gt;[pitch][octave] Available Note Tones: G, A, B, C, D, E, F (Idk why G is the first one) <span data-unresolved-link="org.bukkit/Note.Tone///PointingToDeclaration/">org.bukkit.Note.Tone</span> You can also use sharp or flat tones by using '#' for sharp and '_' for flat e.g.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-7346510%2FFunctions%2F797970008" anchor-label="playMusic" id="-7346510%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-music.html"><span>play</span><wbr></wbr><span><span>Music</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-7346510%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="play-music.html"><span class="token function">playMusic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>player<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>location<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">Supplier</a><span class="token operator">&lt;</span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>script<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html">CompletableFuture</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">&gt;</span></div><div class="brief ">This is a very special and unique method.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1792271080%2FFunctions%2F797970008" anchor-label="testMusic" id="-1792271080%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="test-music.html"><span>test</span><wbr></wbr><span><span>Music</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1792271080%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="test-music.html"><span class="token function">testMusic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>player<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html">CompletableFuture</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">&gt;</span></div><div class="brief ">A pre-written music script to test with <a href="play-music.html">playMusic</a> If you made a cool script using this let me know, I'll put it here.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

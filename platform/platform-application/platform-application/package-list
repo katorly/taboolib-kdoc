@@ -1,0 +1,28 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.platform////PointingToDeclaration/platform-application/taboolib.platform/index.html
+$dokka.location:taboolib.platform/AppExecutor.AppPlatformTask///PointingToDeclaration/platform-application/taboolib.platform/-app-executor/-app-platform-task/index.html
+$dokka.location:taboolib.platform/AppExecutor.AppPlatformTask/AppPlatformTask/#java.util.concurrent.CompletableFuture[kotlin.Unit]/PointingToDeclaration/platform-application/taboolib.platform/-app-executor/-app-platform-task/-app-platform-task.html
+$dokka.location:taboolib.platform/AppExecutor.AppPlatformTask/cancel/#/PointingToDeclaration/platform-application/taboolib.platform/-app-executor/-app-platform-task/cancel.html
+$dokka.location:taboolib.platform/AppExecutor///PointingToDeclaration/platform-application/taboolib.platform/-app-executor/index.html
+$dokka.location:taboolib.platform/AppExecutor/AppExecutor/#/PointingToDeclaration/platform-application/taboolib.platform/-app-executor/-app-executor.html
+$dokka.location:taboolib.platform/AppExecutor/start/#/PointingToDeclaration/platform-application/taboolib.platform/-app-executor/start.html
+$dokka.location:taboolib.platform/AppExecutor/submit/#taboolib.common.platform.service.PlatformExecutor.PlatformRunnable/PointingToDeclaration/platform-application/taboolib.platform/-app-executor/submit.html
+$dokka.location:taboolib.platform/AppIO.Companion///PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/-companion/index.html
+$dokka.location:taboolib.platform/AppIO.Companion/nativeDataFolder/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/-companion/native-data-folder.html
+$dokka.location:taboolib.platform/AppIO///PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/index.html
+$dokka.location:taboolib.platform/AppIO/AppIO/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/-app-i-o.html
+$dokka.location:taboolib.platform/AppIO/date/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/date.html
+$dokka.location:taboolib.platform/AppIO/getDataFolder/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/get-data-folder.html
+$dokka.location:taboolib.platform/AppIO/getJarFile/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/get-jar-file.html
+$dokka.location:taboolib.platform/AppIO/getPlatformData/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/get-platform-data.html
+$dokka.location:taboolib.platform/AppIO/info/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/info.html
+$dokka.location:taboolib.platform/AppIO/isPrimaryThread/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/is-primary-thread.html
+$dokka.location:taboolib.platform/AppIO/pluginId/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/plugin-id.html
+$dokka.location:taboolib.platform/AppIO/pluginVersion/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/plugin-version.html
+$dokka.location:taboolib.platform/AppIO/releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/release-resource-file.html
+$dokka.location:taboolib.platform/AppIO/server/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/server.html
+$dokka.location:taboolib.platform/AppIO/severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/severe.html
+$dokka.location:taboolib.platform/AppIO/warning/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/warning.html
+taboolib.platform
+
