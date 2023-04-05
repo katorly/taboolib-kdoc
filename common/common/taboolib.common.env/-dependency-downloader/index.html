@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DependencyDownloader</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>common</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":common:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="common::taboolib.common.env/DependencyDownloader///PointingToDeclaration//-615688942">
+  <div class="breadcrumbs"><a href="../../../index.html">common</a><span class="delimiter">/</span><a href="../index.html">taboolib.common.env</a><span class="delimiter">/</span><span class="current">DependencyDownloader</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Dependency</span><wbr></wbr><span><span>Downloader</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">DependencyDownloader</a> : <a href="../-abstract-xml-parser/index.html">AbstractXmlParser</a></div><p class="paragraph">The class that contains all of the methods needed for downloading and injecting dependencies into the classpath.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Zach Deibert, sky</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1621230939%2FConstructors%2F-615688942" anchor-label="DependencyDownloader" id="1621230939%2FConstructors%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dependency-downloader.html"><span>Dependency</span><wbr></wbr><span><span>Downloader</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1621230939%2FConstructors%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>baseDir<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>baseDir<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>relocation<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../-jar-relocation/index.html">JarRelocation</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="310890154%2FFunctions%2F-615688942" anchor-label="addRepository" id="310890154%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-repository.html"><span>add</span><wbr></wbr><span><span>Repository</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="310890154%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-repository.html"><span class="token function">addRepository</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">repository<span class="token operator">: </span><a href="../-repository/index.html">Repository</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-498477258%2FFunctions%2F-615688942" anchor-label="injectClasspath" id="-498477258%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inject-classpath.html"><span>inject</span><wbr></wbr><span><span>Classpath</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-498477258%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="inject-classpath.html"><span class="token function">injectClasspath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dependencies<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Injects a set of dependencies into the classpath</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192505817%2FFunctions%2F-615688942" anchor-label="isIgnoreOptional" id="192505817%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-ignore-optional.html"><span>is</span><wbr></wbr><span>Ignore</span><wbr></wbr><span><span>Optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192505817%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-ignore-optional.html"><span class="token function">isIgnoreOptional</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="461570350%2FFunctions%2F-615688942" anchor-label="loadDependency" id="461570350%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-dependency.html"><span>load</span><wbr></wbr><span><span>Dependency</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="461570350%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency.html"><span class="token function">loadDependency</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">repositories<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html">Collection</a><span class="token operator">&lt;</span><a href="../-repository/index.html">Repository</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">dependency<span class="token operator">: </span><a href="../-dependency/index.html">Dependency</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads a dependency along with all of its dependencies and stores them in the <a href="base-dir.html">baseDir</a>.</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency.html"><span class="token function">loadDependency</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">repositories<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../-repository/index.html">Repository</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">dependencies<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads a list of dependencies along with all of their dependencies and stores them in the <a href="base-dir.html">baseDir</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="120638568%2FFunctions%2F-615688942" anchor-label="loadDependencyFromInputStream" id="120638568%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-dependency-from-input-stream.html"><span>load</span><wbr></wbr><span>Dependency</span><wbr></wbr><span>From</span><wbr></wbr><span>Input</span><wbr></wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="120638568%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency-from-input-stream.html"><span class="token function">loadDependencyFromInputStream</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pom<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html">InputStream</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads all of the dependencies specified in the pom for the default scopes</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency-from-input-stream.html"><span class="token function">loadDependencyFromInputStream</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pom<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span></span><span class="parameter ">scopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../-dependency-scope/index.html">DependencyScope</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads all of the dependencies specified in the pom</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="303431500%2FFunctions%2F-615688942" anchor-label="loadDependencyFromPom" id="303431500%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="load-dependency-from-pom.html"><span>load</span><wbr></wbr><span>Dependency</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Pom</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="303431500%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency-from-pom.html"><span class="token function">loadDependencyFromPom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html">Document</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads all of the dependencies specified in the pom for the default scopes</div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="load-dependency-from-pom.html"><span class="token function">loadDependencyFromPom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pom<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-document/index.html">Document</a><span class="token punctuation">, </span></span><span class="parameter ">scopes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../-dependency-scope/index.html">DependencyScope</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token operator">&gt;</span></div><div class="brief ">Downloads all of the dependencies specified in the pom</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1452219413%2FFunctions%2F-615688942" anchor-label="readFile" id="-1452219413%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-file.html"><span>read</span><wbr></wbr><span><span>File</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1452219413%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-file.html"><span class="token function">readFile</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1482088323%2FFunctions%2F-615688942" anchor-label="readFileHash" id="-1482088323%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-file-hash.html"><span>read</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Hash</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1482088323%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-file-hash.html"><span class="token function">readFileHash</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">file<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1808831761%2FFunctions%2F-615688942" anchor-label="readFully" id="-1808831761%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-fully.html"><span>read</span><wbr></wbr><span><span>Fully</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1808831761%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-fully.html"><span class="token function">readFully</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inputStream<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html">InputStream</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="read-fully.html"><span class="token function">readFully</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">inputStream<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html">InputStream</a><span class="token punctuation">, </span></span><span class="parameter ">charset<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/nio/charset/Charset.html">Charset</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="206288608%2FFunctions%2F-615688942" anchor-label="setIgnoreException" id="206288608%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ignore-exception.html"><span>set</span><wbr></wbr><span>Ignore</span><wbr></wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="206288608%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-ignore-exception.html"><span class="token function">setIgnoreException</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignoreException<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DependencyDownloader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1860668983%2FFunctions%2F-615688942" anchor-label="setIgnoreOptional" id="-1860668983%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-ignore-optional.html"><span>set</span><wbr></wbr><span>Ignore</span><wbr></wbr><span><span>Optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1860668983%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-ignore-optional.html"><span class="token function">setIgnoreOptional</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ignoreOptional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">DependencyDownloader</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1291947895%2FProperties%2F-615688942" anchor-label="baseDir" id="-1291947895%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="base-dir.html"><span>base</span><wbr></wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1291947895%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="base-dir.html">baseDir</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a></div><div class="brief ">The directory to download and store artifacts in</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="267469547%2FProperties%2F-615688942" anchor-label="dependencyScopes" id="267469547%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dependency-scopes.html"><span>dependency</span><wbr></wbr><span><span>Scopes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="267469547%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="dependency-scopes.html">dependencyScopes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="../-dependency-scope/index.html">DependencyScope</a><span class="token operator">&gt;</span></div><div class="brief ">The scopes to download dependencies for by default</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="814578268%2FProperties%2F-615688942" anchor-label="injectedDependencies" id="814578268%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="injected-dependencies.html"><span>injected</span><wbr></wbr><span><span>Dependencies</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="814578268%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="injected-dependencies.html">injectedDependencies</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="../-dependency/index.html">Dependency</a><span class="token punctuation">, </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassLoader.html">ClassLoader</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">A set of all of the dependencies that have already been injected into the classpath, so they should not be reinjected (to prevent cyclic dependencies from freezing the code in a loop)</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="88994297%2FProperties%2F-615688942" anchor-label="isDebugMode" id="88994297%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-debug-mode.html"><span>is</span><wbr></wbr><span>Debug</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="88994297%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="is-debug-mode.html">isDebugMode</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">If debugging information should be logged to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#out--">out</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2125586081%2FProperties%2F-615688942" anchor-label="isInitiative" id="-2125586081%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-initiative.html"><span>is</span><wbr></wbr><span><span>Initiative</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2125586081%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="is-initiative.html">isInitiative</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="953853554%2FProperties%2F-615688942" anchor-label="isIsolated" id="953853554%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-isolated.html"><span>is</span><wbr></wbr><span><span>Isolated</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="953853554%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="is-isolated.html">isIsolated</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1749336218%2FProperties%2F-615688942" anchor-label="isTransitive" id="-1749336218%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-transitive.html"><span>is</span><wbr></wbr><span><span>Transitive</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1749336218%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">var </span><a href="is-transitive.html">isTransitive</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1749014643%2FProperties%2F-615688942" anchor-label="relocation" id="-1749014643%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="relocation.html"><span><span>relocation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1749014643%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="relocation.html">relocation</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-jar-relocation/index.html">JarRelocation</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1215188211%2FProperties%2F-615688942" anchor-label="repositories" id="-1215188211%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="repositories.html"><span><span>repositories</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1215188211%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="repositories.html">repositories</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="../-repository/index.html">Repository</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

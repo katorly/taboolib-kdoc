@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Configuration</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-configuration-legacy</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-configuration-legacy:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-configuration-legacy::taboolib.library.configuration/Configuration///PointingToDeclaration//-1864032550">
+  <div class="breadcrumbs"><a href="../../../index.html">module-configuration-legacy</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.configuration</a><span class="delimiter">/</span><span class="current">Configuration</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Configuration</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">Configuration</a> : <a href="../-configuration-section/index.html">ConfigurationSection</a></div><p class="paragraph">Represents a source of configurable options and settings</p><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-memory-configuration/index.html">MemoryConfiguration</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-336005801%2FFunctions%2F-1864032550" anchor-label="addDefault" id="-336005801%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-default.html"><span>add</span><wbr></wbr><span><span>Default</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-336005801%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-default.html"><span class="token function">addDefault</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the default value of the given path as provided.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-773364477%2FFunctions%2F-1864032550" anchor-label="addDefaults" id="-773364477%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-defaults.html"><span>add</span><wbr></wbr><span><span>Defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-773364477%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-defaults.html"><span class="token function">addDefaults</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaults<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-defaults.html"><span class="token function">addDefaults</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaults<span class="token operator">: </span><a href="index.html">Configuration</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the default values of the given paths as provided.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-224682717%2FFunctions%2F-1864032550" anchor-label="contains" id="-224682717%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/contains.html"><span><span>contains</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-224682717%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/contains.html"><span class="token function">contains</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if this <a href="../-configuration-section/index.html">ConfigurationSection</a> contains the given path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="734993479%2FFunctions%2F-1864032550" anchor-label="createSection" id="734993479%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/create-section.html"><span>create</span><wbr></wbr><span><span>Section</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="734993479%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/create-section.html"><span class="token function">createSection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-section/index.html">ConfigurationSection</a></div><div class="brief ">Creates an empty <a href="../-configuration-section/index.html">ConfigurationSection</a> at the specified path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/create-section.html"><span class="token function">createSection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">map<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-section/index.html">ConfigurationSection</a></div><div class="brief ">Creates a <a href="../-configuration-section/index.html">ConfigurationSection</a> at the specified path, with specified values.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="958980864%2FFunctions%2F-1864032550" anchor-label="get" id="958980864%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="958980864%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div><div class="brief ">Gets the requested Object by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div><div class="brief ">Gets the requested Object by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1096301647%2FFunctions%2F-1864032550" anchor-label="getBoolean" id="-1096301647%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-boolean.html"><span>get</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1096301647%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-boolean.html"><span class="token function">getBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Gets the requested boolean by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-boolean.html"><span class="token function">getBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Gets the requested boolean by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1996841166%2FFunctions%2F-1864032550" anchor-label="getBooleanList" id="-1996841166%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-boolean-list.html"><span>get</span><wbr></wbr><span>Boolean</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1996841166%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-boolean-list.html"><span class="token function">getBooleanList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html">Boolean</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Boolean by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1030561554%2FFunctions%2F-1864032550" anchor-label="getByteList" id="1030561554%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-byte-list.html"><span>get</span><wbr></wbr><span>Byte</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1030561554%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-byte-list.html"><span class="token function">getByteList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html">Byte</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Byte by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="723604945%2FFunctions%2F-1864032550" anchor-label="getCharacterList" id="723604945%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-character-list.html"><span>get</span><wbr></wbr><span>Character</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="723604945%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-character-list.html"><span class="token function">getCharacterList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html">Character</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Character by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-73067031%2FFunctions%2F-1864032550" anchor-label="getConfigurationSection" id="-73067031%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-configuration-section.html"><span>get</span><wbr></wbr><span>Configuration</span><wbr></wbr><span><span>Section</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-73067031%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-configuration-section.html"><span class="token function">getConfigurationSection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-section/index.html">ConfigurationSection</a></div><div class="brief ">Gets the requested ConfigurationSection by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1567580639%2FFunctions%2F-1864032550" anchor-label="getCurrentPath" id="1567580639%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-current-path.html"><span>get</span><wbr></wbr><span>Current</span><wbr></wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1567580639%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-current-path.html"><span class="token function">getCurrentPath</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div><div class="brief ">Gets the path of this <a href="../-configuration-section/index.html">ConfigurationSection</a> from its root  For any <a href="index.html">Configuration</a> themselves, this will return an empty string.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-656404200%2FFunctions%2F-1864032550" anchor-label="getDefaults" id="-656404200%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-defaults.html"><span>get</span><wbr></wbr><span><span>Defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-656404200%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-defaults.html"><span class="token function">getDefaults</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Configuration</a></div><div class="brief ">Gets the source <a href="index.html">Configuration</a> for this configuration.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1071594183%2FFunctions%2F-1864032550" anchor-label="getDefaultSection" id="-1071594183%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-default-section.html"><span>get</span><wbr></wbr><span>Default</span><wbr></wbr><span><span>Section</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1071594183%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-default-section.html"><span class="token function">getDefaultSection</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-section/index.html">ConfigurationSection</a></div><div class="brief ">Gets the equivalent <a href="../-configuration-section/index.html">ConfigurationSection</a> from the default <a href="index.html">Configuration</a> defined in <a href="../-configuration-section/get-root.html">getRoot</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1025571166%2FFunctions%2F-1864032550" anchor-label="getDouble" id="-1025571166%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-double.html"><span>get</span><wbr></wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1025571166%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-double.html"><span class="token function">getDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief ">Gets the requested double by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-double.html"><span class="token function">getDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief ">Gets the requested double by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-591372567%2FFunctions%2F-1864032550" anchor-label="getDoubleList" id="-591372567%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-double-list.html"><span>get</span><wbr></wbr><span>Double</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-591372567%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-double-list.html"><span class="token function">getDoubleList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html">Double</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Double by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-516074114%2FFunctions%2F-1864032550" anchor-label="getFloatList" id="-516074114%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-float-list.html"><span>get</span><wbr></wbr><span>Float</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-516074114%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-float-list.html"><span class="token function">getFloatList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html">Float</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Float by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1545000296%2FFunctions%2F-1864032550" anchor-label="getInt" id="-1545000296%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-int.html"><span>get</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1545000296%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-int.html"><span class="token function">getInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Gets the requested int by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-int.html"><span class="token function">getInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief ">Gets the requested int by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1900336604%2FFunctions%2F-1864032550" anchor-label="getIntegerList" id="1900336604%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-integer-list.html"><span>get</span><wbr></wbr><span>Integer</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1900336604%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-integer-list.html"><span class="token function">getIntegerList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html">Integer</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Integer by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-688290479%2FFunctions%2F-1864032550" anchor-label="getKeys" id="-688290479%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-keys.html"><span>get</span><wbr></wbr><span><span>Keys</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-688290479%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-keys.html"><span class="token function">getKeys</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">deep<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></div><div class="brief ">Gets a set containing all keys in this section.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="193549358%2FFunctions%2F-1864032550" anchor-label="getList" id="193549358%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-list.html"><span>get</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="193549358%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-list.html"><span class="token function">getList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-list.html"><span class="token function">getList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1166467904%2FFunctions%2F-1864032550" anchor-label="getLocation" id="-1166467904%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.module.configuration.util/get-location.html"><span>get</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1166467904%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/get-location.html"><span class="token function">getLocation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="775695671%2FFunctions%2F-1864032550" anchor-label="getLong" id="775695671%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-long.html"><span>get</span><wbr></wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="775695671%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-long.html"><span class="token function">getLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Gets the requested long by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-long.html"><span class="token function">getLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief ">Gets the requested long by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1460337122%2FFunctions%2F-1864032550" anchor-label="getLongList" id="-1460337122%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-long-list.html"><span>get</span><wbr></wbr><span>Long</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1460337122%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-long-list.html"><span class="token function">getLongList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html">Long</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Long by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2062777536%2FFunctions%2F-1864032550" anchor-label="getMap" id="-2062777536%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.module.configuration.util/get-map.html"><span>get</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2062777536%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">V</a><span class="token operator">&gt; </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/get-map.html"><span class="token function">getMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">V</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">V</a><span class="token operator">&gt; </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/get-map.html"><span class="token function">getMap</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">transform<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html">Pair</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">V</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">K</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="../../taboolib.module.configuration.util/get-map.html">V</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1971165822%2FFunctions%2F-1864032550" anchor-label="getMapList" id="1971165822%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-map-list.html"><span>get</span><wbr></wbr><span>Map</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1971165822%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-map-list.html"><span class="token function">getMapList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span><span class="token keyword">out </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Maps by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-713887246%2FFunctions%2F-1864032550" anchor-label="getName" id="-713887246%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-name.html"><span>get</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-713887246%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-name.html"><span class="token function">getName</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div><div class="brief ">Gets the name of this individual <a href="../-configuration-section/index.html">ConfigurationSection</a>, in the path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-880272205%2FFunctions%2F-1864032550" anchor-label="getParent" id="-880272205%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-parent.html"><span>get</span><wbr></wbr><span><span>Parent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-880272205%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-parent.html"><span class="token function">getParent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-section/index.html">ConfigurationSection</a></div><div class="brief ">Gets the parent <a href="../-configuration-section/index.html">ConfigurationSection</a> that directly contains this <a href="../-configuration-section/index.html">ConfigurationSection</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="880733051%2FFunctions%2F-1864032550" anchor-label="getRoot" id="880733051%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-root.html"><span>get</span><wbr></wbr><span><span>Root</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="880733051%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-root.html"><span class="token function">getRoot</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">Configuration</a></div><div class="brief ">Gets the root <a href="index.html">Configuration</a> that contains this  For any <a href="index.html">Configuration</a> themselves, this will return its own object.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-170858658%2FFunctions%2F-1864032550" anchor-label="getShortList" id="-170858658%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-short-list.html"><span>get</span><wbr></wbr><span>Short</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-170858658%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-short-list.html"><span class="token function">getShortList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html">Short</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of Short by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="181009614%2FFunctions%2F-1864032550" anchor-label="getString" id="181009614%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-string.html"><span>get</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="181009614%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-string.html"><span class="token function">getString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div><div class="brief ">Gets the requested String by path.</div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-string.html"><span class="token function">getString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">def<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div><div class="brief ">Gets the requested String by path, returning a default value if not found.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1633180492%2FFunctions%2F-1864032550" anchor-label="getStringColored" id="-1633180492%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.module.configuration.util/get-string-colored.html"><span>get</span><wbr></wbr><span>String</span><wbr></wbr><span><span>Colored</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1633180492%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/get-string-colored.html"><span class="token function">getStringColored</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">node<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2114478761%2FFunctions%2F-1864032550" anchor-label="getStringList" id="2114478761%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-string-list.html"><span>get</span><wbr></wbr><span>String</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2114478761%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-string-list.html"><span class="token function">getStringList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></div><div class="brief ">Gets the requested List of String by path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-66304782%2FFunctions%2F-1864032550" anchor-label="getStringListColored" id="-66304782%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.module.configuration.util/get-string-list-colored.html"><span>get</span><wbr></wbr><span>String</span><wbr></wbr><span>List</span><wbr></wbr><span><span>Colored</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-66304782%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/get-string-list-colored.html"><span class="token function">getStringListColored</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">node<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1803539583%2FFunctions%2F-1864032550" anchor-label="getValues" id="1803539583%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/get-values.html"><span>get</span><wbr></wbr><span><span>Values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1803539583%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/get-values.html"><span class="token function">getValues</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">deep<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div><div class="brief ">Gets a Map containing all keys and their values for this section.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1160056432%2FFunctions%2F-1864032550" anchor-label="isBoolean" id="1160056432%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-boolean.html"><span>is</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1160056432%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-boolean.html"><span class="token function">isBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a boolean.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-23019095%2FFunctions%2F-1864032550" anchor-label="isConfigurationSection" id="-23019095%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-configuration-section.html"><span>is</span><wbr></wbr><span>Configuration</span><wbr></wbr><span><span>Section</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-23019095%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-configuration-section.html"><span class="token function">isConfigurationSection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a ConfigurationSection.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2141995303%2FFunctions%2F-1864032550" anchor-label="isDouble" id="2141995303%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-double.html"><span>is</span><wbr></wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2141995303%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-double.html"><span class="token function">isDouble</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a double.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1277198711%2FFunctions%2F-1864032550" anchor-label="isInt" id="-1277198711%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-int.html"><span>is</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1277198711%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-int.html"><span class="token function">isInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is an int.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1957486854%2FFunctions%2F-1864032550" anchor-label="isList" id="-1957486854%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-list.html"><span>is</span><wbr></wbr><span><span>List</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1957486854%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-list.html"><span class="token function">isList</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a List.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1114815196%2FFunctions%2F-1864032550" anchor-label="isLong" id="1114815196%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-long.html"><span>is</span><wbr></wbr><span><span>Long</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1114815196%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-long.html"><span class="token function">isLong</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a long.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1104066422%2FFunctions%2F-1864032550" anchor-label="isSet" id="1104066422%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-set.html"><span>is</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1104066422%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-set.html"><span class="token function">isSet</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if this <a href="../-configuration-section/index.html">ConfigurationSection</a> has a value set for the given path.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1594631399%2FFunctions%2F-1864032550" anchor-label="isString" id="1594631399%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/is-string.html"><span>is</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1594631399%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/is-string.html"><span class="token function">isString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if the specified path is a String.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1483964286%2FFunctions%2F-1864032550" anchor-label="options" id="-1483964286%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="options.html"><span><span>options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1483964286%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="options.html"><span class="token function">options</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-configuration-options/index.html">ConfigurationOptions</a></div><div class="brief ">Gets the <a href="../-configuration-options/index.html">ConfigurationOptions</a> for this <a href="index.html">Configuration</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1243291232%2FFunctions%2F-1864032550" anchor-label="set" id="1243291232%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-configuration-section/set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1243291232%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the specified path to the given value.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-316790785%2FFunctions%2F-1864032550" anchor-label="setDefaults" id="-316790785%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-defaults.html"><span>set</span><wbr></wbr><span><span>Defaults</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-316790785%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-defaults.html"><span class="token function">setDefaults</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaults<span class="token operator">: </span><a href="index.html">Configuration</a></span></span><span class="token punctuation">)</span></div><div class="brief ">Sets the source of all default values for this <a href="index.html">Configuration</a>.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-163772261%2FFunctions%2F-1864032550" anchor-label="setLocation" id="-163772261%2FFunctions%2F-1864032550" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":module:module-configuration-legacy:dokkaHtml/main" data-filterable-set=":module:module-configuration-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.module.configuration.util/set-location.html"><span>set</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-163772261%2FFunctions%2F-1864032550"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-configuration-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-configuration-section/index.html">ConfigurationSection</a><span class="token punctuation">.</span><a href="../../taboolib.module.configuration.util/set-location.html"><span class="token function">setLocation</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">location<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

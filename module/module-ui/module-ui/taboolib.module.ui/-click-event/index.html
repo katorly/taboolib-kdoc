@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ClickEvent</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-ui</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-ui:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-ui::taboolib.module.ui/ClickEvent///PointingToDeclaration//1570363118">
+  <div class="breadcrumbs"><a href="../../../index.html">module-ui</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.ui</a><span class="delimiter">/</span><span class="current">ClickEvent</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Click</span><wbr></wbr><span><span>Event</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ClickEvent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bukkitEvent<span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryInteractEvent///PointingToDeclaration/">InventoryInteractEvent</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>clickType<span class="token operator">: </span><a href="../-click-type/index.html">ClickType</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>slot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>builder<span class="token operator">: </span><a href="../../taboolib.module.ui.type/-basic/index.html">Basic</a></span></span><span class="token punctuation">)</span></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">坏黑</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2019-05-21 18:09</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-184149411%2FConstructors%2F1570363118" anchor-label="ClickEvent" id="-184149411%2FConstructors%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-click-event.html"><span>Click</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-184149411%2FConstructors%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bukkitEvent<span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryInteractEvent///PointingToDeclaration/">InventoryInteractEvent</span><span class="token punctuation">, </span></span><span class="parameter ">clickType<span class="token operator">: </span><a href="../-click-type/index.html">ClickType</a><span class="token punctuation">, </span></span><span class="parameter ">slot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a><span class="token punctuation">, </span></span><span class="parameter ">builder<span class="token operator">: </span><a href="../../taboolib.module.ui.type/-basic/index.html">Basic</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-917275547%2FFunctions%2F1570363118" anchor-label="clickEvent" id="-917275547%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="click-event.html"><span>click</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-917275547%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="click-event.html"><span class="token function">clickEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryClickEvent///PointingToDeclaration/">InventoryClickEvent</span></div><div class="brief "><p class="paragraph">转换为点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1453635451%2FFunctions%2F1570363118" anchor-label="clickEventOrNull" id="1453635451%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="click-event-or-null.html"><span>click</span><wbr></wbr><span>Event</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1453635451%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="click-event-or-null.html"><span class="token function">clickEventOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryClickEvent///PointingToDeclaration/">InventoryClickEvent</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">安全转换为点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1865429219%2FFunctions%2F1570363118" anchor-label="dragEvent" id="-1865429219%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="drag-event.html"><span>drag</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1865429219%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="drag-event.html"><span class="token function">dragEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryDragEvent///PointingToDeclaration/">InventoryDragEvent</span></div><div class="brief "><p class="paragraph">转换为拖拽事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1435902003%2FFunctions%2F1570363118" anchor-label="dragEventOrNull" id="1435902003%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="drag-event-or-null.html"><span>drag</span><wbr></wbr><span>Event</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1435902003%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="drag-event-or-null.html"><span class="token function">dragEventOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryDragEvent///PointingToDeclaration/">InventoryDragEvent</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">安全转换为拖拽事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="893123749%2FFunctions%2F1570363118" anchor-label="getItem" id="893123749%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-item.html"><span>get</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="893123749%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-item.html"><span class="token function">getItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">slot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">获取物品</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1169198386%2FFunctions%2F1570363118" anchor-label="getItems" id="1169198386%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-items.html"><span>get</span><wbr></wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169198386%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-items.html"><span class="token function">getItems</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">slot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">获取物品列表</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1328969683%2FFunctions%2F1570363118" anchor-label="onClick" id="1328969683%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-click.html"><span>on</span><wbr></wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1328969683%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-click.html"><span class="token function">onClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">consumer<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.event.inventory/InventoryClickEvent///PointingToDeclaration/">InventoryClickEvent</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ClickEvent</a></div><div class="brief "><p class="paragraph">用安全的方式处理点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-738800531%2FFunctions%2F1570363118" anchor-label="onDrag" id="-738800531%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-drag.html"><span>on</span><wbr></wbr><span><span>Drag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-738800531%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-drag.html"><span class="token function">onDrag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">consumer<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.event.inventory/InventoryDragEvent///PointingToDeclaration/">InventoryDragEvent</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ClickEvent</a></div><div class="brief "><p class="paragraph">用安全的方式处理拖拽事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="866136995%2FFunctions%2F1570363118" anchor-label="onVirtualClick" id="866136995%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-virtual-click.html"><span>on</span><wbr></wbr><span>Virtual</span><wbr></wbr><span><span>Click</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="866136995%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-virtual-click.html"><span class="token function">onVirtualClick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">consumer<span class="token operator">: </span><span class="token keyword"></span><a href="../../taboolib.module.ui.virtual/-remote-inventory/-click-event/index.html">RemoteInventory.ClickEvent</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ClickEvent</a></div><div class="brief "><p class="paragraph">用安全的方式处理虚拟点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="768041000%2FFunctions%2F1570363118" anchor-label="virtualEvent" id="768041000%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="virtual-event.html"><span>virtual</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="768041000%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="virtual-event.html"><span class="token function">virtualEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../taboolib.module.ui.virtual/-remote-inventory/-click-event/index.html">RemoteInventory.ClickEvent</a></div><div class="brief "><p class="paragraph">转换为虚拟点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-893289218%2FFunctions%2F1570363118" anchor-label="virtualEventOrNull" id="-893289218%2FFunctions%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="virtual-event-or-null.html"><span>virtual</span><wbr></wbr><span>Event</span><wbr></wbr><span>Or</span><wbr></wbr><span><span>Null</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-893289218%2FFunctions%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="virtual-event-or-null.html"><span class="token function">virtualEventOrNull</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../taboolib.module.ui.virtual/-remote-inventory/-click-event/index.html">RemoteInventory.ClickEvent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">安全转换为虚拟点击事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1959610024%2FProperties%2F1570363118" anchor-label="affectItems" id="-1959610024%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="affect-items.html"><span>affect</span><wbr></wbr><span><span>Items</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1959610024%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="affect-items.html">affectItems</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">影响物品</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-848101272%2FProperties%2F1570363118" anchor-label="builder" id="-848101272%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="builder.html"><span><span>builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-848101272%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="builder.html">builder</a><span class="token operator">: </span><a href="../../taboolib.module.ui.type/-basic/index.html">Basic</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1151573746%2FProperties%2F1570363118" anchor-label="clicker" id="-1151573746%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clicker.html"><span><span>clicker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1151573746%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="clicker.html">clicker</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="314603393%2FProperties%2F1570363118" anchor-label="clickType" id="314603393%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="click-type.html"><span>click</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="314603393%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="click-type.html">clickType</a><span class="token operator">: </span><a href="../-click-type/index.html">ClickType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1040819721%2FProperties%2F1570363118" anchor-label="currentItem" id="-1040819721%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="current-item.html"><span>current</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1040819721%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="current-item.html">currentItem</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">获取或设置点击物品</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1130496918%2FProperties%2F1570363118" anchor-label="hotbarKey" id="-1130496918%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hotbar-key.html"><span>hotbar</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1130496918%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="hotbar-key.html">hotbarKey</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">键盘按键</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-320323513%2FProperties%2F1570363118" anchor-label="inventory" id="-320323513%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inventory.html"><span><span>inventory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-320323513%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="inventory.html">inventory</a><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/Inventory///PointingToDeclaration/">Inventory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="32201532%2FProperties%2F1570363118" anchor-label="isCancelled" id="32201532%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-cancelled.html"><span>is</span><wbr></wbr><span><span>Cancelled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="32201532%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-cancelled.html">isCancelled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">取消事件</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1985016861%2FProperties%2F1570363118" anchor-label="rawSlot" id="1985016861%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="raw-slot.html"><span>raw</span><wbr></wbr><span><span>Slot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1985016861%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="raw-slot.html">rawSlot</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">点击位置</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-508119719%2FProperties%2F1570363118" anchor-label="slot" id="-508119719%2FProperties%2F1570363118" data-filterable-set=":module:module-ui:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui:dokkaHtml/main" data-filterable-set=":module:module-ui:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="slot.html"><span><span>slot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-508119719%2FProperties%2F1570363118"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="slot.html">slot</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html">Char</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

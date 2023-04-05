@@ -1,0 +1,6 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.expansion////PointingToDeclaration/expansion-command-helper/taboolib.expansion/index.html
+$dokka.location:taboolib.expansion//createHelper/taboolib.common.platform.command.component.CommandComponent#kotlin.Boolean/PointingToDeclaration/expansion-command-helper/taboolib.expansion/create-helper.html
+taboolib.expansion
+

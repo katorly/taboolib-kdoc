@@ -1,0 +1,13 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.expansion.geek////PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/index.html
+$dokka.location:taboolib.expansion.geek//getTotalExperiences/org.bukkit.entity.Player#/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/get-total-experiences.html
+$dokka.location:taboolib.expansion.geek//giveTotalExperiences/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/give-total-experiences.html
+$dokka.location:taboolib.expansion.geek//hasTotalExperiences/org.bukkit.entity.Player#kotlin.Int#kotlin.Boolean/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/has-total-experiences.html
+$dokka.location:taboolib.expansion.geek//setTotalExperiences/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/set-total-experiences.html
+$dokka.location:taboolib.expansion.geek//takeTotalExperiences/org.bukkit.entity.Player#kotlin.Int/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/take-total-experiences.html
+$dokka.location:taboolib.expansion.geek/Expiry///PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/-expiry/index.html
+$dokka.location:taboolib.expansion.geek/Expiry/getExpiryDate/#kotlin.Long#kotlin.Boolean/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/-expiry/get-expiry-date.html
+$dokka.location:taboolib.expansion.geek/Expiry/getExpiryMillis/#kotlin.String#kotlin.Boolean/PointingToDeclaration/expansion-geek-tool/taboolib.expansion.geek/-expiry/get-expiry-millis.html
+taboolib.expansion.geek
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>playMusic</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>platform-bukkit</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":platform:platform-bukkit:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageIds="platform-bukkit::taboolib.library.xseries/NoteBlockMusic/playMusic/#org.bukkit.entity.Player#java.util.function.Supplier&lt;org.bukkit.Location&gt;#java.lang.String/PointingToDeclaration//797970008">
+  <div class="breadcrumbs"><a href="../../../index.html">platform-bukkit</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.xseries</a><span class="delimiter">/</span><a href="index.html">NoteBlockMusic</a><span class="delimiter">/</span><span class="current">playMusic</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>play</span><wbr></wbr><span><span>Music</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="play-music.html"><span class="token function">playMusic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>player<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/Player///PointingToDeclaration/">Player</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>location<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html">Supplier</a><span class="token operator">&lt;</span><span data-unresolved-link="org.bukkit/Location///PointingToDeclaration/">Location</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>script<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html">CompletableFuture</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Void.html">Void</a><span class="token operator">&gt;</span></div><p class="paragraph">This is a very special and unique method. This method allows you to write your own Minecraft music without needing to use redstones and note blocks. </p><p class="paragraph"> We'll take a whole thread for the music for blocking requests. <strong>Format:</strong></p><p class="paragraph"> Instrument, Tone, Repeat (optional), Repeating Delay (optional, required if Repeat is used) [Next Delay] Both delays are in milliseconds. Also you can use segments (segment) to repeat a segment multiple times. </p><p class="paragraph"><strong>Example</strong></p><p class="paragraph"> Shortcuts: <code class="lang-kotlin">BD,G 20 BD,G 20 BD,G -&gt; BD,G,3,20</code></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">(BD,G,3,20 BG,E,5,10),1000,2 1000 BA,A
+
+Translated:
+Play BASS_DRUM with tone G 3 times every 20 ticks.
+Play BASS_GUITAR with tone E 5 times every 10 ticks.
+Play those ^ again two times with 1 second delay between repeats.
+Wait 1000ms.
+Play BANJO with tone A once.
+</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>Note Tones</strong></p><p class="paragraph"> Available Note Tones: G, A, B, C, D, E, F (Idk why G is the first one) <span data-unresolved-link="org.bukkit/Note.Tone///PointingToDeclaration/">org.bukkit.Note.Tone</span> You can also use sharp or flat tones by using '#' for sharp and '_' for flat e.g. B_ C# Octave numbers 1 and 2 can be used. C1, C#1, B_1, D_2 </p><p class="paragraph"><strong>Instruments</strong></p><p class="paragraph"> Available Instruments: Basically the first letter of every instrument. E.g. <code class="lang-kotlin">BD -&gt; BASS_DRUM</code> You can also use their full name. <span data-unresolved-link="org.bukkit/Instrument///PointingToDeclaration/">Instrument</span></p><p class="paragraph"><strong>CompletableFuture</strong></p><p class="paragraph"> Warning: Do not use blocking methods such as join() or get() You may use cancel() or the then... methods.</p><span class="kdoc-tag"><h4 class="">Return</h4><p class="paragraph">the async task processing the script.</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>player</span></span></u></div></span></div><div><div class="title"><p class="paragraph">in order to play the note we need a player instance. Any player.</p></div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>location</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the location to play this note to.</p></div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>script</span></span></u></div></span></div><div><div class="title"><p class="paragraph">the music script.</p></div></div></div></div></div><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="from-file.html"><span>from</span><wbr></wbr><span><span>File(Player,</span></span> <span><span>Supplier,</span></span> <span><span>Path)</span></span></a></div></span></div><div></div></div></div></div></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

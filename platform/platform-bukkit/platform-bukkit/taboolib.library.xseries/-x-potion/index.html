@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>XPotion</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>platform-bukkit</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":platform:platform-bukkit:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="platform-bukkit::taboolib.library.xseries/XPotion///PointingToDeclaration//797970008">
+  <div class="breadcrumbs"><a href="../../../index.html">platform-bukkit</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.xseries</a><span class="delimiter">/</span><span class="current">XPotion</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>XPotion</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">XPotion</a></div><p class="paragraph">Potion type support for multiple aliases. Uses EssentialsX potion list for aliases. </p><p class="paragraph"> Duration: The duration of the effect in ticks. Values 0 or lower are treated as 1. Optional, and defaults to 1 tick. Amplifier: The amplifier of the effect, with level I having value 0. Optional, and defaults to level I. </p><p class="paragraph"> EssentialsX Potions: https://github.com/EssentialsX/Essentials/blob/2.x/Essentials/src/com/earth2me/essentials/Potions.java Status Effect: https://minecraft.gamepedia.com/Status_effect Potions: https://minecraft.gamepedia.com/Potion</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Crypto Morin</p></span><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.potion/PotionEffect///PointingToDeclaration/"><span>Potion</span><wbr></wbr><span><span>Effect</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.potion/PotionEffectType///PointingToDeclaration/"><span>Potion</span><wbr></wbr><span>Effect</span><wbr></wbr><span><span>Type</span></span></span></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><span data-unresolved-link="org.bukkit.potion/PotionType///PointingToDeclaration/"><span>Potion</span><wbr></wbr><span><span>Type</span></span></span></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="1610889111%2FClasslikes%2F797970008" anchor-label="ABSORPTION" id="1610889111%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-b-s-o-r-p-t-i-o-n/index.html">ABSORPTION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1610889111%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-a-b-s-o-r-p-t-i-o-n/index.html">ABSORPTION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1574015337%2FClasslikes%2F797970008" anchor-label="BAD_OMEN" id="1574015337%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-a-d_-o-m-e-n/index.html">BAD_OMEN</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1574015337%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-b-a-d_-o-m-e-n/index.html">BAD_OMEN</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2066047572%2FClasslikes%2F797970008" anchor-label="BLINDNESS" id="-2066047572%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-b-l-i-n-d-n-e-s-s/index.html">BLINDNESS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2066047572%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-b-l-i-n-d-n-e-s-s/index.html">BLINDNESS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-926115356%2FClasslikes%2F797970008" anchor-label="CONDUIT_POWER" id="-926115356%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-d-u-i-t_-p-o-w-e-r/index.html">CONDUIT_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-926115356%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-c-o-n-d-u-i-t_-p-o-w-e-r/index.html">CONDUIT_POWER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1966778630%2FClasslikes%2F797970008" anchor-label="CONFUSION" id="1966778630%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-o-n-f-u-s-i-o-n/index.html">CONFUSION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1966778630%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-c-o-n-f-u-s-i-o-n/index.html">CONFUSION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="351843561%2FClasslikes%2F797970008" anchor-label="DAMAGE_RESISTANCE" id="351843561%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-a-m-a-g-e_-r-e-s-i-s-t-a-n-c-e/index.html">DAMAGE_RESISTANCE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="351843561%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-d-a-m-a-g-e_-r-e-s-i-s-t-a-n-c-e/index.html">DAMAGE_RESISTANCE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1407031317%2FClasslikes%2F797970008" anchor-label="DARKNESS" id="1407031317%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-a-r-k-n-e-s-s/index.html">DARKNESS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1407031317%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-d-a-r-k-n-e-s-s/index.html">DARKNESS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1677217718%2FClasslikes%2F797970008" anchor-label="DOLPHINS_GRACE" id="1677217718%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-o-l-p-h-i-n-s_-g-r-a-c-e/index.html">DOLPHINS_GRACE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1677217718%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-d-o-l-p-h-i-n-s_-g-r-a-c-e/index.html">DOLPHINS_GRACE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="347767586%2FClasslikes%2F797970008" anchor-label="FAST_DIGGING" id="347767586%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-a-s-t_-d-i-g-g-i-n-g/index.html">FAST_DIGGING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="347767586%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-f-a-s-t_-d-i-g-g-i-n-g/index.html">FAST_DIGGING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="244578562%2FClasslikes%2F797970008" anchor-label="FIRE_RESISTANCE" id="244578562%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-i-r-e_-r-e-s-i-s-t-a-n-c-e/index.html">FIRE_RESISTANCE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="244578562%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-f-i-r-e_-r-e-s-i-s-t-a-n-c-e/index.html">FIRE_RESISTANCE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="366223093%2FClasslikes%2F797970008" anchor-label="GLOWING" id="366223093%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-l-o-w-i-n-g/index.html">GLOWING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="366223093%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-g-l-o-w-i-n-g/index.html">GLOWING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1636817404%2FClasslikes%2F797970008" anchor-label="HARM" id="1636817404%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-a-r-m/index.html">HARM</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1636817404%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-h-a-r-m/index.html">HARM</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1513925648%2FClasslikes%2F797970008" anchor-label="HEAL" id="-1513925648%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-e-a-l/index.html">HEAL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1513925648%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-h-e-a-l/index.html">HEAL</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1273313304%2FClasslikes%2F797970008" anchor-label="HEALTH_BOOST" id="-1273313304%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-e-a-l-t-h_-b-o-o-s-t/index.html">HEALTH_BOOST</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1273313304%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-h-e-a-l-t-h_-b-o-o-s-t/index.html">HEALTH_BOOST</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-490194309%2FClasslikes%2F797970008" anchor-label="HERO_OF_THE_VILLAGE" id="-490194309%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-e-r-o_-o-f_-t-h-e_-v-i-l-l-a-g-e/index.html">HERO_OF_THE_VILLAGE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-490194309%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-h-e-r-o_-o-f_-t-h-e_-v-i-l-l-a-g-e/index.html">HERO_OF_THE_VILLAGE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1157592453%2FClasslikes%2F797970008" anchor-label="HUNGER" id="-1157592453%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-u-n-g-e-r/index.html">HUNGER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1157592453%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-h-u-n-g-e-r/index.html">HUNGER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1059974572%2FClasslikes%2F797970008" anchor-label="INCREASE_DAMAGE" id="1059974572%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-c-r-e-a-s-e_-d-a-m-a-g-e/index.html">INCREASE_DAMAGE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1059974572%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-i-n-c-r-e-a-s-e_-d-a-m-a-g-e/index.html">INCREASE_DAMAGE</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-95187009%2FClasslikes%2F797970008" anchor-label="INVISIBILITY" id="-95187009%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-v-i-s-i-b-i-l-i-t-y/index.html">INVISIBILITY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-95187009%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-i-n-v-i-s-i-b-i-l-i-t-y/index.html">INVISIBILITY</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="84079542%2FClasslikes%2F797970008" anchor-label="JUMP" id="84079542%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-j-u-m-p/index.html">JUMP</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="84079542%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-j-u-m-p/index.html">JUMP</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="424059957%2FClasslikes%2F797970008" anchor-label="LEVITATION" id="424059957%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-l-e-v-i-t-a-t-i-o-n/index.html">LEVITATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="424059957%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-l-e-v-i-t-a-t-i-o-n/index.html">LEVITATION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1673089031%2FClasslikes%2F797970008" anchor-label="LUCK" id="-1673089031%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-l-u-c-k/index.html">LUCK</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1673089031%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-l-u-c-k/index.html">LUCK</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1445248553%2FClasslikes%2F797970008" anchor-label="NIGHT_VISION" id="-1445248553%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-n-i-g-h-t_-v-i-s-i-o-n/index.html">NIGHT_VISION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1445248553%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-n-i-g-h-t_-v-i-s-i-o-n/index.html">NIGHT_VISION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1356305392%2FClasslikes%2F797970008" anchor-label="POISON" id="-1356305392%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-i-s-o-n/index.html">POISON</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1356305392%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-p-o-i-s-o-n/index.html">POISON</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1593085357%2FClasslikes%2F797970008" anchor-label="REGENERATION" id="-1593085357%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-g-e-n-e-r-a-t-i-o-n/index.html">REGENERATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1593085357%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-r-e-g-e-n-e-r-a-t-i-o-n/index.html">REGENERATION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="450699610%2FClasslikes%2F797970008" anchor-label="SATURATION" id="450699610%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-a-t-u-r-a-t-i-o-n/index.html">SATURATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="450699610%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-s-a-t-u-r-a-t-i-o-n/index.html">SATURATION</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="988025417%2FClasslikes%2F797970008" anchor-label="SLOW" id="988025417%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-l-o-w/index.html">SLOW</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="988025417%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-s-l-o-w/index.html">SLOW</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="995144967%2FClasslikes%2F797970008" anchor-label="SLOW_DIGGING" id="995144967%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-l-o-w_-d-i-g-g-i-n-g/index.html">SLOW_DIGGING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995144967%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-s-l-o-w_-d-i-g-g-i-n-g/index.html">SLOW_DIGGING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1618430863%2FClasslikes%2F797970008" anchor-label="SLOW_FALLING" id="-1618430863%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-l-o-w_-f-a-l-l-i-n-g/index.html">SLOW_FALLING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1618430863%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-s-l-o-w_-f-a-l-l-i-n-g/index.html">SLOW_FALLING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="802869127%2FClasslikes%2F797970008" anchor-label="SPEED" id="802869127%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-p-e-e-d/index.html">SPEED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="802869127%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-s-p-e-e-d/index.html">SPEED</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-431711406%2FClasslikes%2F797970008" anchor-label="UNLUCK" id="-431711406%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-u-n-l-u-c-k/index.html">UNLUCK</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-431711406%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-u-n-l-u-c-k/index.html">UNLUCK</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1486611654%2FClasslikes%2F797970008" anchor-label="WATER_BREATHING" id="-1486611654%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-w-a-t-e-r_-b-r-e-a-t-h-i-n-g/index.html">WATER_BREATHING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1486611654%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-w-a-t-e-r_-b-r-e-a-t-h-i-n-g/index.html">WATER_BREATHING</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-654299241%2FClasslikes%2F797970008" anchor-label="WEAKNESS" id="-654299241%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-w-e-a-k-n-e-s-s/index.html">WEAKNESS</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-654299241%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-w-e-a-k-n-e-s-s/index.html">WEAKNESS</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1534275515%2FClasslikes%2F797970008" anchor-label="WITHER" id="1534275515%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-w-i-t-h-e-r/index.html">WITHER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1534275515%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><a href="-w-i-t-h-e-r/index.html">WITHER</a></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="97540524%2FClasslikes%2F797970008" anchor-label="Effect" id="97540524%2FClasslikes%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-effect/index.html"><span><span>Effect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="97540524%2FClasslikes%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-effect/index.html">Effect</a></div><div class="brief ">For now, this merely acts as a chance wrapper for potion effects.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1079384914%2FFunctions%2F797970008" anchor-label="addEffects" id="-1079384914%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-effects.html"><span>add</span><wbr></wbr><span><span>Effects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1079384914%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-effects.html"><span class="token function">addEffects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>entity<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/LivingEntity///PointingToDeclaration/">LivingEntity</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>effects<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief ">Add a list of potion effects to an entity from a string list, usually from config.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1831904968%2FFunctions%2F797970008" anchor-label="buildItemWithEffects" id="1831904968%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-item-with-effects.html"><span>build</span><wbr></wbr><span>Item</span><wbr></wbr><span>With</span><wbr></wbr><span><span>Effects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1831904968%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-item-with-effects.html"><span class="token function">buildItemWithEffects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>type<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>color<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Color///PointingToDeclaration/">Color</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>effects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionEffect///PointingToDeclaration/">PotionEffect</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></div><div class="brief ">Builds an item with the given type, color and effects.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="332288231%2FFunctions%2F797970008" anchor-label="buildPotionEffect" id="332288231%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build-potion-effect.html"><span>build</span><wbr></wbr><span>Potion</span><wbr></wbr><span><span>Effect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="332288231%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="build-potion-effect.html"><span class="token function">buildPotionEffect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">duration<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">amplifier<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionEffect///PointingToDeclaration/">PotionEffect</span></div><div class="brief ">Builds a potion effect with the given duration and amplifier.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1853038647%2FFunctions%2F797970008" anchor-label="canHaveEffects" id="1853038647%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="can-have-effects.html"><span>can</span><wbr></wbr><span>Have</span><wbr></wbr><span><span>Effects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1853038647%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="can-have-effects.html"><span class="token function">canHaveEffects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>material<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Material///PointingToDeclaration/">Material</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if a material can have potion effects.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="680477278%2FFunctions%2F797970008" anchor-label="getPotionEffectType" id="680477278%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-potion-effect-type.html"><span>get</span><wbr></wbr><span>Potion</span><wbr></wbr><span>Effect</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="680477278%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-potion-effect-type.html"><span class="token function">getPotionEffectType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionEffectType///PointingToDeclaration/">PotionEffectType</span></div><div class="brief ">Parses the potion effect type.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-578246801%2FFunctions%2F797970008" anchor-label="getPotionType" id="-578246801%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-potion-type.html"><span>get</span><wbr></wbr><span>Potion</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-578246801%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-potion-type.html"><span class="token function"><strike>getPotionType</strike></span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionType///PointingToDeclaration/">PotionType</span></div><div class="brief ">Gets the PotionType from this PotionEffectType.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1280903026%2FFunctions%2F797970008" anchor-label="isSupported" id="-1280903026%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-supported.html"><span>is</span><wbr></wbr><span><span>Supported</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1280903026%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-supported.html"><span class="token function">isSupported</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief ">Checks if this potion is supported in the current Minecraft version.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-188717216%2FFunctions%2F797970008" anchor-label="matchXPotion" id="-188717216%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="match-x-potion.html"><span>match</span><wbr></wbr><span><span>XPotion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-188717216%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="match-x-potion.html"><span class="token function">matchXPotion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>potion<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="index.html">XPotion</a><span class="token operator">&gt;</span></div><div class="brief ">Parses a potion effect type from the given string.</div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="match-x-potion.html"><span class="token function">matchXPotion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>type<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionEffectType///PointingToDeclaration/">PotionEffectType</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><a href="index.html">XPotion</a></div><div class="brief ">Parses the XPotion for this potion effect.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="200711945%2FFunctions%2F797970008" anchor-label="parseEffect" id="200711945%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parse-effect.html"><span>parse</span><wbr></wbr><span><span>Effect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="200711945%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-effect.html"><span class="token function">parseEffect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>potion<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="-effect/index.html">XPotion.Effect</a></div><div class="brief ">Parse a <span data-unresolved-link="org.bukkit.potion/PotionEffect///PointingToDeclaration/">PotionEffect</span> from a string, usually from config.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="43615358%2FFunctions%2F797970008" anchor-label="parseEffects" id="43615358%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parse-effects.html"><span>parse</span><wbr></wbr><span><span>Effects</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="43615358%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="parse-effects.html"><span class="token function">parseEffects</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>effectsString<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="-effect/index.html">XPotion.Effect</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1254723208%2FFunctions%2F797970008" anchor-label="throwPotion" id="1254723208%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="throw-potion.html"><span>throw</span><wbr></wbr><span><span>Potion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1254723208%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span></div></div><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="throw-potion.html"><span class="token function">throwPotion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span>entity<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/LivingEntity///PointingToDeclaration/">LivingEntity</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>color<span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit/Color///PointingToDeclaration/">Color</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span>effects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/Nullable///PointingToDeclaration/"><span class="token annotation builtin">Nullable</span></span> </span><span data-unresolved-link="org.bukkit.potion/PotionEffect///PointingToDeclaration/">PotionEffect</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.jetbrains.annotations/NotNull///PointingToDeclaration/"><span class="token annotation builtin">NotNull</span></span> </span><span data-unresolved-link="org.bukkit.entity/ThrownPotion///PointingToDeclaration/">ThrownPotion</span></div><div class="brief ">Throws a splash potion from the target entity.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-460839940%2FFunctions%2F797970008" anchor-label="toString" id="-460839940%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-460839940%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div><div class="brief ">In most cases you should be using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Enum.html#name--">name</a> instead.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1877114619%2FFunctions%2F797970008" anchor-label="valueOf" id="-1877114619%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1877114619%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">name<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">XPotion</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="819298502%2FFunctions%2F797970008" anchor-label="values" id="819298502%2FFunctions%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="819298502%2FFunctions%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">XPotion</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared. This method may be used to iterate over the constants.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1505203309%2FProperties%2F797970008" anchor-label="DEBUFFS" id="-1505203309%2FProperties%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-b-u-f-f-s.html"><span><span>DEBUFFS</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1505203309%2FProperties%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-d-e-b-u-f-f-s.html">DEBUFFS</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html">Set</a><span class="token operator">&lt;</span><a href="index.html">XPotion</a><span class="token operator">&gt;</span></div><div class="brief ">An unmodifiable set of &quot;bad&quot; potion effects.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-725807930%2FProperties%2F797970008" anchor-label="VALUES" id="-725807930%2FProperties%2F797970008" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-bukkit:dokkaHtml/main" data-filterable-set=":platform:platform-bukkit:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-a-l-u-e-s.html"><span><span>VALUES</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-725807930%2FProperties%2F797970008"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-bukkit:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="-v-a-l-u-e-s.html">VALUES</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="index.html">XPotion</a><span class="token operator">&gt;</span></div><div class="brief ">Cached list of <span data-unresolved-link="//values/#/PointingToDeclaration/">values</span> to avoid allocating memory for calling the method every time.</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

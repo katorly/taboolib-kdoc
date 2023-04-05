@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>VirtualInventoryViewLegacy</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>module-ui-legacy</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-ui-legacy:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="module-ui-legacy::taboolib.module.ui.virtual/VirtualInventoryViewLegacy///PointingToDeclaration//-2046589596">
+  <div class="breadcrumbs"><a href="../../../index.html">module-ui-legacy</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.ui.virtual</a><span class="delimiter">/</span><span class="current">VirtualInventoryViewLegacy</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Virtual</span><wbr></wbr><span>Inventory</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Legacy</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">VirtualInventoryViewLegacy</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>remoteInventory<span class="token operator">: </span><a href="../-remote-inventory-legacy/index.html">RemoteInventoryLegacy</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="org.bukkit.inventory/InventoryView///PointingToDeclaration/">InventoryView</span></div><p class="paragraph">TabooLib taboolib.module.ui.virtual.VirtualInventoryViewLegacy</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">坏黑</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2023/1/16 04:11</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1594225438%2FConstructors%2F-2046589596" anchor-label="VirtualInventoryViewLegacy" id="-1594225438%2FConstructors%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-virtual-inventory-view-legacy.html"><span>Virtual</span><wbr></wbr><span>Inventory</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Legacy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1594225438%2FConstructors%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">remoteInventory<span class="token operator">: </span><a href="../-remote-inventory-legacy/index.html">RemoteInventoryLegacy</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="94118252%2FFunctions%2F-2046589596" anchor-label="close" id="94118252%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#94118252%2FFunctions%2F-2046589596"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="94118252%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#94118252%2FFunctions%2F-2046589596"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2120353745%2FFunctions%2F-2046589596" anchor-label="convertSlot" id="2120353745%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2120353745%2FFunctions%2F-2046589596"><span>convert</span><wbr></wbr><span><span>Slot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2120353745%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#2120353745%2FFunctions%2F-2046589596"><span class="token function">convertSlot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="164083664%2FFunctions%2F-2046589596" anchor-label="countSlots" id="164083664%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#164083664%2FFunctions%2F-2046589596"><span>count</span><wbr></wbr><span><span>Slots</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="164083664%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#164083664%2FFunctions%2F-2046589596"><span class="token function">countSlots</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1260103092%2FFunctions%2F-2046589596" anchor-label="getBottomInventory" id="-1260103092%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-bottom-inventory.html"><span>get</span><wbr></wbr><span>Bottom</span><wbr></wbr><span><span>Inventory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1260103092%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-bottom-inventory.html"><span class="token function">getBottomInventory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/Inventory///PointingToDeclaration/">Inventory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-87137256%2FFunctions%2F-2046589596" anchor-label="getCursor" id="-87137256%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-87137256%2FFunctions%2F-2046589596"><span>get</span><wbr></wbr><span><span>Cursor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-87137256%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-87137256%2FFunctions%2F-2046589596"><span class="token function">getCursor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1593725159%2FFunctions%2F-2046589596" anchor-label="getItem" id="-1593725159%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1593725159%2FFunctions%2F-2046589596"><span>get</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1593725159%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1593725159%2FFunctions%2F-2046589596"><span class="token function">getItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-39102692%2FFunctions%2F-2046589596" anchor-label="getPlayer" id="-39102692%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-player.html"><span>get</span><wbr></wbr><span><span>Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-39102692%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-player.html"><span class="token function">getPlayer</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.entity/HumanEntity///PointingToDeclaration/">HumanEntity</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1867361108%2FFunctions%2F-2046589596" anchor-label="getTitle" id="1867361108%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1867361108%2FFunctions%2F-2046589596"><span>get</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1867361108%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1867361108%2FFunctions%2F-2046589596"><span class="token function">getTitle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="208361782%2FFunctions%2F-2046589596" anchor-label="getTopInventory" id="208361782%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-top-inventory.html"><span>get</span><wbr></wbr><span>Top</span><wbr></wbr><span><span>Inventory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="208361782%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-top-inventory.html"><span class="token function">getTopInventory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/Inventory///PointingToDeclaration/">Inventory</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1101983517%2FFunctions%2F-2046589596" anchor-label="getType" id="-1101983517%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-type.html"><span>get</span><wbr></wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1101983517%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-type.html"><span class="token function">getType</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.bukkit.event.inventory/InventoryType///PointingToDeclaration/">InventoryType</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1950067217%2FFunctions%2F-2046589596" anchor-label="setCursor" id="-1950067217%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1950067217%2FFunctions%2F-2046589596"><span>set</span><wbr></wbr><span><span>Cursor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1950067217%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1950067217%2FFunctions%2F-2046589596"><span class="token function">setCursor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1861104267%2FFunctions%2F-2046589596" anchor-label="setItem" id="-1861104267%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1861104267%2FFunctions%2F-2046589596"><span>set</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1861104267%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1861104267%2FFunctions%2F-2046589596"><span class="token function">setItem</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="210460002%2FFunctions%2F-2046589596" anchor-label="setProperty" id="210460002%2FFunctions%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#210460002%2FFunctions%2F-2046589596"><span>set</span><wbr></wbr><span><span>Property</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="210460002%2FFunctions%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#210460002%2FFunctions%2F-2046589596"><span class="token function">setProperty</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/InventoryView.Property///PointingToDeclaration/">InventoryView.Property</span><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="236033437%2FProperties%2F-2046589596" anchor-label="remoteInventory" id="236033437%2FProperties%2F-2046589596" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-ui-legacy:dokkaHtml/main" data-filterable-set=":module:module-ui-legacy:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remote-inventory.html"><span>remote</span><wbr></wbr><span><span>Inventory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="236033437%2FProperties%2F-2046589596"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-ui-legacy:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="remote-inventory.html">remoteInventory</a><span class="token operator">: </span><a href="../-remote-inventory-legacy/index.html">RemoteInventoryLegacy</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

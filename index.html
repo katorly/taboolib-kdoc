@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>Taboolib 6.0.10 KDoc</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- CACHE (每7天过期) -->
+    <meta http-equiv="Cache-Control" content="max-age=604800 must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/material-kit.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: #FAFAFA;
+
+            /* Firefox scrollbar */
+            scrollbar-width: 8px;
+            scrollbar-color: #A2A2A4 #F4F4F4;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            background-color: #F4F4F4;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 50px;
+            background-color: #A2A2A4;
+        }
+
+        table {
+            border-radius: 5px;
+            background: #FEFEFE;
+        }
+
+        a:hover,
+        a:active {
+            color: #4E73DF;
+        }
+
+        .item:hover {
+            background-color: #F8F9FC;
+        }
+
+        .item:active {
+            background-color: #F1F3F9;
+        }
+
+        span.green {
+            color: #1CC88A;
+        }
+
+        span.blue {
+            color: #4E73DF;
+        }
+
+        span.red {
+            color: #E74A3B;
+        }
+    </style>
+
+    <!-- JS -->
+    <script src="assets/js/material-kit.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+
+    <!-- 全部链接新窗口打开 -->
+    <base target="_blank">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav id="header" class="navbar navbar-expand-md navbar-light shadow z-index-3 py-1">
+        <div class="container">
+            <a class="navbar-brand text-lg fw-bold mt-2" href="https://tabooproject.org"><img
+                src="assets/img/taboolib-icon.png" width="48" height="48" class="mb-1">&nbsp;Taboolib</a>
+            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mt-2">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="navigation">
+                <ul class="navbar-nav navbar-nav-hover ms-auto mt-1">
+                    <li class="nav-item px-1">
+                        <a href="https://get.tabooproject.org/quickstart.html" class="nav-link text-decoration-none">
+                            <i class="bi bi-star-fill"></i>&nbsp;快速开始
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://docs.tabooproject.org" class="nav-link text-decoration-none">
+                            <i class="bi bi-file-earmark-text-fill"></i>&nbsp;官方文档
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://katorly.github.io/taboolib-wiki" class="nav-link text-decoration-none">
+                            <i class="bi bi-file-earmark-text"></i>&nbsp;旧版文档
+                        </a>
+                    </li>
+                    <li class="nav-item px-1">
+                        <a href="https://github.com/TabooLib/taboolib" class="nav-link text-decoration-none">
+                            <i class="bi bi-github"></i>&nbsp;GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- /Header -->
+
+    <!-- 列表 -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+            <div class="col-lg-12">
+
+                <h1 class="display-5 fw-bold lh-1 ms-1 mb-3 pb-1">Taboolib 非官方 KDoc</h1>
+                <p class="text-sm lead mb-0 px-5 pt-4 pb-5">
+                    状态栏 基于 <a href="https://get.tabooproject.org/quickstart.html">项目生成器</a> 中显示的状态, 为空 表示可用, <span
+                        class="blue fw-bold">?</span> 表示弃用, <span class="red">✘</span> 表示维护.<br>
+                </p>
+
+                <!-- 模块 -->
+                <div id="module" class="card">
+                    <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-secondary text-xs"><i class="bi bi-plugin"></i>&nbsp;模块</th>
+                                    <th class="text-secondary text-xs ps-2">状态</th>
+                                    <th class="text-secondary text-xs ps-2">说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="window.open('/common/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">common</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">TabooLib 的核心部分, 环境部署以及跨平台接口, 贯穿整个开发流程</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/common-5/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">common-5</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">TabooLib 5.0 版本保留下来的一些工具, 推荐与 common 一起安装</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-ai/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-ai</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台下实现自定义生物寻路 (Pathfinder) 以及相关控制方法</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-chat/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-chat</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台 Raw 信息构建工具与 1.16 RGB 颜色转换工具</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-configuration/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-configuration</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台配置文件解决方案 (Yaml & Toml & Hocon & Json)</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-configuration-legacy/index.html')"
+                                    class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-configuration-legacy</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">
+                                            Yaml 封装接口与配置文件管理工具 (老版本, 6.0.3 以前)</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-database-core/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-database</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">数据库工具, 基于 HikariCP 连接池. 不同于 Exposed 框架, 不会将数据映射到对象
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-database-mongodb/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-database-mongodb</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge blue mb-0">?</span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">数据库 (MongoDB) 工具, 仅提供一些简单的封装</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-effect/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-effect</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台粒子绘制工具, 提供了大量基本函数</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-kether/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-kether</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台内建脚本 (动作语句) 解决方案, 已经面世许久. 在
+                                            kether.tabooproject.org
+                                            查看更多的介绍</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-lang/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-lang</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台语言文件工具, 为项目提供标准化的 i18n 服务</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-metrics/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-metrics</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">全平台 bStats 的整合, 轻松使用</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-navigation/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-navigation</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台无实体寻路工具, 基于原版 r-star 算法</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-nms/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-nms</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台服务端逆向工具 (跨版本 nms 解决方案与数据包管理工具)</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-nms-util/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-nms-util</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台 nms 模块的扩展, 在基础上增加大量工具</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-porticus/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-porticus</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 与 BungeeCord 的通讯工具, 提供了相当方便的使用方式</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-ui/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-ui</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台箱子菜单构建工具, 提供了数种不同类型的结构</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-ui-legacy/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-ui-legacy</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0"></p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/module/module-ui-receptacle/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">module-ui-receptacle</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge blue mb-0">?</span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台虚拟容器构建工具, 完全由数据包实现. 基于原 TrMenu 的代码改进而成</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /模块 -->
+
+                <!-- 平台 -->
+                <div class="pt-5"></div>
+                <div id="platform" class="card">
+                    <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-secondary text-xs"><i class="bi bi-cpu-fill"></i>&nbsp;平台</th>
+                                    <th class="text-secondary text-xs ps-2">状态</th>
+                                    <th class="text-secondary text-xs ps-2">说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="window.open('/platform/platform-bukkit/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">platform-bukkit</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Bukkit 平台实现, 拥有完整的跨平台服务</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/platform/platform-bungee/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">platform-bungee</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">BungeeCord 平台实现, 部分跨平台服务受限</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/platform/platform-velocity/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">platform-velocity</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge red mb-0">✘</span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">Velocity 平台实现, 部分跨平台服务受限</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/platform/platform-application/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">platform-application</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">独立程序实现, 用于在非 Minecraft 平台下使用, 但部分服务受限</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /平台 -->
+
+                <!-- 扩展 -->
+                <div class="pt-5"></div>
+                <div id="expansion" class="card">
+                    <div class="table-responsive">
+                        <table class="table align-items-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-secondary text-xs"><i class="bi bi-sd-card-fill"></i>&nbsp;扩展</th>
+                                    <th class="text-secondary text-xs ps-2">状态</th>
+                                    <th class="text-secondary text-xs ps-2">说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr onclick="window.open('/expansion/expansion-alkaid-redis/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-alkaid-redis</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0"></p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-command-helper/index.html')"
+                                    class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-command-helper</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">快速生成你的插件指令帮助</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-geek-tool/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-geek-tool</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0"></p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-ioc/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-ioc</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">帮助你管理数据类的工具</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-javascript/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-javascript</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">将字符串编译为 JavaScript 脚本 (基于 Nashorn 引擎)</p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-lang-tools/index.html')" class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-lang-tools</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0"></p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-persistent-container/index.html')"
+                                    class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-persistent-container</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0"></p>
+                                    </td>
+                                </tr>
+                                <tr onclick="window.open('/expansion/expansion-player-database/index.html')"
+                                    class="item">
+                                    <td>
+                                        <div class="d-flex px-3">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <h6 class="font-weight-bold mb-0">expansion-player-database</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge green mb-0"></span></td>
+                                    <td>
+                                        <p class="text-sm lead mb-0">快速部署 SQL & SQLite 玩家数据库</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- /扩展 -->
+
+                <p class="text-sm lead text-center mb-0 px-5 pt-8 pb-2">
+                    Taboolib 是由 Bkm016, IzzelAliz, Arasple 等编写的使用 <a
+                        href="https://github.com/TabooLib/taboolib/blob/f0d1eae35eaefbb66fe3ff26ed5ed7950fcbc8ff/LICENSE">MIT协议</a>
+                    许可的 Minecraft (Java 版) 跨平台插件开发框架,<br>
+                    本页面 以及 Kotlin文档 由 <a href="https://github.com/katorly">Katorly</a> 使用 <a href="https://github.com/Kotlin/dokka">Dokka</a> 自行构建, 与 Taboolib 以及
+                    TabooProject <strong>没有从属关系</strong>.<br>
+                </p>
+                <p class="text-sm lead text-center mb-0 px-5 py-2">
+                    仅提供 Taboolib 总项目 settings.gradle.kts 中定义的子项目的 Kotlin 文档.<br>
+                    为什么不把所有子项目放入一个侧栏中, 以及 如何更新文档至最新版本 等疑问, 请<a
+                        href="https://github.com/katorly/taboolib-kdoc/tree/howto">见此</a>.<br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /列表 -->
+</body>
+
+</html>

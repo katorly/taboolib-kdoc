@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CommandComponentDynamic</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>common</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":common:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="common::taboolib.common.platform.command.component/CommandComponentDynamic///PointingToDeclaration//-615688942">
+  <div class="breadcrumbs"><a href="../../../index.html">common</a><span class="delimiter">/</span><a href="../index.html">taboolib.common.platform.command.component</a><span class="delimiter">/</span><span class="current">CommandComponentDynamic</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Command</span><wbr></wbr><span>Component</span><wbr></wbr><span><span>Dynamic</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../-command-component/index.html">CommandComponent</a></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button><button class="section-tab" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY,EXTENSION_PROPERTY,EXTENSION_FUNCTION">Members &amp; Extensions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1169977641%2FConstructors%2F-615688942" anchor-label="CommandComponentDynamic" id="1169977641%2FConstructors%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-command-component-dynamic.html"><span>Command</span><wbr></wbr><span>Component</span><wbr></wbr><span><span>Dynamic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169977641%2FConstructors%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="534925882%2FFunctions%2F-615688942" anchor-label="bool" id="534925882%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/bool.html"><span><span>bool</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="534925882%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/bool.html"><span class="token function">bool</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;boolean&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层布尔值节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1260666252%2FFunctions%2F-615688942" anchor-label="decimal" id="1260666252%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/decimal.html"><span><span>decimal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1260666252%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/decimal.html"><span class="token function">decimal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;decimal&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层数字节点（自动约束）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1866739204%2FFunctions%2F-615688942" anchor-label="dynamic" id="1866739204%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/dynamic.html"><span><span>dynamic</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1866739204%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/dynamic.html"><span class="token function">dynamic</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;...&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层动态节点</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-423102582%2FFunctions%2F-615688942" anchor-label="euler" id="-423102582%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/euler.html"><span><span>euler</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-423102582%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/euler.html"><span class="token function">euler</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">yaw<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;yaw&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">pitch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;pitch&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层坐标 YAW,PITCH 节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="869485391%2FFunctions%2F-615688942" anchor-label="execute" id="869485391%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/execute.html"><span><span>execute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="869485391%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/execute.html">T</a><span class="token operator">&gt; </span><a href="../-command-component/execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="../-command-component/execute.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/execute.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span>argument<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/execute.html">T</a><span class="token operator">&gt; </span><a href="../-command-component/execute.html"><span class="token function">execute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bind<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/execute.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="../-command-component/execute.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/execute.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span>argument<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">创建当前节点下的执行器</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-790240505%2FFunctions%2F-615688942" anchor-label="findChildren" id="-790240505%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/find-children.html"><span>find</span><wbr></wbr><span><span>Children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-790240505%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/find-children.html"><span class="token function">findChildren</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/index.html">CommandComponent</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">根据命令上下文获取所有合法的下层节点</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/find-children.html"><span class="token function">findChildren</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">parameter<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-command-component/index.html">CommandComponent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">根据命令上下文和输入参数获取合法的下层节点</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="404795690%2FFunctions%2F-615688942" anchor-label="int" id="404795690%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/int.html"><span><span>int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404795690%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/int.html"><span class="token function">int</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;int&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层整型节点（自动约束）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-77685260%2FFunctions%2F-615688942" anchor-label="literal" id="-77685260%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/literal.html"><span><span>literal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-77685260%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/literal.html"><span class="token function">literal</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">vararg </span>aliases<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">literal<span class="token operator">: </span><span class="token keyword"></span><a href="../-command-component-literal/index.html">CommandComponentLiteral</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-command-component-literal/index.html">CommandComponentLiteral</a></div><div class="brief "><p class="paragraph">添加一层明文节点</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1797062692%2FFunctions%2F-615688942" anchor-label="location" id="-1797062692%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1797062692%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/location.html"><span class="token function">location</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">world<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;world&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;x&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;y&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">z<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;z&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">yaw<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;yaw&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">pitch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;pitch&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">euler<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层坐标节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-342045525%2FFunctions%2F-615688942" anchor-label="locationWithoutWorld" id="-342045525%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/location-without-world.html"><span>location</span><wbr></wbr><span>Without</span><wbr></wbr><span><span>World</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-342045525%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/location-without-world.html"><span class="token function">locationWithoutWorld</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;x&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;y&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">z<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;z&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">yaw<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;yaw&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">pitch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;pitch&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">euler<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层坐标节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-877493722%2FFunctions%2F-615688942" anchor-label="player" id="-877493722%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/player.html"><span><span>player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-877493722%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/player.html"><span class="token function">player</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;player&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层玩家节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-140025072%2FFunctions%2F-615688942" anchor-label="removeRestrict" id="-140025072%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-restrict.html"><span>remove</span><wbr></wbr><span><span>Restrict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-140025072%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-restrict.html"><span class="token function">removeRestrict</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">解除约束</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="750857480%2FFunctions%2F-615688942" anchor-label="removeSuggestion" id="750857480%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-suggestion.html"><span>remove</span><wbr></wbr><span><span>Suggestion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="750857480%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-suggestion.html"><span class="token function">removeSuggestion</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">解除建议</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-591823821%2FFunctions%2F-615688942" anchor-label="restrict" id="-591823821%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="restrict.html"><span><span>restrict</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-591823821%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="restrict.html">T</a><span class="token operator">&gt; </span><a href="restrict.html"><span class="token function">restrict</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="restrict.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="restrict.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span>argument<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建当前节点下的命令建议约束</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="restrict.html">T</a><span class="token operator">&gt; </span><a href="restrict.html"><span class="token function">restrict</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bind<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="restrict.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="restrict.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="restrict.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span><span class="token keyword"></span>argument<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建当前节点下的命令建议约束（自动取消建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2144930391%2FFunctions%2F-615688942" anchor-label="restrictBoolean" id="-2144930391%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/restrict-boolean.html"><span>restrict</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2144930391%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/restrict-boolean.html"><span class="token function">restrictBoolean</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数约束（仅 boolean 类型）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1235954782%2FFunctions%2F-615688942" anchor-label="restrictDouble" id="1235954782%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/restrict-double.html"><span>restrict</span><wbr></wbr><span><span>Double</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1235954782%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/restrict-double.html"><span class="token function">restrictDouble</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数约束（仅 double 类型）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1031175682%2FFunctions%2F-615688942" anchor-label="restrictInt" id="1031175682%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/restrict-int.html"><span>restrict</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1031175682%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/restrict-int.html"><span class="token function">restrictInt</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数约束（仅 int 类型）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="27028429%2FFunctions%2F-615688942" anchor-label="suggest" id="27028429%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/suggest.html"><span><span>suggest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="27028429%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/suggest.html"><span class="token function">suggest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">suggest<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数补全</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2085686361%2FFunctions%2F-615688942" anchor-label="suggestBoolean" id="-2085686361%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/suggest-boolean.html"><span>suggest</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2085686361%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/suggest-boolean.html"><span class="token function">suggestBoolean</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数补全（仅布尔值）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="394497827%2FFunctions%2F-615688942" anchor-label="suggestion" id="394497827%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="suggestion.html"><span><span>suggestion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="394497827%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion.html">T</a><span class="token operator">&gt; </span><a href="suggestion.html"><span class="token function">suggestion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">uncheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="suggestion.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建当前节点下的命令建议</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion.html">T</a><span class="token operator">&gt; </span><a href="suggestion.html"><span class="token function">suggestion</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bind<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">uncheck<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="suggestion.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建当前节点下的命令建议（自动取消约束）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="534836684%2FFunctions%2F-615688942" anchor-label="suggestionUncheck" id="534836684%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="suggestion-uncheck.html"><span>suggestion</span><wbr></wbr><span><span>Uncheck</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="534836684%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion-uncheck.html">T</a><span class="token operator">&gt; </span><a href="suggestion-uncheck.html"><span class="token function">suggestionUncheck</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>function<span class="token operator">: </span><span class="token punctuation">(</span><span class="token keyword"></span>sender<span class="token operator">: </span><a href="suggestion-uncheck.html">T</a><span class="token punctuation">, </span><span class="token keyword"></span>context<span class="token operator">: </span><a href="../../taboolib.common.platform.command/-command-context/index.html">CommandContext</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="suggestion-uncheck.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建当前节点下的不约束命令建议</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1904883175%2FFunctions%2F-615688942" anchor-label="suggestPlayers" id="1904883175%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/suggest-players.html"><span>suggest</span><wbr></wbr><span><span>Players</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1904883175%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/suggest-players.html"><span class="token function">suggestPlayers</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数补全（仅在线玩家名称）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="64001854%2FFunctions%2F-615688942" anchor-label="suggestUncheck" id="64001854%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/suggest-uncheck.html"><span>suggest</span><wbr></wbr><span><span>Uncheck</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="64001854%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/suggest-uncheck.html"><span class="token function">suggestUncheck</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">suggest<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建一个不检查的参数不全</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="565987610%2FFunctions%2F-615688942" anchor-label="suggestWorlds" id="565987610%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/suggest-worlds.html"><span>suggest</span><wbr></wbr><span><span>Worlds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="565987610%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/suggest-worlds.html"><span class="token function">suggestWorlds</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">创建参数补全（仅世界名称）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-83825724%2FFunctions%2F-615688942" anchor-label="toString" id="-83825724%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-83825724%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1732843571%2FFunctions%2F-615688942" anchor-label="world" id="-1732843571%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/world.html"><span><span>world</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1732843571%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/world.html"><span class="token function">world</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">comment<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;world&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">suggest<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf(&quot;~&quot;)<span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层世界节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1163361985%2FFunctions%2F-615688942" anchor-label="xyz" id="-1163361985%2FFunctions%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../taboolib.common.platform.command/xyz.html"><span><span>xyz</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1163361985%2FFunctions%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../-command-component/index.html">CommandComponent</a><span class="token punctuation">.</span><a href="../../taboolib.common.platform.command/xyz.html"><span class="token function">xyz</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;x&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;y&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">z<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;z&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">optional<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">dynamic<span class="token operator">: </span><span class="token keyword"></span><a href="index.html">CommandComponentDynamic</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">CommandComponentDynamic</a></div><div class="brief "><p class="paragraph">添加一层坐标 X,Y,Z 节点（自动约束、自动建议）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1102923468%2FProperties%2F-615688942" anchor-label="children" id="1102923468%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/children.html"><span><span>children</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1102923468%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-command-component/children.html">children</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-command-component/index.html">CommandComponent</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">下层节点</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1330078997%2FProperties%2F-615688942" anchor-label="comment" id="-1330078997%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="comment.html"><span><span>comment</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1330078997%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="comment.html">comment</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="827995581%2FProperties%2F-615688942" anchor-label="index" id="827995581%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/--index--.html"><span><span>index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="827995581%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-command-component/--index--.html">index</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1737128075%2FProperties%2F-615688942" anchor-label="optional" id="1737128075%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/optional.html"><span><span>optional</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1737128075%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-command-component/optional.html">optional</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-403859967%2FProperties%2F-615688942" anchor-label="parent" id="-403859967%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/parent.html"><span><span>parent</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-403859967%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="../-command-component/parent.html">parent</a><span class="token operator">: </span><a href="../-command-component/index.html">CommandComponent</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">上层节点</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-229444228%2FProperties%2F-615688942" anchor-label="permission" id="-229444228%2FProperties%2F-615688942" data-filterable-set=":common:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":common:dokkaHtml/main" data-filterable-set=":common:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../-command-component/permission.html"><span><span>permission</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-229444228%2FProperties%2F-615688942"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":common:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../-command-component/permission.html">permission</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

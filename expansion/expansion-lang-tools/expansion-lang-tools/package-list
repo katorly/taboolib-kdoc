@@ -1,0 +1,11 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.expansion////PointingToDeclaration/expansion-lang-tools/taboolib.expansion/index.html
+$dokka.location:taboolib.expansion//infoAsLang/#kotlin.String#kotlin.Array[kotlin.Any]/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/info-as-lang.html
+$dokka.location:taboolib.expansion//infoAsLang/#kotlin.String/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/info-as-lang.html
+$dokka.location:taboolib.expansion//sendMessageAsLang/org.bukkit.command.CommandSender#kotlin.String#kotlin.Array[kotlin.Any]/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/send-message-as-lang.html
+$dokka.location:taboolib.expansion//sendMessageAsLang/org.bukkit.command.CommandSender#kotlin.String/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/send-message-as-lang.html
+$dokka.location:taboolib.expansion//warningAsLang/#kotlin.String#kotlin.Array[kotlin.Any]/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/warning-as-lang.html
+$dokka.location:taboolib.expansion//warningAsLang/#kotlin.String/PointingToDeclaration/expansion-lang-tools/taboolib.expansion/warning-as-lang.html
+taboolib.expansion
+

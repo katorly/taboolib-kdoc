@@ -1,0 +1,57 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.expansion////PointingToDeclaration/expansion-player-database/taboolib.expansion/index.html
+$dokka.location:taboolib.expansion//getDataContainer/org.bukkit.entity.Player#/PointingToDeclaration/expansion-player-database/taboolib.expansion/get-data-container.html
+$dokka.location:taboolib.expansion//getDataContainer/taboolib.common.platform.ProxyPlayer#/PointingToDeclaration/expansion-player-database/taboolib.expansion/get-data-container.html
+$dokka.location:taboolib.expansion//playerDataContainer/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/player-data-container.html
+$dokka.location:taboolib.expansion//playerDatabase/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/player-database.html
+$dokka.location:taboolib.expansion//releaseDataContainer/org.bukkit.entity.Player#/PointingToDeclaration/expansion-player-database/taboolib.expansion/release-data-container.html
+$dokka.location:taboolib.expansion//releaseDataContainer/taboolib.common.platform.ProxyPlayer#/PointingToDeclaration/expansion-player-database/taboolib.expansion/release-data-container.html
+$dokka.location:taboolib.expansion//setupDataContainer/org.bukkit.entity.Player#kotlin.Boolean/PointingToDeclaration/expansion-player-database/taboolib.expansion/setup-data-container.html
+$dokka.location:taboolib.expansion//setupDataContainer/taboolib.common.platform.ProxyPlayer#kotlin.Boolean/PointingToDeclaration/expansion-player-database/taboolib.expansion/setup-data-container.html
+$dokka.location:taboolib.expansion//setupPlayerDatabase/#java.io.File/PointingToDeclaration/expansion-player-database/taboolib.expansion/setup-player-database.html
+$dokka.location:taboolib.expansion//setupPlayerDatabase/#kotlin.String#kotlin.Int#kotlin.String#kotlin.String#kotlin.String#kotlin.String#kotlin.collections.List[kotlin.String]#kotlin.Boolean#kotlin.String?/PointingToDeclaration/expansion-player-database/taboolib.expansion/setup-player-database.html
+$dokka.location:taboolib.expansion//setupPlayerDatabase/#taboolib.library.configuration.ConfigurationSection#kotlin.String#kotlin.collections.List[kotlin.String]#kotlin.Boolean#kotlin.String?/PointingToDeclaration/expansion-player-database/taboolib.expansion/setup-player-database.html
+$dokka.location:taboolib.expansion/DataContainer.Companion///PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/-companion/index.html
+$dokka.location:taboolib.expansion/DataContainer///PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/index.html
+$dokka.location:taboolib.expansion/DataContainer/DataContainer/#kotlin.String#taboolib.expansion.Database/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/-data-container.html
+$dokka.location:taboolib.expansion/DataContainer/checkUpdate/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/check-update.html
+$dokka.location:taboolib.expansion/DataContainer/database/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/database.html
+$dokka.location:taboolib.expansion/DataContainer/get/#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/get.html
+$dokka.location:taboolib.expansion/DataContainer/keys/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/keys.html
+$dokka.location:taboolib.expansion/DataContainer/save/#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/save.html
+$dokka.location:taboolib.expansion/DataContainer/set/#kotlin.String#kotlin.Any/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/set.html
+$dokka.location:taboolib.expansion/DataContainer/setDelayed/#kotlin.String#kotlin.Any#kotlin.Long#java.util.concurrent.TimeUnit/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/set-delayed.html
+$dokka.location:taboolib.expansion/DataContainer/size/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/size.html
+$dokka.location:taboolib.expansion/DataContainer/source/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/source.html
+$dokka.location:taboolib.expansion/DataContainer/toString/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/to-string.html
+$dokka.location:taboolib.expansion/DataContainer/updateMap/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/update-map.html
+$dokka.location:taboolib.expansion/DataContainer/user/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/user.html
+$dokka.location:taboolib.expansion/DataContainer/values/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-data-container/values.html
+$dokka.location:taboolib.expansion/Database///PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/index.html
+$dokka.location:taboolib.expansion/Database/Database/#taboolib.expansion.Type#javax.sql.DataSource/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/-database.html
+$dokka.location:taboolib.expansion/Database/dataSource/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/data-source.html
+$dokka.location:taboolib.expansion/Database/get/#kotlin.String#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/get.html
+$dokka.location:taboolib.expansion/Database/get/#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/get.html
+$dokka.location:taboolib.expansion/Database/set/#kotlin.String#kotlin.String#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/set.html
+$dokka.location:taboolib.expansion/Database/type/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-database/type.html
+$dokka.location:taboolib.expansion/DelayUpdate///PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/index.html
+$dokka.location:taboolib.expansion/DelayUpdate/DelayUpdate/#kotlin.String#kotlin.Long/PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/-delay-update.html
+$dokka.location:taboolib.expansion/DelayUpdate/equals/#kotlin.Any?/PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/equals.html
+$dokka.location:taboolib.expansion/DelayUpdate/hashCode/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/hash-code.html
+$dokka.location:taboolib.expansion/DelayUpdate/key/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/key.html
+$dokka.location:taboolib.expansion/DelayUpdate/updateTime/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-delay-update/update-time.html
+$dokka.location:taboolib.expansion/Type///PointingToDeclaration/expansion-player-database/taboolib.expansion/-type/index.html
+$dokka.location:taboolib.expansion/Type/Type/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type/-type.html
+$dokka.location:taboolib.expansion/Type/host/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type/host.html
+$dokka.location:taboolib.expansion/Type/tableVar/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type/table-var.html
+$dokka.location:taboolib.expansion/TypeSQL///PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-l/index.html
+$dokka.location:taboolib.expansion/TypeSQL/TypeSQL/#taboolib.module.database.Host[taboolib.module.database.SQL]#kotlin.String/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-l/-type-s-q-l.html
+$dokka.location:taboolib.expansion/TypeSQL/host/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-l/host.html
+$dokka.location:taboolib.expansion/TypeSQL/tableVar/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-l/table-var.html
+$dokka.location:taboolib.expansion/TypeSQLite///PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-lite/index.html
+$dokka.location:taboolib.expansion/TypeSQLite/TypeSQLite/#java.io.File/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-lite/-type-s-q-lite.html
+$dokka.location:taboolib.expansion/TypeSQLite/host/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-lite/host.html
+$dokka.location:taboolib.expansion/TypeSQLite/tableVar/#/PointingToDeclaration/expansion-player-database/taboolib.expansion/-type-s-q-lite/table-var.html
+taboolib.expansion
+
