@@ -28,6 +28,7 @@ subprojects {
             isAllowInsecureProtocol = true
         }
         mavenCentral()
+        mavenLocal()
     }
 
     dependencies {
@@ -35,8 +36,8 @@ subprojects {
     }
 
     java {
-          withJavadocJar()
-         withSourcesJar()
+        withJavadocJar()
+        withSourcesJar()
     }
 
     tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
