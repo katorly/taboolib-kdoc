@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>CloudNetV3Player</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>platform-cloudnet-v3</span>
+            </a>
+    </div>
+    <div>
+6.0.10    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":platform:platform-cloudnet-v3:dokkaHtml/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="platform-cloudnet-v3::taboolib.platform.type/CloudNetV3Player///PointingToDeclaration//-630579388">
+  <div class="breadcrumbs"><a href="../../../index.html">platform-cloudnet-v3</a><span class="delimiter">/</span><a href="../index.html">taboolib.platform.type</a><span class="delimiter">/</span><span class="current">CloudNetV3Player</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Cloud</span><wbr></wbr><span>Net</span><wbr></wbr><span><span>V3Player</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">CloudNetV3Player</a> : <span data-unresolved-link="taboolib.common.platform/ProxyPlayer///PointingToDeclaration/">ProxyPlayer</span></div><p class="paragraph">TabooLib taboolib.platform.type.BungeePlayer</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">CziSKY</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2021/6/21 13:41</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-751161125%2FConstructors%2F-630579388" anchor-label="CloudNetV3Player" id="-751161125%2FConstructors%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-cloud-net-v3-player.html"><span>Cloud</span><wbr></wbr><span>Net</span><wbr></wbr><span><span>V3Player</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-751161125%2FConstructors%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cloudPlayer<span class="token operator">: </span><span data-unresolved-link="de.dytanic.cloudnet.ext.bridge.player/CloudPlayer///PointingToDeclaration/">CloudPlayer</span></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sender<span class="token operator">: </span><span data-unresolved-link="de.dytanic.cloudnet.command/ICommandSender///PointingToDeclaration/">ICommandSender</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1849712024%2FFunctions%2F-630579388" anchor-label="cast" id="1849712024%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1849712024%2FFunctions%2F-630579388"><span><span>cast</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1849712024%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#1849712024%2FFunctions%2F-630579388">T</a><span class="token operator">&gt; </span><a href="index.html#1849712024%2FFunctions%2F-630579388"><span class="token function">cast</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html#1849712024%2FFunctions%2F-630579388">T</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1323003746%2FFunctions%2F-630579388" anchor-label="castSafely" id="-1323003746%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1323003746%2FFunctions%2F-630579388"><span>cast</span><wbr></wbr><span><span>Safely</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1323003746%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html#-1323003746%2FFunctions%2F-630579388">T</a><span class="token operator">&gt; </span><a href="index.html#-1323003746%2FFunctions%2F-630579388"><span class="token function">castSafely</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html#-1323003746%2FFunctions%2F-630579388">T</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1894008112%2FFunctions%2F-630579388" anchor-label="chat" id="-1894008112%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="chat.html"><span><span>chat</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1894008112%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="chat.html"><span class="token function">chat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1298453978%2FFunctions%2F-630579388" anchor-label="giveExp" id="-1298453978%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1298453978%2FFunctions%2F-630579388"><span>give</span><wbr></wbr><span><span>Exp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1298453978%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1298453978%2FFunctions%2F-630579388"><span class="token function">giveExp</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">exp<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1776584769%2FFunctions%2F-630579388" anchor-label="hasPermission" id="-1776584769%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-permission.html"><span>has</span><wbr></wbr><span><span>Permission</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1776584769%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="has-permission.html"><span class="token function">hasPermission</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">permission<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1834778127%2FFunctions%2F-630579388" anchor-label="isOnline" id="1834778127%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-online.html"><span>is</span><wbr></wbr><span><span>Online</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1834778127%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="is-online.html"><span class="token function">isOnline</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-863486107%2FFunctions%2F-630579388" anchor-label="kick" id="-863486107%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="kick.html"><span><span>kick</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-863486107%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="kick.html"><span class="token function">kick</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1872095586%2FFunctions%2F-630579388" anchor-label="performCommand" id="1872095586%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="perform-command.html"><span>perform</span><wbr></wbr><span><span>Command</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1872095586%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="perform-command.html"><span class="token function">performCommand</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">command<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1664404760%2FFunctions%2F-630579388" anchor-label="playSound" id="1664404760%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-sound.html"><span>play</span><wbr></wbr><span><span>Sound</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1664404760%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="play-sound.html"><span class="token function">playSound</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">location<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter ">sound<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">volume<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">pitch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2142459590%2FFunctions%2F-630579388" anchor-label="playSoundResource" id="2142459590%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="play-sound-resource.html"><span>play</span><wbr></wbr><span>Sound</span><wbr></wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2142459590%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="play-sound-resource.html"><span class="token function">playSoundResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">location<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter ">sound<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">volume<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">pitch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-619577845%2FFunctions%2F-630579388" anchor-label="sendActionBar" id="-619577845%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-action-bar.html"><span>send</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>Bar</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-619577845%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-action-bar.html"><span class="token function">sendActionBar</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1326710187%2FFunctions%2F-630579388" anchor-label="sendMessage" id="-1326710187%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-message.html"><span>send</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1326710187%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-message.html"><span class="token function">sendMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1724688824%2FFunctions%2F-630579388" anchor-label="sendParticle" id="1724688824%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-particle.html"><span>send</span><wbr></wbr><span><span>Particle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1724688824%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-particle.html"><span class="token function">sendParticle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">particle<span class="token operator">: </span><span data-unresolved-link="taboolib.common.platform/ProxyParticle///PointingToDeclaration/">ProxyParticle</span><span class="token punctuation">, </span></span><span class="parameter ">location<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span><span class="token punctuation">, </span></span><span class="parameter ">offset<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Vector///PointingToDeclaration/">Vector</span><span class="token punctuation">, </span></span><span class="parameter ">count<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">speed<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><span data-unresolved-link="taboolib.common.platform/ProxyParticle.Data///PointingToDeclaration/">ProxyParticle.Data</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2032355167%2FFunctions%2F-630579388" anchor-label="sendRawMessage" id="2032355167%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-raw-message.html"><span>send</span><wbr></wbr><span>Raw</span><wbr></wbr><span><span>Message</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2032355167%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-raw-message.html"><span class="token function">sendRawMessage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-125536612%2FFunctions%2F-630579388" anchor-label="sendTitle" id="-125536612%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="send-title.html"><span>send</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-125536612%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="send-title.html"><span class="token function">sendTitle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">subtitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter ">fadein<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">stay<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">fadeout<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2013631845%2FFunctions%2F-630579388" anchor-label="teleport" id="2013631845%2FFunctions%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="teleport.html"><span><span>teleport</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2013631845%2FFunctions%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="teleport.html"><span class="token function">teleport</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">loc<span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="82007653%2FProperties%2F-630579388" anchor-label="absorptionAmount" id="82007653%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="absorption-amount.html"><span>absorption</span><wbr></wbr><span><span>Amount</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="82007653%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="absorption-amount.html">absorptionAmount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1575802010%2FProperties%2F-630579388" anchor-label="address" id="1575802010%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="address.html"><span><span>address</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1575802010%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="address.html">address</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/net/InetSocketAddress.html">InetSocketAddress</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2034485909%2FProperties%2F-630579388" anchor-label="allowFlight" id="2034485909%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-flight.html"><span>allow</span><wbr></wbr><span><span>Flight</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2034485909%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="allow-flight.html">allowFlight</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="651982297%2FProperties%2F-630579388" anchor-label="attackCooldown" id="651982297%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="attack-cooldown.html"><span>attack</span><wbr></wbr><span><span>Cooldown</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="651982297%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="attack-cooldown.html">attackCooldown</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1600858653%2FProperties%2F-630579388" anchor-label="bedSpawnLocation" id="1600858653%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bed-spawn-location.html"><span>bed</span><wbr></wbr><span>Spawn</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1600858653%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="bed-spawn-location.html">bedSpawnLocation</a><span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-639667861%2FProperties%2F-630579388" anchor-label="compassTarget" id="-639667861%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="compass-target.html"><span>compass</span><wbr></wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-639667861%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="compass-target.html">compassTarget</a><span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="821203905%2FProperties%2F-630579388" anchor-label="displayName" id="821203905%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="display-name.html"><span>display</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="821203905%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="display-name.html">displayName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1191029010%2FProperties%2F-630579388" anchor-label="exhaustion" id="-1191029010%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exhaustion.html"><span><span>exhaustion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1191029010%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="exhaustion.html">exhaustion</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2072561425%2FProperties%2F-630579388" anchor-label="exp" id="2072561425%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="exp.html"><span><span>exp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2072561425%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="exp.html">exp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1072577714%2FProperties%2F-630579388" anchor-label="facing" id="1072577714%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="facing.html"><span><span>facing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1072577714%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="facing.html">facing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="54869323%2FProperties%2F-630579388" anchor-label="firstPlayed" id="54869323%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="first-played.html"><span>first</span><wbr></wbr><span><span>Played</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="54869323%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="first-played.html">firstPlayed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1925633656%2FProperties%2F-630579388" anchor-label="flySpeed" id="1925633656%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="fly-speed.html"><span>fly</span><wbr></wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1925633656%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="fly-speed.html">flySpeed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-528333112%2FProperties%2F-630579388" anchor-label="foodLevel" id="-528333112%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="food-level.html"><span>food</span><wbr></wbr><span><span>Level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-528333112%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="food-level.html">foodLevel</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1299394441%2FProperties%2F-630579388" anchor-label="gameMode" id="-1299394441%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="game-mode.html"><span>game</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1299394441%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="game-mode.html">gameMode</a><span class="token operator">: </span><span data-unresolved-link="taboolib.common.platform/ProxyGameMode///PointingToDeclaration/">ProxyGameMode</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1035850744%2FProperties%2F-630579388" anchor-label="hasGravity" id="1035850744%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has-gravity.html"><span>has</span><wbr></wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1035850744%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="has-gravity.html">hasGravity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1174765680%2FProperties%2F-630579388" anchor-label="health" id="1174765680%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="health.html"><span><span>health</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1174765680%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="health.html">health</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="209882413%2FProperties%2F-630579388" anchor-label="isBlocking" id="209882413%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-blocking.html"><span>is</span><wbr></wbr><span><span>Blocking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="209882413%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-blocking.html">isBlocking</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1635221394%2FProperties%2F-630579388" anchor-label="isConversing" id="1635221394%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-conversing.html"><span>is</span><wbr></wbr><span><span>Conversing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1635221394%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-conversing.html">isConversing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-667809186%2FProperties%2F-630579388" anchor-label="isDead" id="-667809186%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-dead.html"><span>is</span><wbr></wbr><span><span>Dead</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-667809186%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-dead.html">isDead</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-862626477%2FProperties%2F-630579388" anchor-label="isFlying" id="-862626477%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-flying.html"><span>is</span><wbr></wbr><span><span>Flying</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-862626477%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-flying.html">isFlying</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1724256714%2FProperties%2F-630579388" anchor-label="isGliding" id="-1724256714%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-gliding.html"><span>is</span><wbr></wbr><span><span>Gliding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1724256714%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-gliding.html">isGliding</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1372329597%2FProperties%2F-630579388" anchor-label="isGlowing" id="-1372329597%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-glowing.html"><span>is</span><wbr></wbr><span><span>Glowing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1372329597%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-glowing.html">isGlowing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-462111416%2FProperties%2F-630579388" anchor-label="isInsideVehicle" id="-462111416%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-inside-vehicle.html"><span>is</span><wbr></wbr><span>Inside</span><wbr></wbr><span><span>Vehicle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-462111416%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-inside-vehicle.html">isInsideVehicle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="467673820%2FProperties%2F-630579388" anchor-label="isLeashed" id="467673820%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-leashed.html"><span>is</span><wbr></wbr><span><span>Leashed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="467673820%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-leashed.html">isLeashed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="806768188%2FProperties%2F-630579388" anchor-label="isOnGround" id="806768188%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-on-ground.html"><span>is</span><wbr></wbr><span>On</span><wbr></wbr><span><span>Ground</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="806768188%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-on-ground.html">isOnGround</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-619279167%2FProperties%2F-630579388" anchor-label="isOp" id="-619279167%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-op.html"><span>is</span><wbr></wbr><span><span>Op</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-619279167%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-op.html">isOp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="474904204%2FProperties%2F-630579388" anchor-label="isRiptiding" id="474904204%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-riptiding.html"><span>is</span><wbr></wbr><span><span>Riptiding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="474904204%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-riptiding.html">isRiptiding</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1722221687%2FProperties%2F-630579388" anchor-label="isSleeping" id="1722221687%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sleeping.html"><span>is</span><wbr></wbr><span><span>Sleeping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1722221687%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-sleeping.html">isSleeping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="382522705%2FProperties%2F-630579388" anchor-label="isSleepingIgnored" id="382522705%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sleeping-ignored.html"><span>is</span><wbr></wbr><span>Sleeping</span><wbr></wbr><span><span>Ignored</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="382522705%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-sleeping-ignored.html">isSleepingIgnored</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1513791692%2FProperties%2F-630579388" anchor-label="isSneaking" id="-1513791692%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sneaking.html"><span>is</span><wbr></wbr><span><span>Sneaking</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1513791692%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-sneaking.html">isSneaking</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1928206896%2FProperties%2F-630579388" anchor-label="isSprinting" id="-1928206896%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-sprinting.html"><span>is</span><wbr></wbr><span><span>Sprinting</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1928206896%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="is-sprinting.html">isSprinting</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="500339589%2FProperties%2F-630579388" anchor-label="isSwimming" id="500339589%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-swimming.html"><span>is</span><wbr></wbr><span><span>Swimming</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="500339589%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-swimming.html">isSwimming</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="822853347%2FProperties%2F-630579388" anchor-label="lastPlayed" id="822853347%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="last-played.html"><span>last</span><wbr></wbr><span><span>Played</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="822853347%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="last-played.html">lastPlayed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-785852598%2FProperties%2F-630579388" anchor-label="level" id="-785852598%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="level.html"><span><span>level</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-785852598%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="level.html">level</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-906539470%2FProperties%2F-630579388" anchor-label="locale" id="-906539470%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="locale.html"><span><span>locale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-906539470%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="locale.html">locale</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-201211529%2FProperties%2F-630579388" anchor-label="location" id="-201211529%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-201211529%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="location.html">location</a><span class="token operator">: </span><span data-unresolved-link="taboolib.common.util/Location///PointingToDeclaration/">Location</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2103555858%2FProperties%2F-630579388" anchor-label="maxHealth" id="-2103555858%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-health.html"><span>max</span><wbr></wbr><span><span>Health</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2103555858%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="max-health.html">maxHealth</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-660272126%2FProperties%2F-630579388" anchor-label="maximumAir" id="-660272126%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="maximum-air.html"><span>maximum</span><wbr></wbr><span><span>Air</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-660272126%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="maximum-air.html">maximumAir</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1578951393%2FProperties%2F-630579388" anchor-label="name" id="1578951393%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="name.html"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1578951393%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="name.html">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2136106056%2FProperties%2F-630579388" anchor-label="noDamageTicks" id="2136106056%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="no-damage-ticks.html"><span>no</span><wbr></wbr><span>Damage</span><wbr></wbr><span><span>Ticks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2136106056%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="no-damage-ticks.html">noDamageTicks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="204335846%2FProperties%2F-630579388" anchor-label="origin" id="204335846%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="origin.html"><span><span>origin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="204335846%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="origin.html">origin</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1950916058%2FProperties%2F-630579388" anchor-label="ping" id="1950916058%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="ping.html"><span><span>ping</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1950916058%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="ping.html">ping</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1539341634%2FProperties%2F-630579388" anchor-label="playerListName" id="1539341634%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="player-list-name.html"><span>player</span><wbr></wbr><span>List</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1539341634%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="player-list-name.html">playerListName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1644597698%2FProperties%2F-630579388" anchor-label="playerTime" id="-1644597698%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="player-time.html"><span>player</span><wbr></wbr><span><span>Time</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1644597698%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="player-time.html">playerTime</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="873559963%2FProperties%2F-630579388" anchor-label="pose" id="873559963%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="pose.html"><span><span>pose</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="873559963%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="pose.html">pose</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="530678364%2FProperties%2F-630579388" anchor-label="rawData" id="530678364%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="raw-data.html"><span>raw</span><wbr></wbr><span><span>Data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="530678364%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="raw-data.html">rawData</a><span class="token operator">: </span><span data-unresolved-link="de.dytanic.cloudnet.common.document.gson/JsonDocument///PointingToDeclaration/">JsonDocument</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1045217048%2FProperties%2F-630579388" anchor-label="remainingAir" id="1045217048%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remaining-air.html"><span>remaining</span><wbr></wbr><span><span>Air</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1045217048%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="remaining-air.html">remainingAir</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="436574266%2FProperties%2F-630579388" anchor-label="saturation" id="436574266%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="saturation.html"><span><span>saturation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436574266%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="saturation.html">saturation</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1967767223%2FProperties%2F-630579388" anchor-label="sender" id="1967767223%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sender.html"><span><span>sender</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1967767223%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="sender.html">sender</a><span class="token operator">: </span><span data-unresolved-link="de.dytanic.cloudnet.command/ICommandSender///PointingToDeclaration/">ICommandSender</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1573526221%2FProperties%2F-630579388" anchor-label="sleepTicks" id="1573526221%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sleep-ticks.html"><span>sleep</span><wbr></wbr><span><span>Ticks</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1573526221%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="sleep-ticks.html">sleepTicks</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="841782336%2FProperties%2F-630579388" anchor-label="uniqueId" id="841782336%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="unique-id.html"><span>unique</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="841782336%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="unique-id.html">uniqueId</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html">UUID</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-971363440%2FProperties%2F-630579388" anchor-label="walkSpeed" id="-971363440%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="walk-speed.html"><span>walk</span><wbr></wbr><span><span>Speed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-971363440%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="walk-speed.html">walkSpeed</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="886825724%2FProperties%2F-630579388" anchor-label="world" id="886825724%2FProperties%2F-630579388" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":platform:platform-cloudnet-v3:dokkaHtml/main" data-filterable-set=":platform:platform-cloudnet-v3:dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="world.html"><span><span>world</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="886825724%2FProperties%2F-630579388"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":platform:platform-cloudnet-v3:dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="world.html">world</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:taboolib.platform////PointingToDeclaration/platform-minestom/taboolib.platform/index.html
+$dokka.location:taboolib.platform/MinestomPlugin///PointingToDeclaration/platform-minestom/taboolib.platform/-minestom-plugin/index.html
+$dokka.location:taboolib.platform/MinestomPlugin/MinestomPlugin/#/PointingToDeclaration/platform-minestom/taboolib.platform/-minestom-plugin/-minestom-plugin.html
+$dokka.location:taboolib.platform/MinestomPlugin/initialize/#/PointingToDeclaration/platform-minestom/taboolib.platform/-minestom-plugin/initialize.html
+$dokka.location:taboolib.platform/MinestomPlugin/terminate/#/PointingToDeclaration/platform-minestom/taboolib.platform/-minestom-plugin/terminate.html
+taboolib.platform
+
