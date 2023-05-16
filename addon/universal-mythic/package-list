@@ -1,0 +1,10 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:common
+ink.ptms.um
+ink.ptms.um.event
+module:implementation-v4
+ink.ptms.um.impl4
+module:implementation-v5
+ink.ptms.um.impl5

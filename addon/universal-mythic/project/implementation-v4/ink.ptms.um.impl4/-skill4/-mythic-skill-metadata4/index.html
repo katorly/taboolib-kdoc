@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>MythicSkillMetadata4</title>
+<link href="../../../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../../../index.html">
+<span>universal-mythic</span>            </a>    </div>
+    <div>1.0.0-beta-25
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":project:implementation-v4:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="implementation-v4::ink.ptms.um.impl4/Skill4.MythicSkillMetadata4///PointingToDeclaration//-376327934">
+  <div class="breadcrumbs"><a href="../../../index.html">implementation-v4</a><span class="delimiter">/</span><a href="../../index.html">ink.ptms.um.impl4</a><span class="delimiter">/</span><a href="../index.html">Skill4</a><span class="delimiter">/</span><span class="current">MythicSkillMetadata4</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Mythic</span><wbr><span>Skill</span><wbr><span><span>Metadata4</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">MythicSkillMetadata4</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cause<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillTrigger///PointingToDeclaration/">SkillTrigger</span><span class="token punctuation">, </span></span><span class="parameter ">am<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillCaster///PointingToDeclaration/">SkillCaster</span><span class="token punctuation">, </span></span><span class="parameter ">trigger<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token punctuation">, </span></span><span class="parameter ">origin<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token punctuation">, </span></span><span class="parameter ">eTargets<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-set/index.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">lTargets<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-set/index.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">power<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targetFilter<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.entity/Entity///PointingToDeclaration/">Entity</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-801033169%2FConstructors%2F-376327934" anchor-label="MythicSkillMetadata4" id="-801033169%2FConstructors%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-mythic-skill-metadata4.html"><span>Mythic</span><wbr><span>Skill</span><wbr><span><span>Metadata4</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-801033169%2FConstructors%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cause<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillTrigger///PointingToDeclaration/">SkillTrigger</span><span class="token punctuation">, </span></span><span class="parameter ">am<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillCaster///PointingToDeclaration/">SkillCaster</span><span class="token punctuation">, </span></span><span class="parameter ">trigger<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token punctuation">, </span></span><span class="parameter ">origin<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token punctuation">, </span></span><span class="parameter ">eTargets<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-set/index.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">lTargets<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-set/index.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">power<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">targetFilter<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.entity/Entity///PointingToDeclaration/">Entity</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1017376759%2FFunctions%2F-376327934" anchor-label="cancelEvent" id="1017376759%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1017376759%2FFunctions%2F-376327934"><span>cancel</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1017376759%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1017376759%2FFunctions%2F-376327934"><span class="token function">cancelEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="104452346%2FFunctions%2F-376327934" anchor-label="clone" id="104452346%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#104452346%2FFunctions%2F-376327934"><span><span>clone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="104452346%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#104452346%2FFunctions%2F-376327934"><span class="token function">clone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1138386950%2FFunctions%2F-376327934" anchor-label="deepClone" id="1138386950%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1138386950%2FFunctions%2F-376327934"><span>deep</span><wbr><span><span>Clone</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1138386950%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1138386950%2FFunctions%2F-376327934"><span class="token function">deepClone</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="861990411%2FFunctions%2F-376327934" anchor-label="getCallingEvent" id="861990411%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#861990411%2FFunctions%2F-376327934"><span>get</span><wbr><span>Calling</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="861990411%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#861990411%2FFunctions%2F-376327934"><span class="token function">getCallingEvent</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/IParentSkill///PointingToDeclaration/">IParentSkill</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-724961350%2FFunctions%2F-376327934" anchor-label="getEntityTargets" id="-724961350%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-724961350%2FFunctions%2F-376327934"><span>get</span><wbr><span>Entity</span><wbr><span><span>Targets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-724961350%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-724961350%2FFunctions%2F-376327934"><span class="token function">getEntityTargets</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="482756679%2FFunctions%2F-376327934" anchor-label="getIsAsync" id="482756679%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#482756679%2FFunctions%2F-376327934"><span>get</span><wbr><span>Is</span><wbr><span><span>Async</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="482756679%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#482756679%2FFunctions%2F-376327934"><span class="token function">getIsAsync</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2145791116%2FFunctions%2F-376327934" anchor-label="getLocationTargets" id="2145791116%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#2145791116%2FFunctions%2F-376327934"><span>get</span><wbr><span>Location</span><wbr><span><span>Targets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2145791116%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#2145791116%2FFunctions%2F-376327934"><span class="token function">getLocationTargets</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2146959598%2FFunctions%2F-376327934" anchor-label="getMetadata" id="-2146959598%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-2146959598%2FFunctions%2F-376327934"><span>get</span><wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2146959598%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2146959598%2FFunctions%2F-376327934"><span class="token function">getMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1320511259%2FFunctions%2F-376327934" anchor-label="setCallingEvent" id="1320511259%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1320511259%2FFunctions%2F-376327934"><span>set</span><wbr><span>Calling</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1320511259%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1320511259%2FFunctions%2F-376327934"><span class="token function">setCallingEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/IParentSkill///PointingToDeclaration/">IParentSkill</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-44778077%2FFunctions%2F-376327934" anchor-label="setEntityTarget" id="-44778077%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-entity-target.html"><span>set</span><wbr><span>Entity</span><wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-44778077%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-entity-target.html"><span class="token function">setEntityTarget</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">target<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-269801250%2FFunctions%2F-376327934" anchor-label="setEntityTargets" id="-269801250%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-entity-targets.html"><span>set</span><wbr><span>Entity</span><wbr><span><span>Targets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-269801250%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="set-entity-targets.html"><span class="token function">setEntityTargets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">targets<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1973297320%2FFunctions%2F-376327934" anchor-label="setIsAsync" id="-1973297320%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1973297320%2FFunctions%2F-376327934"><span>set</span><wbr><span>Is</span><wbr><span><span>Async</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1973297320%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-1973297320%2FFunctions%2F-376327934"><span class="token function">setIsAsync</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1891531732%2FFunctions%2F-376327934" anchor-label="setLocationTarget" id="1891531732%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1891531732%2FFunctions%2F-376327934"><span>set</span><wbr><span>Location</span><wbr><span><span>Target</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1891531732%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#1891531732%2FFunctions%2F-376327934"><span class="token function">setLocationTarget</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="674535667%2FFunctions%2F-376327934" anchor-label="setLocationTargets" id="674535667%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#674535667%2FFunctions%2F-376327934"><span>set</span><wbr><span>Location</span><wbr><span><span>Targets</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="674535667%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#674535667%2FFunctions%2F-376327934"><span class="token function">setLocationTargets</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html">HashSet</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="223844578%2FFunctions%2F-376327934" anchor-label="setMetadata" id="223844578%2FFunctions%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#223844578%2FFunctions%2F-376327934"><span>set</span><wbr><span><span>Metadata</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="223844578%2FFunctions%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#223844578%2FFunctions%2F-376327934"><span class="token function">setMetadata</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p0<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">p1<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillMetadata///PointingToDeclaration/">SkillMetadata</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1597800535%2FProperties%2F-376327934" anchor-label="caster" id="1597800535%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1597800535%2FProperties%2F-376327934"><span><span>caster</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1597800535%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#1597800535%2FProperties%2F-376327934">caster</a><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillCaster///PointingToDeclaration/">SkillCaster</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="54951790%2FProperties%2F-376327934" anchor-label="cause" id="54951790%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#54951790%2FProperties%2F-376327934"><span><span>cause</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="54951790%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#54951790%2FProperties%2F-376327934">cause</a><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills/SkillTrigger///PointingToDeclaration/">SkillTrigger</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1807741597%2FProperties%2F-376327934" anchor-label="origin" id="1807741597%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#1807741597%2FProperties%2F-376327934"><span><span>origin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1807741597%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#1807741597%2FProperties%2F-376327934">origin</a><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractLocation///PointingToDeclaration/">AbstractLocation</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="631640658%2FProperties%2F-376327934" anchor-label="power" id="631640658%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#631640658%2FProperties%2F-376327934"><span><span>power</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="631640658%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#631640658%2FProperties%2F-376327934">power</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1864019081%2FProperties%2F-376327934" anchor-label="targetFilter" id="1864019081%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target-filter.html"><span>target</span><wbr><span><span>Filter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1864019081%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="target-filter.html">targetFilter</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html">Function</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="org.bukkit.entity/Entity///PointingToDeclaration/">Entity</span><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="724946559%2FProperties%2F-376327934" anchor-label="trigger" id="724946559%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#724946559%2FProperties%2F-376327934"><span><span>trigger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="724946559%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#724946559%2FProperties%2F-376327934">trigger</a><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.adapters/AbstractEntity///PointingToDeclaration/">AbstractEntity</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1417669344%2FProperties%2F-376327934" anchor-label="variables" id="-1417669344%2FProperties%2F-376327934" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":project:implementation-v4:dokkaHtmlPartial/main" data-filterable-set=":project:implementation-v4:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="index.html#-1417669344%2FProperties%2F-376327934"><span><span>variables</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1417669344%2FProperties%2F-376327934"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":project:implementation-v4:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#-1417669344%2FProperties%2F-376327934">variables</a><span class="token operator">: </span><span data-unresolved-link="io.lumine.xikage.mythicmobs.skills.variables/VariableRegistry///PointingToDeclaration/">VariableRegistry</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
