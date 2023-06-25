@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>QuestService</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>module</span>            </a>    </div>
+    <div>6.0.11
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-kether:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="module-kether::taboolib.library.kether/QuestService///PointingToDeclaration//338952794">
+  <div class="breadcrumbs"><a href="../../index.html">module-kether</a><span class="delimiter">/</span><a href="../index.html">taboolib.library.kether</a><span class="delimiter">/</span><span class="current">QuestService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Quest</span><wbr><span><span>Service</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">QuestService</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">CTX</a><span class="token operator"> : </span><a href="../-quest-context/index.html">QuestContext</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../taboolib.module.kether/-script-service/index.html">ScriptService</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-707697269%2FFunctions%2F338952794" anchor-label="getAsyncExecutor" id="-707697269%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-async-executor.html"><span>get</span><wbr><span>Async</span><wbr><span><span>Executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-707697269%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-async-executor.html"><span class="token function">getAsyncExecutor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html">ScheduledExecutorService</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-898634291%2FFunctions%2F338952794" anchor-label="getExecutor" id="-898634291%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-executor.html"><span>get</span><wbr><span><span>Executor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-898634291%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-executor.html"><span class="token function">getExecutor</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html">Executor</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-729147947%2FFunctions%2F338952794" anchor-label="getLocalizedText" id="-729147947%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-localized-text.html"><span>get</span><wbr><span>Localized</span><wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-729147947%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-localized-text.html"><span class="token function">getLocalizedText</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">node<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">params<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1291767411%2FFunctions%2F338952794" anchor-label="getQuest" id="1291767411%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-quest.html"><span>get</span><wbr><span><span>Quest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1291767411%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-quest.html"><span class="token function">getQuest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html">Optional</a><span class="token operator">&lt;</span><a href="../-quest/index.html">Quest</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-834559665%2FFunctions%2F338952794" anchor-label="getQuests" id="-834559665%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-quests.html"><span>get</span><wbr><span><span>Quests</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-834559665%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-quests.html"><span class="token function">getQuests</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="../-quest/index.html">Quest</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1713744528%2FFunctions%2F338952794" anchor-label="getQuestSettings" id="1713744528%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-quest-settings.html"><span>get</span><wbr><span>Quest</span><wbr><span><span>Settings</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1713744528%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-quest-settings.html"><span class="token function">getQuestSettings</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html">Map</a><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1494089309%2FFunctions%2F338952794" anchor-label="getRegistry" id="-1494089309%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-registry.html"><span>get</span><wbr><span><span>Registry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1494089309%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-registry.html"><span class="token function">getRegistry</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-quest-registry/index.html">QuestRegistry</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-844397629%2FFunctions%2F338952794" anchor-label="getRunningQuests" id="-844397629%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-running-quests.html"><span>get</span><wbr><span>Running</span><wbr><span><span>Quests</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-844397629%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-running-quests.html"><span class="token function">getRunningQuests</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="com.google.common.collect/Multimap///PointingToDeclaration/">Multimap</span><span class="token operator">&lt;</span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a><span class="token punctuation">, </span><a href="index.html">CTX</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-running-quests.html"><span class="token function">getRunningQuests</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">playerIdentifier<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html">List</a><span class="token operator">&lt;</span><a href="index.html">CTX</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="922679087%2FFunctions%2F338952794" anchor-label="instance" id="922679087%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instance.html"><span><span>instance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="922679087%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="instance.html">C</a><span class="token operator"> : </span><a href="../-quest-context/index.html">QuestContext</a><span class="token operator">?</span><span class="token operator">&gt; </span><a href="instance.html"><span class="token function">instance</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">QuestService</a><span class="token operator">&lt;</span><a href="instance.html">C</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="194167447%2FFunctions%2F338952794" anchor-label="startQuest" id="194167447%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="start-quest.html"><span>start</span><wbr><span><span>Quest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="194167447%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="start-quest.html"><span class="token function">startQuest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="index.html">CTX</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-177823752%2FFunctions%2F338952794" anchor-label="terminateQuest" id="-177823752%2FFunctions%2F338952794" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":module:module-kether:dokkaHtmlPartial/main" data-filterable-set=":module:module-kether:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="terminate-quest.html"><span>terminate</span><wbr><span><span>Quest</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-177823752%2FFunctions%2F338952794"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-kether:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="terminate-quest.html"><span class="token function">terminateQuest</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="index.html">CTX</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
