@@ -1,5 +1,5 @@
 # 常见疑问 & 构建指南
-> **Warning**
+> [!Warning]
 > 本 README 写于 2023-04-05，部分内容可能不准确或已经过期。  
 
 ## 可能的疑问
@@ -47,10 +47,12 @@ import org.jetbrains.dokka.base.DokkaBaseConfiguration
 ```kotlin
 id("org.jetbrains.dokka") version "1.8.10"
 ```
-在 `subprojects` 中：`
+在 `subprojects` 中：
 ```kotlin
 apply(plugin = "org.jetbrains.dokka")
-
+```
+在文件末尾：
+```kotlin
 buildscript {
     dependencies {
         classpath("org.jetbrains.dokka:dokka-base:1.8.10")
@@ -66,9 +68,9 @@ tasks.withType<DokkaTask>().configureEach {
 ```
 如果这一步没看懂，这里有一份修改过的 Taboolib 的 [`build.gradle.kts`](/build.gradle.kts) 文件供参考。  
 ### 第3步
-在每个有效子项目下执行 `dokkaHtml`，不要用`dokkaHtmlMultiModule`。  
+如果电脑性能顶不住，在每个有效子项目下执行 `dokkaHtml`，不要用`dokkaHtmlMultiModule`。例如：在 `module子项目` 的 `module-effect子项目` 中执行：`./gradlew :module:module-effect dokkaHtml`。  
 
-例如：在 `module子项目` 的 `module-effect子项目` 中执行：`./gradlew :module:module-effect dokkaHtml`。  
+如果你比较勇，那么直接执行`./gradlew dokkaHtmlMultiModule`。如果要收敛点，则可以选择在每个有效项目分类下执行`dokkaHtmlMultiModule`，例如在`module分类`中执行：`./gradlew :module:dokkaHtmlMultiModule`。  
 
 ### 第4步
 将每个项目的 `/build/dokka/html` 目录下的文件集中，并像本仓库一样依据 `module`, `platform`, `expansion` 等进行分类。  
