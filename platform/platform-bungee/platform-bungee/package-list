@@ -132,7 +132,7 @@ $dokka.location:taboolib.platform/BungeeIO/isPrimaryThread/#/PointingToDeclarati
 $dokka.location:taboolib.platform/BungeeIO/plugin/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/plugin.html
 $dokka.location:taboolib.platform/BungeeIO/pluginId/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/plugin-id.html
 $dokka.location:taboolib.platform/BungeeIO/pluginVersion/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/plugin-version.html
-$dokka.location:taboolib.platform/BungeeIO/releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/release-resource-file.html
+$dokka.location:taboolib.platform/BungeeIO/releaseResourceFile/#kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/release-resource-file.html
 $dokka.location:taboolib.platform/BungeeIO/server/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/server.html
 $dokka.location:taboolib.platform/BungeeIO/severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/severe.html
 $dokka.location:taboolib.platform/BungeeIO/warning/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-i-o/warning.html
@@ -160,6 +160,7 @@ $dokka.location:taboolib.platform/BungeeOpenContainer/pluginContainer/#/Pointing
 $dokka.location:taboolib.platform/BungeePlugin///PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/index.html
 $dokka.location:taboolib.platform/BungeePlugin/BungeePlugin/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/-bungee-plugin.html
 $dokka.location:taboolib.platform/BungeePlugin/instance/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/instance.html
+$dokka.location:taboolib.platform/BungeePlugin/isolatedClassLoader/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/isolated-class-loader.html
 $dokka.location:taboolib.platform/BungeePlugin/onDisable/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/on-disable.html
 $dokka.location:taboolib.platform/BungeePlugin/onEnable/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/on-enable.html
 $dokka.location:taboolib.platform/BungeePlugin/onLoad/#/PointingToDeclaration/platform-bungee/taboolib.platform/-bungee-plugin/on-load.html

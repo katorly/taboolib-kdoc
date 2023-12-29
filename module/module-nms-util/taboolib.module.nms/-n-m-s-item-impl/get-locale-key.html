@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>getLocaleKey</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>module</span>            </a>    </div>
+    <div>6.0.12
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":module:module-nms-util:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="member" id="content" pageids="module-nms-util::taboolib.module.nms/NMSItemImpl/getLocaleKey/#org.bukkit.inventory.ItemStack/PointingToDeclaration//242218042">
+  <div class="breadcrumbs"><a href="../../index.html">module-nms-util</a><span class="delimiter">/</span><a href="../index.html">taboolib.module.nms</a><span class="delimiter">/</span><a href="index.html">NMSItemImpl</a><span class="delimiter">/</span><span class="current">getLocaleKey</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>get</span><wbr><span>Locale</span><wbr><span><span>Key</span></span></h1>
+  </div>
+  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":module:module-nms-util:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-locale-key.html"><span class="token function">getLocaleKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">itemStack<span class="token operator">: </span><span data-unresolved-link="org.bukkit.inventory/ItemStack///PointingToDeclaration/">ItemStack</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../module-nms/taboolib.module.nms/-locale-key/index.html">LocaleKey</a></div><p class="paragraph">在 1.12 及以下版本，包含名称变种的物品会被特殊处理，具体表现为：</p><p class="paragraph"><strong>ItemPotion</strong></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">public String a(ItemStack var1) {<br>    if (var1.getData() == 0) {<br>        return LocaleI18n.get("item.emptyPotion.name").trim();<br>    } else {<br>        String var2 = "";<br>        if (f(var1.getData())) {<br>            var2 = LocaleI18n.get("potion.prefix.grenade").trim() + " ";<br>        }<br>        List var3 = Items.POTION.h(var1);<br>        String var4;<br>        if (var3 != null &amp;&amp; !var3.isEmpty()) {<br>            var4 = ((MobEffect)var3.get(0)).g();<br>            var4 = var4 + ".postfix";<br>            return var2 + LocaleI18n.get(var4).trim();<br>        } else {<br>            var4 = PotionBrewer.c(var1.getData());<br>            return LocaleI18n.get(var4).trim() + " " + super.a(var1);<br>        }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>ItemMonsterEgg</strong></p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">public String a(ItemStack itemstack) {<br>    String s = LocaleI18n.get(this.getName() + ".name").trim();<br>    String s1 = EntityTypes.b(itemstack.getData());<br>    if (s1 != null) {<br>        s = s + " " + LocaleI18n.get("entity." + s1 + ".name");<br>    }<br>    return s;<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph">通过上述代码可以看出，服务端本身就无法直接获取关于 Potion 和 MonsterEgg 的准确语言文件节点，需要依赖拼接完成。</p><p class="paragraph">这种逆天的语言文件拼接在 1.13 版本后被移除。</p><hr><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-locale-key.html"><span class="token function">getLocaleKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">enchantment<span class="token operator">: </span><span data-unresolved-link="org.bukkit.enchantments/Enchantment///PointingToDeclaration/">Enchantment</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../module-nms/taboolib.module.nms/-locale-key/index.html">LocaleKey</a></div><p class="paragraph"><strong>Enchantment</strong>, <strong>1.12-</strong> 表现为：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">public String a() {<br>    return "enchantment." + this.d;<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>Enchantment</strong>, <strong>1.13+</strong> 表现为：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">protected String f() {<br>    if (this.descriptionId == null) {<br>        this.descriptionId = // 省略 ...<br>    }<br>    return this.descriptionId;<br>}<br><br>public String g() {<br>    return this.f();<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><p class="paragraph"><strong>Enchantment</strong>, <strong>1.18+</strong> 表现为：</p><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">protected String getOrCreateDescriptionId() {<br>    // 同 1.13+<br>}<br><br>public String getDescriptionId() {<br>    return this.getOrCreateDescriptionId();<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><hr><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="get-locale-key.html"><span class="token function">getLocaleKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">potionEffectType<span class="token operator">: </span><span data-unresolved-link="org.bukkit.potion/PotionEffectType///PointingToDeclaration/">PotionEffectType</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../module-nms/taboolib.module.nms/-locale-key/index.html">LocaleKey</a></div><p class="paragraph">表现形式与 <span data-unresolved-link="org.bukkit.enchantments/Enchantment///PointingToDeclaration/">Enchantment</span> 接近，仅转换为 NMS 类型的方法不同。</p></div></div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+

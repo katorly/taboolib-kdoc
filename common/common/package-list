@@ -3,7 +3,16 @@ $dokka.linkExtension:html
 $dokka.location:taboolib.common.classloader////PointingToDeclaration/common/taboolib.common.classloader/index.html
 $dokka.location:taboolib.common.classloader/IsolatedClassLoader///PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/index.html
 $dokka.location:taboolib.common.classloader/IsolatedClassLoader/IsolatedClassLoader/#java.net.URL[]#java.lang.ClassLoader/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/-isolated-class-loader.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/addExcludedClass/#java.lang.String/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/add-excluded-class.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/addExcludedClasses/#java.util.Collection<java.lang.String>/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/add-excluded-classes.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/addExcludedPackage/#java.lang.String/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/add-excluded-package.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/addExcludedPackages/#java.util.Collection<java.lang.String>/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/add-excluded-packages.html
 $dokka.location:taboolib.common.classloader/IsolatedClassLoader/isEnabled/#/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/is-enabled.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/loadClass/#java.lang.String#boolean#boolean/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/load-class.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoader/runIsolated/#java.lang.Runnable/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader/run-isolated.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoaderConfig///PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader-config/index.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoaderConfig/excludedClasses/#/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader-config/excluded-classes.html
+$dokka.location:taboolib.common.classloader/IsolatedClassLoaderConfig/excludedPackages/#/PointingToDeclaration/common/taboolib.common.classloader/-isolated-class-loader-config/excluded-packages.html
 $dokka.location:taboolib.common.env////PointingToDeclaration/common/taboolib.common.env/index.html
 $dokka.location:taboolib.common.env/AbstractXmlParser///PointingToDeclaration/common/taboolib.common.env/-abstract-xml-parser/index.html
 $dokka.location:taboolib.common.env/AbstractXmlParser/AbstractXmlParser/#/PointingToDeclaration/common/taboolib.common.env/-abstract-xml-parser/-abstract-xml-parser.html
@@ -167,6 +176,7 @@ $dokka.location:taboolib.common.io//findImplementation/java.lang.Class[TypeParam
 $dokka.location:taboolib.common.io//getClass/#kotlin.String/PointingToDeclaration/common/taboolib.common.io/get-class.html
 $dokka.location:taboolib.common.io//getClasses/java.net.URL#/PointingToDeclaration/common/taboolib.common.io/get-classes.html
 $dokka.location:taboolib.common.io//getInstance/java.lang.Class[TypeParam(bounds=[kotlin.Any?])]#kotlin.Boolean/PointingToDeclaration/common/taboolib.common.io/get-instance.html
+$dokka.location:taboolib.common.io//getResources/java.net.URL#/PointingToDeclaration/common/taboolib.common.io/get-resources.html
 $dokka.location:taboolib.common.io//groupId/#/PointingToDeclaration/common/taboolib.common.io/group-id.html
 $dokka.location:taboolib.common.io//groupId/java.lang.Class[*]#/PointingToDeclaration/common/taboolib.common.io/group-id.html
 $dokka.location:taboolib.common.io//inject/java.lang.Class[TypeParam(bounds=[kotlin.Any?])]#/PointingToDeclaration/common/taboolib.common.io/inject.html
@@ -183,6 +193,7 @@ $dokka.location:taboolib.common.io//runningClasses/#/PointingToDeclaration/comm
 $dokka.location:taboolib.common.io//runningClassesWithoutLibrary/#/PointingToDeclaration/common/taboolib.common.io/running-classes-without-library.html
 $dokka.location:taboolib.common.io//runningExactClassMap/#/PointingToDeclaration/common/taboolib.common.io/running-exact-class-map.html
 $dokka.location:taboolib.common.io//runningExactClasses/#/PointingToDeclaration/common/taboolib.common.io/running-exact-classes.html
+$dokka.location:taboolib.common.io//runningResources/#/PointingToDeclaration/common/taboolib.common.io/running-resources.html
 $dokka.location:taboolib.common.io//taboolibId/#/PointingToDeclaration/common/taboolib.common.io/taboolib-id.html
 $dokka.location:taboolib.common.io//taboolibPath/#/PointingToDeclaration/common/taboolib.common.io/taboolib-path.html
 $dokka.location:taboolib.common.io//unzip/java.io.File#java.io.File/PointingToDeclaration/common/taboolib.common.io/unzip.html
@@ -293,6 +304,7 @@ $dokka.location:taboolib.common.platform.command//playersOrNull/taboolib.common.
 $dokka.location:taboolib.common.platform.command//restrictBoolean/taboolib.common.platform.command.component.CommandComponentDynamic#/PointingToDeclaration/common/taboolib.common.platform.command/restrict-boolean.html
 $dokka.location:taboolib.common.platform.command//restrictDouble/taboolib.common.platform.command.component.CommandComponentDynamic#/PointingToDeclaration/common/taboolib.common.platform.command/restrict-double.html
 $dokka.location:taboolib.common.platform.command//restrictInt/taboolib.common.platform.command.component.CommandComponentDynamic#/PointingToDeclaration/common/taboolib.common.platform.command/restrict-int.html
+$dokka.location:taboolib.common.platform.command//simpleCommand/#kotlin.String#kotlin.collections.List[kotlin.String]#kotlin.String#kotlin.String#kotlin.String#kotlin.String#taboolib.common.platform.command.PermissionDefault#kotlin.collections.Map[kotlin.String,taboolib.common.platform.command.PermissionDefault]#taboolib.common.platform.command.CommandCompleter?#kotlin.Function2[taboolib.common.platform.ProxyCommandSender,kotlin.Array[kotlin.String],kotlin.Unit]/PointingToDeclaration/common/taboolib.common.platform.command/simple-command.html
 $dokka.location:taboolib.common.platform.command//subCommand/#kotlin.Function1[taboolib.common.platform.command.component.CommandComponent,kotlin.Unit]/PointingToDeclaration/common/taboolib.common.platform.command/sub-command.html
 $dokka.location:taboolib.common.platform.command//suggest/taboolib.common.platform.command.component.CommandComponentDynamic#kotlin.Function0[kotlin.collections.List[kotlin.String]?]/PointingToDeclaration/common/taboolib.common.platform.command/suggest.html
 $dokka.location:taboolib.common.platform.command//suggestBoolean/taboolib.common.platform.command.component.CommandComponentDynamic#/PointingToDeclaration/common/taboolib.common.platform.command/suggest-boolean.html
@@ -495,7 +507,7 @@ $dokka.location:taboolib.common.platform.function//registerBungeeListener/#java.
 $dokka.location:taboolib.common.platform.function//registerCommand/#taboolib.common.platform.command.CommandStructure#taboolib.common.platform.command.CommandExecutor#taboolib.common.platform.command.CommandCompleter#kotlin.Function1[taboolib.common.platform.command.component.CommandBase,kotlin.Unit]/PointingToDeclaration/common/taboolib.common.platform.function/register-command.html
 $dokka.location:taboolib.common.platform.function//registerSpongeListener/#java.lang.Class[TypeParam(bounds=[kotlin.Any?])]#taboolib.common.platform.event.EventOrder#kotlin.Boolean#kotlin.Function2[java.io.Closeable,TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/common/taboolib.common.platform.function/register-sponge-listener.html
 $dokka.location:taboolib.common.platform.function//registerVelocityListener/#java.lang.Class[TypeParam(bounds=[kotlin.Any?])]#taboolib.common.platform.event.PostOrder#kotlin.Function2[java.io.Closeable,TypeParam(bounds=[kotlin.Any?]),kotlin.Unit]/PointingToDeclaration/common/taboolib.common.platform.function/register-velocity-listener.html
-$dokka.location:taboolib.common.platform.function//releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/common/taboolib.common.platform.function/release-resource-file.html
+$dokka.location:taboolib.common.platform.function//releaseResourceFile/#kotlin.String#kotlin.Boolean#kotlin.String/PointingToDeclaration/common/taboolib.common.platform.function/release-resource-file.html
 $dokka.location:taboolib.common.platform.function//runningPlatform/#/PointingToDeclaration/common/taboolib.common.platform.function/running-platform.html
 $dokka.location:taboolib.common.platform.function//server/#/PointingToDeclaration/common/taboolib.common.platform.function/server.html
 $dokka.location:taboolib.common.platform.function//severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/common/taboolib.common.platform.function/severe.html
@@ -547,7 +559,7 @@ $dokka.location:taboolib.common.platform.service/PlatformIO/info/#kotlin.Array[k
 $dokka.location:taboolib.common.platform.service/PlatformIO/isPrimaryThread/#/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/is-primary-thread.html
 $dokka.location:taboolib.common.platform.service/PlatformIO/pluginId/#/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/plugin-id.html
 $dokka.location:taboolib.common.platform.service/PlatformIO/pluginVersion/#/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/plugin-version.html
-$dokka.location:taboolib.common.platform.service/PlatformIO/releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/release-resource-file.html
+$dokka.location:taboolib.common.platform.service/PlatformIO/releaseResourceFile/#kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/release-resource-file.html
 $dokka.location:taboolib.common.platform.service/PlatformIO/server/#/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/server.html
 $dokka.location:taboolib.common.platform.service/PlatformIO/severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/severe.html
 $dokka.location:taboolib.common.platform.service/PlatformIO/warning/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/common/taboolib.common.platform.service/-platform-i-o/warning.html
@@ -861,6 +873,7 @@ $dokka.location:taboolib.common.util//random/#kotlin.Double/PointingToDeclaratio
 $dokka.location:taboolib.common.util//random/#kotlin.Int#kotlin.Int/PointingToDeclaration/common/taboolib.common.util/random.html
 $dokka.location:taboolib.common.util//random/#kotlin.Int/PointingToDeclaration/common/taboolib.common.util/random.html
 $dokka.location:taboolib.common.util//randomDouble/#/PointingToDeclaration/common/taboolib.common.util/random-double.html
+$dokka.location:taboolib.common.util//removeAndBackIf/kotlin.collections.MutableCollection[TypeParam(bounds=[kotlin.Any?])]#kotlin.Function1[TypeParam(bounds=[kotlin.Any?]),kotlin.Boolean]/PointingToDeclaration/common/taboolib.common.util/remove-and-back-if.html
 $dokka.location:taboolib.common.util//replaceWithOrder/kotlin.String#kotlin.Array[kotlin.Any]/PointingToDeclaration/common/taboolib.common.util/replace-with-order.html
 $dokka.location:taboolib.common.util//resettableLazy/#kotlin.Array[kotlin.String]#kotlin.Boolean#kotlin.Function0[TypeParam(bounds=[kotlin.Any?])]/PointingToDeclaration/common/taboolib.common.util/resettable-lazy.html
 $dokka.location:taboolib.common.util//setSafely/kotlin.collections.MutableList[TypeParam(bounds=[kotlin.Any?])]#kotlin.Int#TypeParam(bounds=[kotlin.Any?])#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/common/taboolib.common.util/set-safely.html
@@ -1044,9 +1057,42 @@ $dokka.location:taboolib.common/TabooLibCommon/lifeCycle/#taboolib.common.LifeCy
 $dokka.location:taboolib.common/TabooLibCommon/lifeCycle/#taboolib.common.LifeCycle/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/life-cycle.html
 $dokka.location:taboolib.common/TabooLibCommon/postpone/#taboolib.common.LifeCycle#java.lang.Runnable/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/postpone.html
 $dokka.location:taboolib.common/TabooLibCommon/print/#java.lang.Object/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/print.html
+$dokka.location:taboolib.common/TabooLibCommon/run/#java.lang.Runnable/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/run.html
 $dokka.location:taboolib.common/TabooLibCommon/runningPlatform/#/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/running-platform.html
 $dokka.location:taboolib.common/TabooLibCommon/testCancel/#/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/test-cancel.html
 $dokka.location:taboolib.common/TabooLibCommon/testSetup/#/PointingToDeclaration/common/taboolib.common/-taboo-lib-common/test-setup.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult///PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/index.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/BatchResult/#kotlin.collections.List[taboolib.common.Test.Result]/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/-batch-result.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/failure/#/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/failure.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/print/#kotlin.Boolean/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/print.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/results/#/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/results.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/success/#/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/success.html
+$dokka.location:taboolib.common/Test.Companion.BatchResult/unsupported/#/PointingToDeclaration/common/taboolib.common/-test/-companion/-batch-result/unsupported.html
+$dokka.location:taboolib.common/Test.Companion///PointingToDeclaration/common/taboolib.common/-test/-companion/index.html
+$dokka.location:taboolib.common/Test.Companion/check/#kotlin.Array[taboolib.common.Test]/PointingToDeclaration/common/taboolib.common/-test/-companion/check.html
+$dokka.location:taboolib.common/Test.Failure.Companion///PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/index.html
+$dokka.location:taboolib.common/Test.Failure.Companion/of/#/PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/of.html
+$dokka.location:taboolib.common/Test.Failure.Companion/of/#kotlin.String#kotlin.String/PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/of.html
+$dokka.location:taboolib.common/Test.Failure.Companion/of/#kotlin.String#kotlin.Throwable/PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/of.html
+$dokka.location:taboolib.common/Test.Failure.Companion/of/#kotlin.String/PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/of.html
+$dokka.location:taboolib.common/Test.Failure.Companion/of/#kotlin.Throwable/PointingToDeclaration/common/taboolib.common/-test/-failure/-companion/of.html
+$dokka.location:taboolib.common/Test.Failure///PointingToDeclaration/common/taboolib.common/-test/-failure/index.html
+$dokka.location:taboolib.common/Test.Failure/Failure/#kotlin.String#kotlin.Throwable/PointingToDeclaration/common/taboolib.common/-test/-failure/-failure.html
+$dokka.location:taboolib.common/Test.Failure/error/#/PointingToDeclaration/common/taboolib.common/-test/-failure/error.html
+$dokka.location:taboolib.common/Test.Result///PointingToDeclaration/common/taboolib.common/-test/-result/index.html
+$dokka.location:taboolib.common/Test.Result/reason/#/PointingToDeclaration/common/taboolib.common/-test/-result/reason.html
+$dokka.location:taboolib.common/Test.Success.Companion///PointingToDeclaration/common/taboolib.common/-test/-success/-companion/index.html
+$dokka.location:taboolib.common/Test.Success.Companion/of/#/PointingToDeclaration/common/taboolib.common/-test/-success/-companion/of.html
+$dokka.location:taboolib.common/Test.Success.Companion/of/#kotlin.String/PointingToDeclaration/common/taboolib.common/-test/-success/-companion/of.html
+$dokka.location:taboolib.common/Test.Success///PointingToDeclaration/common/taboolib.common/-test/-success/index.html
+$dokka.location:taboolib.common/Test.Success/Success/#kotlin.String/PointingToDeclaration/common/taboolib.common/-test/-success/-success.html
+$dokka.location:taboolib.common/Test.Unsupported///PointingToDeclaration/common/taboolib.common/-test/-unsupported/index.html
+$dokka.location:taboolib.common/Test.Unsupported/Unsupported/#kotlin.String/PointingToDeclaration/common/taboolib.common/-test/-unsupported/-unsupported.html
+$dokka.location:taboolib.common/Test///PointingToDeclaration/common/taboolib.common/-test/index.html
+$dokka.location:taboolib.common/Test/Test/#/PointingToDeclaration/common/taboolib.common/-test/-test.html
+$dokka.location:taboolib.common/Test/check/#/PointingToDeclaration/common/taboolib.common/-test/check.html
+$dokka.location:taboolib.common/UnsupportedVersionException///PointingToDeclaration/common/taboolib.common/-unsupported-version-exception/index.html
+$dokka.location:taboolib.common/UnsupportedVersionException/UnsupportedVersionException/#/PointingToDeclaration/common/taboolib.common/-unsupported-version-exception/-unsupported-version-exception.html
 taboolib.common
 taboolib.common.classloader
 taboolib.common.env

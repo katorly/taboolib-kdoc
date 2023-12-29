@@ -130,7 +130,7 @@ $dokka.location:taboolib.platform/VelocityIO/isPrimaryThread/#/PointingToDeclara
 $dokka.location:taboolib.platform/VelocityIO/plugin/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/plugin.html
 $dokka.location:taboolib.platform/VelocityIO/pluginId/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/plugin-id.html
 $dokka.location:taboolib.platform/VelocityIO/pluginVersion/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/plugin-version.html
-$dokka.location:taboolib.platform/VelocityIO/releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/release-resource-file.html
+$dokka.location:taboolib.platform/VelocityIO/releaseResourceFile/#kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/release-resource-file.html
 $dokka.location:taboolib.platform/VelocityIO/server/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/server.html
 $dokka.location:taboolib.platform/VelocityIO/severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/severe.html
 $dokka.location:taboolib.platform/VelocityIO/warning/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-i-o/warning.html
@@ -154,6 +154,7 @@ $dokka.location:taboolib.platform/VelocityPlugin/configDirectory/#/PointingToDec
 $dokka.location:taboolib.platform/VelocityPlugin/e/#com.velocitypowered.api.event.proxy.ProxyInitializeEvent/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/e.html
 $dokka.location:taboolib.platform/VelocityPlugin/e/#com.velocitypowered.api.event.proxy.ProxyShutdownEvent/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/e.html
 $dokka.location:taboolib.platform/VelocityPlugin/instance/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/instance.html
+$dokka.location:taboolib.platform/VelocityPlugin/isolatedClassLoader/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/isolated-class-loader.html
 $dokka.location:taboolib.platform/VelocityPlugin/logger/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/logger.html
 $dokka.location:taboolib.platform/VelocityPlugin/pluginInstance/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/plugin-instance.html
 $dokka.location:taboolib.platform/VelocityPlugin/server/#/PointingToDeclaration/platform-velocity/taboolib.platform/-velocity-plugin/server.html

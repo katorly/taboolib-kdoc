@@ -3,6 +3,7 @@ $dokka.linkExtension:html
 
 module:module-ai
 taboolib.module.ai
+taboolib.test.ai
 module:module-chat
 taboolib.module.chat
 taboolib.module.chat.impl
@@ -48,10 +49,11 @@ module:module-navigation
 taboolib.module.navigation
 module:module-nms
 taboolib.module.nms
+taboolib.test.nms
 module:module-nms-util
 taboolib.module.nms
-taboolib.module.nms.i18n
 taboolib.module.nms.type
+taboolib.test.nms_util
 module:module-porticus
 taboolib.module.porticus
 taboolib.module.porticus.bukkitside

@@ -21,7 +21,7 @@ $dokka.location:taboolib.platform/AppIO/isLog4jEnabled/#/PointingToDeclaration/
 $dokka.location:taboolib.platform/AppIO/isPrimaryThread/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/is-primary-thread.html
 $dokka.location:taboolib.platform/AppIO/pluginId/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/plugin-id.html
 $dokka.location:taboolib.platform/AppIO/pluginVersion/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/plugin-version.html
-$dokka.location:taboolib.platform/AppIO/releaseResourceFile/#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/release-resource-file.html
+$dokka.location:taboolib.platform/AppIO/releaseResourceFile/#kotlin.String#kotlin.String#kotlin.Boolean/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/release-resource-file.html
 $dokka.location:taboolib.platform/AppIO/server/#/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/server.html
 $dokka.location:taboolib.platform/AppIO/severe/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/severe.html
 $dokka.location:taboolib.platform/AppIO/warning/#kotlin.Array[kotlin.Any?]/PointingToDeclaration/platform-application/taboolib.platform/-app-i-o/warning.html

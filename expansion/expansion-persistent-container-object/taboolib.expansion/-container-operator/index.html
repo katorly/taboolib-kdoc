@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ContainerOperator</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>expansion</span>            </a>    </div>
+    <div>6.0.12
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="expansion-persistent-container-object::taboolib.expansion/ContainerOperator///PointingToDeclaration//1510107298">
+  <div class="breadcrumbs"><a href="../../index.html">expansion-persistent-container-object</a><span class="delimiter">/</span><a href="../index.html">taboolib.expansion</a><span class="delimiter">/</span><span class="current">ContainerOperator</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Container</span><wbr><span><span>Operator</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="index.html">ContainerOperator</a></div><h2 class=""> 创建数据类</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 数据类中必须存在<br>data class PlayerHome(<br>    @Id         // 主键（不是数据库意义上的主键，而是用于查询的主键）<br>    val username: UUID,<br>    @Key        // 建立索引（作用在于 update 时，若 @Id 重复出现，可以借助 @Key 来精确定位）<br>    @Length(32) // 数据在数据库中的长度<br>    val serverName: String,<br>    @Length(32)<br>    var world: String,<br>    var x: Double,<br>    var y: Double,<br>    var z: Double,<br>    var yaw: Float,<br>    var pitch: Float,<br>    var active: Boolean,<br>) {<br><br>    // 在数据类生成时，会优先查找解包函数，如果不存在则调用构造函数<br>    // 对于解包函数的要求：<br>    // 1. 名字任意<br>    // 2. 有且仅有一个 BundleMap 参数<br>    // 3. 返回值为该数据类<br>    companion object {<br><br>        @JvmStatic<br>        fun wrap(map: BundleMap): PlayerFurniture {<br>            return PlayerHome(<br>                map["username"],<br>                map["server_name"], // serverName -&gt; server_name<br>                map["world"],<br>                map["x"],<br>                map["y"],<br>                map["z"],<br>                map["yaw"],<br>                map["pitch"],<br>                map["active"],<br>            )<br>        }<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> 创建容器</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">val container = persistentContainer { new&lt;PlayerHome&gt;() } // PlayerHome -&gt; player_home<br><br>// 别忘记释放资源<br>fun close() {<br>    container.close()<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> 获取数据</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 获取所有家<br>fun getPlayerHomes(username: UUID): List&lt;PlayerHome&gt; {<br>    return container.get&lt;PlayerHome&gt;().find(username)<br>}<br><br>// 获取特定服务器中的家<br>fun getPlayerHomes(username: UUID, serverName: String): List&lt;PlayerHome&gt; {<br>    return container.get&lt;PlayerHome&gt;().find(username) {<br>        "server_name" eq serverName<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><h2 class=""> 更新数据</h2><div class="sample-container"><pre><code class="block lang-kotlin" theme="idea">// 借助 @Id 和 @Key 定位数据并更新<br>// 数据类中必须存在可变数据（var）才可执行 update 函数，因为该函数仅更新可变数据<br>fun updatePlayerHome(home: PlayerHome) {<br>    container.get&lt;PlayerHome&gt;().updateByKey(home)<br>}<br><br>// 借助 @Id 和自定义条件定位数据并更新（不借助 @Key）<br>fun updatePlayerHome(home: PlayerHome, serverName: String) {<br>    container.get&lt;PlayerHome&gt;().update(home) {<br>        "server_name" eq serverName<br>    }<br>}</code></pre><span class="top-right-position"><span class="copy-icon"></span><div class="copy-popup-wrapper popup-to-left"><span class="copy-popup-icon"></span><span>Content copied to clipboard</span></div></span></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">坏黑</p></span><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2022/5/25 00:35</p></span><h4 class="">Inheritors</h4><div class="table"><div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-container-operator-impl/index.html">ContainerOperatorImpl</a></div></span></div><div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1955724336%2FConstructors%2F1510107298" anchor-label="ContainerOperator" id="1955724336%2FConstructors%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-container-operator.html"><span>Container</span><wbr><span><span>Operator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1955724336%2FConstructors%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-127716597%2FFunctions%2F1510107298" anchor-label="delete" id="-127716597%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="delete.html"><span><span>delete</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-127716597%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delete.html">T</a><span class="token operator">&gt; </span><a href="delete.html"><span class="token function">delete</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delete.html">T</a><span class="token operator">&gt; </span><a href="delete.html"><span class="token function">delete</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="delete.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">删除数据</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1835919243%2FFunctions%2F1510107298" anchor-label="find" id="1835919243%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find.html"><span><span>find</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1835919243%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find.html">T</a><span class="token operator">&gt; </span><a href="find.html"><span class="token function">find</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find.html">T</a><span class="token operator">&gt; </span><a href="find.html"><span class="token function">find</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">查询数据，查多个</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-527770963%2FFunctions%2F1510107298" anchor-label="findOne" id="-527770963%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="find-one.html"><span>find</span><wbr><span><span>One</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-527770963%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find-one.html">T</a><span class="token operator">&gt; </span><a href="find-one.html"><span class="token function">findOne</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="find-one.html">T</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find-one.html">T</a><span class="token operator">&gt; </span><a href="find-one.html"><span class="token function">findOne</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="find-one.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="find-one.html">T</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">查询数据，查一个，有多个仅返回第一个</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1226802135%2FFunctions%2F1510107298" anchor-label="get" id="-1226802135%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1226802135%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">T</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">T</a><span class="token operator">&gt; </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">获取数据，获取多个（默认不经过任何条件判断）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1573008591%2FFunctions%2F1510107298" anchor-label="getOne" id="-1573008591%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-one.html"><span>get</span><wbr><span><span>One</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1573008591%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-one.html">T</a><span class="token operator">&gt; </span><a href="get-one.html"><span class="token function">getOne</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-one.html">T</a><span class="token operator">?</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-one.html">T</a><span class="token operator">&gt; </span><a href="get-one.html"><span class="token function">getOne</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="get-one.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="get-one.html">T</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">获取数据，获取一个，有多个仅返回第一个（默认不经过任何条件判断）</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1871060210%2FFunctions%2F1510107298" anchor-label="has" id="-1871060210%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="has.html"><span><span>has</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1871060210%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="has.html"><span class="token function">has</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="has.html">T</a><span class="token operator">&gt; </span><a href="has.html"><span class="token function">has</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="has.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">检查数据</p></div><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="has.html">T</a><span class="token operator">&gt; </span><a href="has.html"><span class="token function">has</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">id<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">检查数据是否存在</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1065816369%2FFunctions%2F1510107298" anchor-label="insert" id="-1065816369%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="insert.html"><span><span>insert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1065816369%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="insert.html"><span class="token function">insert</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataList<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">插入数据</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1895511771%2FFunctions%2F1510107298" anchor-label="sort" id="1895511771%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sort.html"><span><span>sort</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1895511771%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt; </span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt; </span><a href="sort.html"><span class="token function">sort</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">正序排序</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="70476251%2FFunctions%2F1510107298" anchor-label="sortDescending" id="70476251%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="sort-descending.html"><span>sort</span><wbr><span><span>Descending</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="70476251%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort-descending.html">T</a><span class="token operator">&gt; </span><a href="sort-descending.html"><span class="token function">sortDescending</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">noinline </span>filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort-descending.html">T</a><span class="token operator">&gt;</span></div><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort-descending.html">T</a><span class="token operator">&gt; </span><a href="sort-descending.html"><span class="token function">sortDescending</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">type<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html">Class</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort-descending.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">row<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">limit<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="sort-descending.html">T</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">倒序排序</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="187066304%2FFunctions%2F1510107298" anchor-label="update" id="187066304%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update.html"><span><span>update</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="187066304%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="update.html"><span class="token function">update</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token punctuation">, </span></span><span class="parameter ">filter<span class="token operator">: </span><span class="token keyword"></span><span data-unresolved-link="taboolib.module.database/Filter///PointingToDeclaration/">Filter</span><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">更新数据，借助 @Id 定位数据并更新</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="420549591%2FFunctions%2F1510107298" anchor-label="updateByKey" id="420549591%2FFunctions%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-by-key.html"><span>update</span><wbr><span>By</span><wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="420549591%2FFunctions%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-by-key.html"><span class="token function">updateByKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">更新数据，借助 @Id 和 @Key 定位数据并更新</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1275306752%2FProperties%2F1510107298" anchor-label="dataSource" id="-1275306752%2FProperties%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-source.html"><span>data</span><wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1275306752%2FProperties%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="data-source.html">dataSource</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/javax/sql/DataSource.html">DataSource</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1473463129%2FProperties%2F1510107298" anchor-label="table" id="-1473463129%2FProperties%2F1510107298" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"></a>
+          <div class="table-row" data-filterable-current=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main" data-filterable-set=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="table.html"><span><span>table</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1473463129%2FProperties%2F1510107298"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":expansion:expansion-persistent-container-object:dokkaHtmlPartial/main"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword"></span><span class="token keyword">val </span><a href="table.html">table</a><span class="token operator">: </span><span data-unresolved-link="taboolib.module.database/Table///PointingToDeclaration/">Table</span><span class="token operator">&lt;</span><span class="token operator">*</span><span class="token punctuation">, </span><span class="token operator">*</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
+
